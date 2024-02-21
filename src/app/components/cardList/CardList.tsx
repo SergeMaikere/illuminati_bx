@@ -1,4 +1,3 @@
-import React, { PropTypes } from 'react';
 import Pagination from '../pagination/Pagination';
 
 const CardList = ({ className }) => {
