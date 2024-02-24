@@ -5,7 +5,7 @@ import ToggleTheme from '../toggleTheme/ToggleTheme';
 
 const Navbar = ({ className }) => {
     return (
-        <div className="flex px-2 py-3 mb-2 bg-gray-100 border-b-2 border-gray-300">
+        <div className="flex px-2 py-3 mb-2 border-b-2 border-red-400">
             <div className="flex flex-1">
                 <Link href="/"className='pl-2'><FaSquareFacebook/></Link>
                 <Link href="/"className='pl-2'><FaSquareXTwitter/></Link>
