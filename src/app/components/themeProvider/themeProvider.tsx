@@ -7,7 +7,7 @@ const ThemeProvider = ({ children }) => {
     const { theme, toggleTheme } = useContext(ThemeContext)
 
     return (
-        <div className={`w-screen${theme === 'dark' ? ' dark' : ''}`}>{children}</div>
+        <div className={`w-screen${ !theme ? ' dark' : ''}`}>{children}</div>
     );
 };
 

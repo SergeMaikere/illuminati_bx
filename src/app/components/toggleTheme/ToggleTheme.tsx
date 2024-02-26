@@ -6,12 +6,20 @@ import { ThemeContext } from '../../../context/ThemeContext';
 
 const ToggleTheme = ({ className }) => {
 
-    const {theme, toggleTheme} = useContext(ThemeContext) 
-    const ball: ReactElement = <div className="w-4 h-4 bg-black dark:bg-white rounded-full"></div>
+    const {theme, setTheme} = useContext(ThemeContext) 
+    const ball: ReactElement = () => <div className=" w-3 h-3 md:w-4 md:h-4 bg-sky-700 rounded-full"></div>
+    const toggleTheme = () => {
+        setTheme(!theme)
+        localStorage.setItem('theme', theme )
+    }
     return (
-        <div onClick={toggleTheme} className="flex justify-between p-1 rounded border-b-2 border-b-gray-800 dark:border-b-gray-100 w-11">
-            {theme === 'dark' ? ball : <FaSun className="text-yellow-600"/>}
-            {theme === 'dark' ? <FaMoon className="text-yellow-600"/> : ball}
+        <div onClick={toggleTheme} className={`
+            flex items-center justify-around
+            rounded-md border border-gray-800 dark:border-gray-100 
+            w-10 md:w-11 xl:w-12
+        `}>
+            {!theme ? ball() : <FaSun className="text-amber-500 w-3 h-3 md:w-4 md:h-4"/>}
+            {!theme ? <FaMoon className="text-amber-500 w-3 h-3 md:w-4 md:h-4"/> : ball()}
         </div>
     );
 };
