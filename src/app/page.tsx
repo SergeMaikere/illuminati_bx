@@ -5,10 +5,10 @@ import Menu from './components/menu/Menu';
 
 export default function Home() {
     return (
-        <div className="bg-teal-300">
+        <div>
             <Featured/>
             <Categories/>
-            <div className="flex flex-col md:flex-row">
+            <div className=" mt-10 flex flex-col md:flex-row">
                 <CardList/>
                 <Menu/>
             </div>
