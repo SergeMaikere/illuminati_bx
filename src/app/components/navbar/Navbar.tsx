@@ -11,7 +11,7 @@ const Navbar = ({ className }) => {
     const [ open, setOpen ] = useState( false )
 
     return (
-        <div className="flex items-center px-2 py-3 mb-2 border-b border-amber-500 h-16 font-mono">
+        <div className="flex items-center px-2 py-3 mb-2 border-b border-gray-300 h-16 font-mono">
 
             {/*Hidden responsive theme button*/}
             <div className="sm:hidden block flex-1">
