@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
+import Button from '../button/Button';
 
 const Featured = ({ className }) => {
     return (
-        <div className="mt-10 pb-24 border-b border-gray-300">
+        <div className="mt-10 pb-12 sm:pb-24 border-b border-gray-300">
             <h1 className="mb-4 font-serif">
                 <span className="font-bold text-4xl md:text-6xl">Les Illuminés de Bruxelles </span> 
                 <span className="text-4xl md:text-6xl"> seraient en guet-à-pinte depuis 1830!</span>
@@ -19,7 +20,7 @@ const Featured = ({ className }) => {
                     <p className="font-mono text-base">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi voluptate, voluptates sunt odit rerum maxime explicabo natus nam dolor iusto ullam quia assumenda rem doloremque exercitationem dicta inventore. Quod.
                     </p>  
-                    <button className="border border-gray-800 rounded p-2 mt-5">Read More</button>
+                    <Button buttonText="Read More" />
                 </div>
             </div>
         </div>
