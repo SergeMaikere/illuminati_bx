@@ -8,7 +8,7 @@ import { getEditorChoice } from '../../utils/getEditorsChoice';
 
 const Menu = ({ className }) => {
     return (
-        <div className="mt-10">
+        <div className="mt-10 px-3">
             <div className="border-b border-gray-300 pb-12">
                 <h3 className="font-serif mb-4">
                     <div className="text-3xl">Populaires</div>

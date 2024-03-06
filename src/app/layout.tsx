@@ -27,7 +27,7 @@ export default function RootLayout({
                     <div className={`
                         bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-200
                         text-sm md:text-base xl:text-lg
-                        mx-auto 2xl:max-w-screen-[1366px] xl:max-w-6xl lg:max-w-5xl md:max-w-3xl md:px-10
+                        mx-auto max-w-full 2xl:max-w-screen-[1366px] xl:max-w-6xl lg:max-w-5xl md:max-w-3xl md:px-10
                     `}>
                         <Navbar/>
                         {children}

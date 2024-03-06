@@ -11,32 +11,35 @@ const Navbar = ({ className }) => {
     const [ open, setOpen ] = useState( false )
 
     return (
-        <div className="flex items-center px-2 py-3 mb-2 border-b border-gray-300 h-16 font-mono">
+        <div className="flex items-center px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif">
 
             {/*Hidden responsive theme button*/}
             <div className="sm:hidden block flex-1">
                 <ToggleTheme/>
             </div>
 
-            <div className="hidden md:flex flex-1">
+            <div className="hidden md:flex md:gap-4 flex-1">
                 <Link href="/">
-                    <img className="max-w-10" src="./facebook.png" alt="facebook link"/>
+                    <img className="h-10" src="./facebook.png" alt="facebook link"/>
                 </Link>
                 <Link href="/">
-                    <img className="max-w-10" src="./instagram.png" alt="instagram link"/>
+                    <img className="h-10" src="./instagram.png" alt="instagram link"/>
                 </Link>
                 <Link href="/">
-                    <img className="max-w-10 h-[40px]" src="./twitter.png" alt="twitter link"/>
+                    <img className="h-10" src="./twitter.png" alt="twitter link"/>
+                </Link>
+                <Link href="/">
+                    <img className="h-10" src="./onlyfans.png" alt="onlyfans link"/>
                 </Link>
             </div>
 
-            <div className="flex items-center flex-1 gap-2">
-                <span className="hidden md:block">Illuminati</span>
-                <img className="w-[60px] h-[60px]" src="./illuminati_bx.png" alt="Illuminati Brussels logo" />
-                <span className="hidden md:block">Bruxelles</span>
+            <div className="flex items-center flex-1 gap-1 text-xl">
+                <span className="hidden md:block text-sky-700">Illuminati</span>
+                <img className="h-20" src="./illuminati_bx.png" alt="Illuminati Brussels logo" />
+                <span className="hidden md:block text-amber-500">Bruxelles</span>
             </div>
 
-            <div className="hidden sm:flex gap-2 flex-1">
+            <div className="hidden sm:flex gap-4 flex-1">
                 <ToggleTheme className="hidden sm:block"/>
                 <Link href="/">Home</Link>
                 <Link href="/contact">Contact</Link>

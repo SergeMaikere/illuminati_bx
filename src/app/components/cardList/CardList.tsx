@@ -5,7 +5,7 @@ import { getRecents } from '../../utils/getRecents';
 const CardList = (props) => {
 
     return (
-        <div className="mt-10 pb-12">
+        <div className="mt-10 pb-12 px-3">
             <h2 className="text-4xl font-serif">Articles Récents</h2>
             {props.cards.map( 
                 obj => <RecentCard 

@@ -1,18 +1,56 @@
 import React, { PropTypes } from 'react';
+import Link from 'next/link'
 
 const Footer = ({ className }) => {
     return (
-        <div className="flex bg-stone-200 p-3">
-            <div className="flex-1 flex justify-around">
-               <img className="w-40" src="./illuminati_bx.png" alt="logo"/>
-               <div>Some Infos</div>
-            </div>
-            <div className="flex-1">
+        <div className="lg:flex gap-2 py-10 px-2 border-t border-gray-300">
+            <div className="flex gap-2 flex-2">
+                <img className="hidden lg:block h-44" src="illuminati_bx.png" alt="illuminati Bruxelles Logo"/>
                 <div>
-                    <a href="https://www.freepik.com/free-vector/hand-drawn-illuminati-illustration_36865229.htm#fromView=search&page=1&position=21&uuid=331f0dff-92c5-46d6-bc36-8d8f9f907e08">Image by freepik</a>
+                    <div className="font-serif text-2xl">
+                        <span className="text-sky-700">Illuminati</span>
+                        <span className="text-amber-500"> Bruxelles</span>     
+                    </div>
+                    <div className="text-base font-mono py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ex laudantium facere blanditiis accusamus architecto autem rerum perferendis exercitationem odit, doloremque accusantium vitae veritatis, magni iste, ad nobis excepturi nulla!</div>
+                    <div className="hidden md:flex flex gap-4">
+                        <Link href="/">
+                            <img className="h-8" src="facebook.png" alt="facebook Logo"/>
+                        </Link>
+                        <Link href="/">
+                            <img className="h-8" src="instagram.png" alt="instagram Logo"/>
+                        </Link>
+                        <Link href="/">
+                            <img className="h-8" src="twitter.png" alt="twitter Logo"/>
+                        </Link>
+                        <Link href="/">
+                            <img className="h-8" src="onlyfans.png" alt="onlyfans Logo"/>
+                        </Link>
+                    </div>
                 </div>
-                <div>
-                    Photo by <a href="https://unsplash.com/@mham3816?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Madie Hamilton</a> on <a href="https://unsplash.com/photos/person-holding-red-plastic-shovel-l9vXx8aEYJ8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </div>
+            <div className="flex gap-4 flex-1">
+                <div className="flex flex-col justify-between text-base">
+                    <div className="text-xl font-serif">Liens</div>
+                    <Link className="block" href="/">Home</Link>
+                    <Link className="block" href="/blog">Blog</Link>
+                    <Link className="block" href="/about">About</Link>
+                    <Link className="block" href="/contact">Contact</Link>
+                </div>
+                <div className="flex flex-col justify-between text-sm">
+                    <div className="text-xl font-serif">Tags</div>
+                    <Link className="block" href="/blog/mode">Mode</Link>
+                    <Link className="block" href="/blog/science">Science</Link>
+                    <Link className="block" href="/blog/enfer">Enfer</Link>
+                    <Link className="block" href="/blog/cyprien">Cyprien</Link>
+                    <Link className="block" href="/blog/histoire">Histoire</Link>
+                    <Link className="block" href="/blog/france">France</Link>
+                </div>
+                <div className="flex flex-col justify-between text-base">
+                    <div className="text-xl font-serif">Social</div>
+                    <Link className="block" href="https://www.facebook.com">Facebook</Link>
+                    <Link className="block" href="https://www.twitter.com">Twitter</Link>
+                    <Link className="block" href="https://www.instagram.com">Instagram</Link>
+                    <Link className="block" href="https://www.onlyfans.com">OnlyFSans</Link>
                 </div>
             </div>
         </div>
