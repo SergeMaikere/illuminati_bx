@@ -1,32 +1,64 @@
 import React, { PropTypes } from 'react';
+import PopularCard from '../popularCard/PopularCard';
+import CategoryPill from '../categoryPill/CategoryPill';
+import EditorCard from '../editorCard/EditorCard';
 import { getPopular } from '../../utils/getPopular';
-import Card from '../card/Card';
+import { getAllCategories } from '../../utils/Helper';
+import { getEditorChoice } from '../../utils/getEditorsChoice';
 
 const Menu = ({ className }) => {
     return (
-        <div className="">
-            <div className="">
-                <h3 className="font-serif">
-                    <div className="font-extralight">Le Menu</div>
+        <div className="mt-10">
+            <div className="border-b border-gray-300 pb-12">
+                <h3 className="font-serif mb-4">
                     <div className="text-3xl">Populaires</div>
                 </h3>
                 <div>
                     {
                         getPopular().map(
-                            obj => <Card
+                            obj => <PopularCard
+                                id={obj.id}
                                 date={obj.date}
                                 category={obj.category}
                                 author={obj.author}
                                 title={obj.title}
                                 subtitle={obj.subtitle}
-                                description={obj.description}
                             />
                         )
                     }
                 </div>
             </div>
-            <div className=""></div>
-            <div className=""></div>
+            <div className="mt-10 border-b border-gray-300 pb-12">
+                <h3 className="font-serif mb-4">
+                    <div className="text-gray-400">Sélectionnez par Sujets</div>
+                    <div className="text-3xl">Catégories</div>
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                    {getAllCategories().map( cat => <CategoryPill category={cat} /> )}
+                </div>
+            </div>
+            <div className="mt-10 pb-12">
+                <h3 className="font-serif mb-4">
+                    <div className="text-gray-400">Ma préférence à Moi</div>
+                    <div className="text-3xl">Choix de l'éditeur</div>
+                </h3>
+                <div>
+                    {
+                        getEditorChoice().map( 
+                            obj => <EditorCard 
+                                id={obj.id}
+                                date={obj.date}
+                                category={obj.category}
+                                author={obj.author}
+                                title={obj.title}
+                                subtitle={obj.subtitle}
+                                imgSrc={obj.imgSrc}
+                                imgAlt={obj.imgAlt}
+                            /> 
+                        )
+                    }
+                </div>
+            </div>
         </div>
     );
 };

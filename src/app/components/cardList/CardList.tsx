@@ -1,14 +1,14 @@
 import Pagination from '../pagination/Pagination';
-import Card from '../card/Card';
+import RecentCard from '../recentCard/RecentCard';
 import { getRecents } from '../../utils/getRecents';
 
-const CardList = ({ className }) => {
+const CardList = (props) => {
 
     return (
-        <div className="mt-10 pb-12 sm:pb-24 border-b border-gray-300">
+        <div className="mt-10 pb-12">
             <h2 className="text-4xl font-serif">Articles Récents</h2>
-            {getRecents().map( 
-                obj => <Card 
+            {props.cards.map( 
+                obj => <RecentCard 
                     date={obj.date} 
                     category={obj.category} 
                     title={obj.title} 

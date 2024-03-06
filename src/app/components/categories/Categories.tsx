@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Categories = ({ className }) => {
     return (
-        <div className="mt-10 pb-12 sm:pb-24 border-b border-gray-300">
+        <div className="mt-10 pb-12 border-b border-gray-300">
             <h1 className="text-4xl font-serif mb-8">Nos Catégories</h1>
             <div className="flex flex-wrap gap-4">
                 <Link className="max-w-80" href="/blog?cat=hell">

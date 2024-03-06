@@ -7,7 +7,7 @@ const Button = (props) => {
             border-gray-500 
             rounded 
             p-2 mt-5
-            hover:shadow-lg hover:text-red-500 hover:text-lg
+            hover:shadow-lg hover:text-red-500 hover:bg-black hover:text-lg
         `}>{props.buttonText}</button>
     );
 };
