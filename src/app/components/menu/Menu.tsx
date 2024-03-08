@@ -20,6 +20,9 @@ const Menu = ({ className }) => {
                                 id={obj.id}
                                 date={obj.date}
                                 category={obj.category}
+                                logoSrc={obj.logoSrc}
+                                logoAlt={obj.logoAlt}
+                                logoColor={obj.logoColor}
                                 author={obj.author}
                                 title={obj.title}
                                 subtitle={obj.subtitle}
@@ -49,6 +52,9 @@ const Menu = ({ className }) => {
                                 id={obj.id}
                                 date={obj.date}
                                 category={obj.category}
+                                logoSrc={obj.logoSrc}
+                                logoAlt={obj.logoAlt}
+                                logoColor={obj.logoColor}
                                 author={obj.author}
                                 title={obj.title}
                                 subtitle={obj.subtitle}

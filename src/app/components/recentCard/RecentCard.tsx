@@ -9,7 +9,7 @@ const RecentCard = (props) => {
         cyprien: 'text-lime-400',
         histoire: 'text-stone-400',
         mode: 'text-fuchsia-400',
-        science: 'text-teal-400'
+        science: 'text-amber-400'
     }
 
     return (
@@ -18,7 +18,7 @@ const RecentCard = (props) => {
             <div className="lg:col-span-3">
                 <div className="mb-1 font-mono">
                     <san>{props.date}</san>
-                    <span className={`text-red-400 uppercase ${textConfig[props.category.toLowerCase()]}`}>{` ${props.category}`}</span>
+                    <span className={`uppercase ${textConfig[props.category.toLowerCase()]}`}>{` ${props.category}`}</span>
                 </div>
                 <h3 className="mb-2">
                     <span className="text-xl font-bold font-serif">{props.title}</span>
