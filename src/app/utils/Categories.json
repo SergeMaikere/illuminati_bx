@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+           "id": "1",
+           "category": "Enfer",
+           "logoSrc": "satan.png",
+           "logoAlt": "Satanic symbol",
+           "imgSrc": "./satan_mic.jpg",
+           "imgAlt": "Satanic microphone",
+           "subtitle": "Pendant ce temps en Enfer",
+           "description": "Nouvelles exclusives de notre correspondant venu du 9ème cercle des Enfers" 
+        },
+        {
+           "id": "2",
+           "category": "Histoire",
+           "logoSrc": "cia.png",
+           "logoAlt": "CIA logo",
+           "imgSrc": "./conspi_wall.jpg",
+           "imgAlt": "'True story' being written by a writting-machine",
+           "subtitle": "Histoires Secrètes",
+           "description": "Ou mais qu'est-ce que la CIA a encore foutu" 
+        },
+        {
+           "id": "3",
+           "category": "Science",
+           "logoSrc": "virus.png",
+           "logoAlt": "virus",
+           "imgSrc": "old_scientist.jpg",
+           "imgAlt": "Scientist manipulating biohazard",
+           "subtitle": "Les 5 Virus du dr Strauss",
+           "description": "Ou comment expérimenter illégalement mais humainement au 21ème siècle" 
+        },
+        {
+           "id": "4",
+           "category": "Mode",
+           "logoSrc": "villain.jpeg",
+           "logoAlt": "Villain club symbol",
+           "imgSrc": "secret_societies.jpg",
+           "imgAlt": "Group picture of cloacked figures",
+           "subtitle": "Mode et sociétés secrètes",
+           "description": "Ou que mettre lors de votre prochaine orgie dans le sang" 
+        },
+        {
+           "id": "5",
+           "category": "France",
+           "logoSrc": "france_icon.png",
+           "logoAlt": "Heart shapped French flag",
+           "imgSrc": "france.jpg",
+           "imgAlt": "French flag",
+           "subtitle": "Illuminati France",
+           "description": "Où on se permet une remarque ou deux sur leur travail merdique, toujours dans le respect" 
+        },
+        {
+           "id": "6",
+           "category": "Cyprien",
+           "logoSrc": "reptilian_icon.png",
+           "logoAlt": "Reptilian pyramid symbo,l",
+           "imgSrc": "reptilian.jpg",
+           "imgAlt": "Reptilian in deep thoughts",
+           "subtitle": "Les Conseils de Cyprien",
+           "description": "Ou demandez à un reptilien" 
+        }
+    ]
+}

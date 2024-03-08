@@ -15,7 +15,7 @@ const ToggleTheme = ({ className }) => {
     return (
         <div onClick={toggleTheme} className={`
             flex items-center justify-around
-            rounded-md border border-gray-800 dark:border-gray-100 
+            rounded-2xl border-b border-gray-400 dark:border-gray-100 
             w-10 md:w-11 xl:w-12
         `}>
             {!theme ? ball() : <FaSun className="text-amber-500 w-3 h-3 md:w-4 md:h-4"/>}

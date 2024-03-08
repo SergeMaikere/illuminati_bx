@@ -1,8 +1,12 @@
 import React, { PropTypes } from 'react';
+import Button from '../button/Button';
 
 const Pagination = ({ className }) => {
     return (
-        <div className="bg-pink-500">Pagination</div>
+        <div className="flex justify-between">
+            <Button buttonText="Précédent"/>
+            <Button buttonText="Suivant"/>
+        </div>
     );
 };
 
