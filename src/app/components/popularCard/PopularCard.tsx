@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import Link from 'next/link'
 import { getCategoryLogo } from '../../utils/Helper';
+import { TextCategoryColor } from '../../utils/Categories';
 
 const PopularCard = (props) => {
 
@@ -9,7 +10,7 @@ const PopularCard = (props) => {
             <Link href={`blog/${props.category.toLowerCase()}/${props.id}`}>
                 <div>
                     <img className="w-6 h-6 inline-block mx-1" src={`./${props.logoSrc}`} alt={props.logoAlt} />
-                    <span className={`uppercase text-sm font-mono ${props.logoColor}`}>{props.category}</span>
+                    <span className={`uppercase text-sm font-mono ${TextCategoryColor[props.category.toLowerCase()]}`}>{props.category}</span>
                 </div>
                 <div className="py-3">
                     <span className="font-bold font-serif">{props.title}</span>

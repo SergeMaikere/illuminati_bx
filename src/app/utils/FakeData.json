@@ -1,7 +1,7 @@
 {
     "data": [
         {
-           "id": "bla246fdsf54sddsf",
+            "id": "bla246fdsf54sddsf",
             "date": "5/3/2024",
             "category": "Science",
             "author": "Pr Strauss",
@@ -43,6 +43,28 @@
             "description": "Cyprien le Reptilien rentre dans une analyse exhaustive des difficultés et avantages du cannibalisme social et propose même quelques recettes.",
             "imgSrc": "cannibal.jpg",
             "imgAlt": "Butcher cutting throufgh what I hope is animal meat"
+        },
+        {
+            "id": "bla246fdsf54sddsf",
+            "date": "5/3/2024",
+            "category": "Histoire",
+            "author": "Acolyte Meneer",
+            "title": "MK UKLTRA",
+            "subtitle": "'C'était juste pour rire quoi...et puis lundi...Approuvé",
+            "description": "Ce qui n'était sensé être qu'une blague entre collègues prend des proportions inattendues...",
+            "imgSrc": "mk_ultra.jpg",
+            "imgAlt": "Profile of a face with see-through skull"
+        },
+        {
+            "id": "bla246fdsf54sddsf",
+            "date": "5/3/2024",
+            "category": "Mode",
+            "author": "Cyprien",
+            "title": "Une journée pour dire merci aux pauvres",
+            "subtitle": "Parce que sans eux on serait pas riche",
+            "description": "Bildeveerd dans la controverse avec cette nouvelle initiative qui s'inscrit dans une démarche de gratitude et d'élévation spirituelle",
+            "imgSrc": "wealthy.jpg",
+            "imgAlt": "Whealthy man enjoying a drink and a cigar"
         }
     ]
 }

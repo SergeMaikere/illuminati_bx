@@ -2,10 +2,8 @@ import myJSON from './Categories.json'
 import { curry, pipe, voyeur } from './Helper';
 
 type Category = {
+    id: number;
     category: string;
-    color: string;
-    bgColor: string;
-    textColor: string;
     logoSrc: string;
     logoAlt: string;
     imgSrc: string;
@@ -14,16 +12,25 @@ type Category = {
     description: string;
 }
 
-const getRawCategories = (): Category[] => JSON.parse(JSON.stringify(myJSON)).data
-const setCategoriesBg = (categories: Category[]): Category[] => categories.map( category => ({...category, bgColor: `bg-${category.color}-400`}) )
-const setCategoriesText = (categories: Category[]): Category[] => categories.map( category => ({...category, textColor: `text-${category.color}-400`}) )
+export const BgCategoryColor = {
+    enfer: 'bg-red-600',
+    france: 'bg-blue-600',
+    cyprien: 'bg-lime-600',
+    histoire: 'bg-stone-600',
+    mode: 'bg-purple-600',
+    science: 'bg-amber-600'
+}
 
+export const TextCategoryColor = {
+    enfer: 'text-red-600',
+    france: 'text-blue-600',
+    cyprien: 'text-lime-600',
+    histoire: 'text-stone-600',
+    mode: 'text-purple-600',
+    science: 'text-orange-600'
+}
 
-export const getAllCategories = (): Category[] => pipe( setCategoriesBg, setCategoriesText )( getRawCategories())
+export const getAllCategories = (): Category[] => JSON.parse(JSON.stringify(myJSON)).data
 
-const getRawCategory = category => getRawCategories().find( obj => obj.category.toLowerCase() === category.toLowerCase() )
+export const getCategory = category => getAllCategories().find( obj => obj.category.toLowerCase() === category.toLowerCase() )
 
-const setCategoryBg = (category: Category): Category => ({...category, bgColor: `bg-${category.color}-400`})
-const setCategoryText = (category: Category): Category => ({...category, textColor: `text-${category.color}-400`})
-
-export const getCategory = (category): Category => pipe( getRawCategory, setCategoryBg, setCategoryText )( category )

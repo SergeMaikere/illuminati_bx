@@ -1,10 +1,8 @@
 {
     "data": [
         {
+           "id": "1",
            "category": "Enfer",
-           "color": "red",
-           "bgColor": "",
-           "textColor": "",
            "logoSrc": "satan.png",
            "logoAlt": "Satanic symbol",
            "imgSrc": "./satan_mic.jpg",
@@ -13,10 +11,8 @@
            "description": "Nouvelles exclusives de notre correspondant venu du 9ème cercle des Enfers" 
         },
         {
+           "id": "2",
            "category": "Histoire",
-           "color": "stone",
-           "bgColor": "",
-           "textColor": "",
            "logoSrc": "cia.png",
            "logoAlt": "CIA logo",
            "imgSrc": "./conspi_wall.jpg",
@@ -25,10 +21,8 @@
            "description": "Ou mais qu'est-ce que la CIA a encore foutu" 
         },
         {
+           "id": "3",
            "category": "Science",
-           "color": "yellow",
-           "bgColor": "",
-           "textColor": "",
            "logoSrc": "virus.png",
            "logoAlt": "virus",
            "imgSrc": "old_scientist.jpg",
@@ -37,10 +31,8 @@
            "description": "Ou comment expérimenter illégalement mais humainement au 21ème siècle" 
         },
         {
+           "id": "4",
            "category": "Mode",
-           "color": "fuchsia",
-           "bgColor": "",
-           "textColor": "",
            "logoSrc": "villain.jpeg",
            "logoAlt": "Villain club symbol",
            "imgSrc": "secret_societies.jpg",
@@ -49,10 +41,8 @@
            "description": "Ou que mettre lors de votre prochaine orgie dans le sang" 
         },
         {
+           "id": "5",
            "category": "France",
-           "color": "blue",
-           "bgColor": "",
-           "textColor": "",
            "logoSrc": "france_icon.png",
            "logoAlt": "Heart shapped French flag",
            "imgSrc": "france.jpg",
@@ -61,12 +51,10 @@
            "description": "Où on se permet une remarque ou deux sur leur travail merdique, toujours dans le respect" 
         },
         {
+           "id": "6",
            "category": "Cyprien",
-           "color": "lime",
-           "bgColor": "",
-           "textColor": "",
            "logoSrc": "reptilian_icon.png",
-           "logoAlt": "Reptilian pyramid symbol",
+           "logoAlt": "Reptilian pyramid symbo,l",
            "imgSrc": "reptilian.jpg",
            "imgAlt": "Reptilian in deep thoughts",
            "subtitle": "Les Conseils de Cyprien",

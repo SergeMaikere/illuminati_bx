@@ -1,16 +1,9 @@
 import React, { PropTypes } from 'react';
 import Button from '../button/Button';
+import { TextCategoryColor } from '../../utils/Categories';
 
 const RecentCard = (props) => {
 
-    const textConfig = {
-        enfer: 'text-red-400',
-        france: 'text-blue-400',
-        cyprien: 'text-lime-400',
-        histoire: 'text-stone-400',
-        mode: 'text-fuchsia-400',
-        science: 'text-amber-400'
-    }
 
     return (
         <div className="lg:grid lg:grid-cols-5 gap-3 items-stretch mb-6 max-w-2xl p-3 border-b rounded border-gray-300 shadow-md">
@@ -18,7 +11,7 @@ const RecentCard = (props) => {
             <div className="lg:col-span-3">
                 <div className="mb-1 font-mono">
                     <san>{props.date}</san>
-                    <span className={`uppercase ${textConfig[props.category.toLowerCase()]}`}>{` ${props.category}`}</span>
+                    <span className={`uppercase ${TextCategoryColor[props.category.toLowerCase()]}`}>{` ${props.category}`}</span>
                 </div>
                 <h3 className="mb-2">
                     <span className="text-xl font-bold font-serif">{props.title}</span>

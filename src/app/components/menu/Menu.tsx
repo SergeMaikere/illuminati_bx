@@ -33,7 +33,6 @@ const Menu = ({ className }) => {
             </div>
             <div className="mt-10 border-b border-gray-300 pb-12">
                 <h3 className="font-serif mb-4">
-                    <div className="text-gray-400">Sélectionnez par Sujets</div>
                     <div className="text-3xl">Catégories</div>
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -41,10 +40,7 @@ const Menu = ({ className }) => {
                 </div>
             </div>
             <div className="mt-10 pb-12">
-                <h3 className="font-serif mb-4">
-                    <div className="text-gray-400">Ma préférence à Moi</div>
-                    <div className="text-3xl">Choix de l'éditeur</div>
-                </h3>
+                <h3 className="font-serif mb-4 text-3xl">Choix de l'éditeur</h3>
                 <div>
                     {
                         getEditorChoice().map( 
