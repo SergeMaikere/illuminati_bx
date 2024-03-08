@@ -6,7 +6,7 @@ const CardList = (props) => {
 
     return (
         <div className="mt-10 pb-12 px-3">
-            <h2 className="text-4xl font-serif">Articles Récents</h2>
+            <h2 className="text-4xl font-serif">{props.title}</h2>
             {props.cards.map( 
                 obj => <RecentCard 
                     date={obj.date} 
