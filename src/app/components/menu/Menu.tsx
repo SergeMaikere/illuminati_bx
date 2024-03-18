@@ -3,8 +3,8 @@ import PopularCard from '../popularCard/PopularCard';
 import CategoryPill from '../categoryPill/CategoryPill';
 import EditorCard from '../editorCard/EditorCard';
 import { getPopular } from '../../utils/getPopular';
-import { getAllCategories } from '../../utils/Helper';
 import { getEditorChoice } from '../../utils/getEditorsChoice';
+import { CATEGORIES } from '../../utils/Categories';
 
 const Menu = ({ className }) => {
     return (
@@ -17,7 +17,7 @@ const Menu = ({ className }) => {
                     {
                         getPopular().map(
                             obj => <PopularCard
-                                id={obj.id}
+                                key={obj.id}
                                 date={obj.date}
                                 category={obj.category}
                                 logoSrc={obj.logoSrc}
@@ -36,7 +36,7 @@ const Menu = ({ className }) => {
                     <div className="text-3xl">Catégories</div>
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                    {getAllCategories().map( cat => <CategoryPill category={cat} /> )}
+                    {CATEGORIES.map( (cat, i) => <CategoryPill key={i+1} category={cat} /> )}
                 </div>
             </div>
             <div className="mt-10 pb-12">
@@ -45,7 +45,7 @@ const Menu = ({ className }) => {
                     {
                         getEditorChoice().map( 
                             obj => <EditorCard 
-                                id={obj.id}
+                                key={obj.id}
                                 date={obj.date}
                                 category={obj.category}
                                 logoSrc={obj.logoSrc}

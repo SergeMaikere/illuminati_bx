@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
-import Link from 'next/link'
+import Link from 'next/Link'
 import { getCategoryTextColor } from '../../utils/Helper';
 import { TextCategoryColor } from '../../utils/Categories';
 
 const CategoryCard = (props) => {
 
     return (
-        <Link className="flex h-40 max-w-md" href={`/blog?cat=${props.category.toLowerCase()}`}>
+        <Link className="flex h-40 max-w-md" href={`http://localhost:3000/blog/${props.category.toLowerCase()}`}>
             <img className="hidden sm:block mb-3" src={props.logoSrc} alt={props.logoAlt}/>
             <div className="p-3">
                 <div className="flex gap-2 items-center">

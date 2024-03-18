@@ -9,13 +9,19 @@ export const curry = fn => {
 
 export const pipe = (...fns) => arg => fns.reduce( (g, fn) => fn(g), arg )
 
-export const voyeur = x => {console.log('VOYEUR', x); return x}
- 
-export const selectProperties = (keys: string[], obj: any) => keys.reduce( 
-    (acc, key) => {
-        acc[key] = obj.hasOwnProperty(key) ? obj[key] : ""
-        return acc
-    },{} 
-)
+export const asyncPipe = (...fns) => arg => fns.reduce( (g, fn) => g.then(fn), Promise.resolve(arg) )
 
-export const getAllCategories = (): string[] => [ 'science', 'mode', 'histoire', 'enfer', 'france', 'cyprien' ]
+export const asyncVoyeur = async x => {console.log(await `SEEEEEERGE ====> ${JSON.stringify(x)}`); return x}
+
+export const voyeur = x => {console.log(`SEEEEEERGE ====> ${JSON.stringify(x)}`); return x}
+ 
+export const pick = (obj: any, props: string[]): any => {
+    return props.reduce( 
+        (newObj: any, prop: string) => {
+            newObj[prop] = obj[prop]
+            return newObj
+        },{} 
+    )
+}
+
+export const addProps = (obj: any, ...props: string[]) => props.map( prop =>({...obj, prop: "" }) )

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import Link from 'next/link'
+import Link from 'next/Link'
 import CategoryCard from '../categoryCard/CategoryCard';
 import { getAllCategories } from '../../utils/Categories';
 

@@ -8,7 +8,7 @@
             "title": "That Meddling Alex Jones!",
             "subtitle": "Comment Alex Jones a empêché la gayification de l'Amerique",
             "description": "Une histoire de lanceurs d'alertes, de chimie gay...et de grenouilles.",
-            "imgSrc": "gay_frogs.jpg",
+            "imgSrc": "/gay_frogs.jpg",
             "imgAlt": "Screaming Alex Jones"
         },
         {
@@ -19,7 +19,7 @@
             "title": "Manifestation de l'Amicale des Nazis d'Outre-Tombe.",
             "subtitle": " 'On est plus chez nous!'",
             "description": "L'arrivée massive de djihadistes ne fait pas que des heureux en Enfer, à part pour les démons, qui pronostiquent un de leurs meilleurs trimestres.",
-            "imgSrc": "nazis.jpg",
+            "imgSrc": "/nazis.jpg",
             "imgAlt": "Nazis manifesting"
         },
         {
@@ -30,7 +30,7 @@
             "title": "Disparitions des grenouilles en France!",
             "subtitle": "Pr Strauss pointé du doigt",
             "description": "'Abondance d'amphibiens homosexuels n'est pas preuve de complots. Tous mes labos sont à Wuhan de toute façon'. -Pr Strauss",
-            "imgSrc": "french_frog.jpg",
+            "imgSrc": "/french_frog.jpg",
             "imgAlt": "Frog contemplating the botomless pit of loneliness that is the human experience"
         },
         {
@@ -41,7 +41,7 @@
             "title": "Pragmatisme et Surpopulation:",
             "subtitle": "je dis cannibalisme et bon geuleton",
             "description": "Cyprien le Reptilien rentre dans une analyse exhaustive des difficultés et avantages du cannibalisme social et propose même quelques recettes.",
-            "imgSrc": "cannibal.jpg",
+            "imgSrc": "/cannibal.jpg",
             "imgAlt": "Butcher cutting throufgh what I hope is animal meat"
         },
         {
@@ -52,7 +52,7 @@
             "title": "MK UKLTRA",
             "subtitle": "'C'était juste pour rire quoi...et puis lundi...Approuvé",
             "description": "Ce qui n'était sensé être qu'une blague entre collègues prend des proportions inattendues...",
-            "imgSrc": "mk_ultra.jpg",
+            "imgSrc": "/mk_ultra.jpg",
             "imgAlt": "Profile of a face with see-through skull"
         },
         {
@@ -63,7 +63,7 @@
             "title": "Une journée pour dire merci aux pauvres",
             "subtitle": "Parce que sans eux on serait pas riche",
             "description": "Bildeveerd dans la controverse avec cette nouvelle initiative qui s'inscrit dans une démarche de gratitude et d'élévation spirituelle",
-            "imgSrc": "wealthy.jpg",
+            "imgSrc": "/wealthy.jpg",
             "imgAlt": "Whealthy man enjoying a drink and a cigar"
         }
     ]

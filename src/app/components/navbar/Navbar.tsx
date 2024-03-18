@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/Link'
 import { FaSquareFacebook, FaSquareXTwitter, FaSquareYoutube  } from "react-icons/fa6";
 import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';
@@ -20,22 +20,22 @@ const Navbar = ({ className }) => {
 
             <div className="hidden md:flex md:gap-4 flex-1">
                 <Link href="/">
-                    <img className="h-10" src="./facebook.png" alt="facebook link"/>
+                    <img className="h-10" src="/facebook.png" alt="facebook link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-10" src="./instagram.png" alt="instagram link"/>
+                    <img className="h-10" src="/instagram.png" alt="instagram link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-10" src="./twitter.png" alt="twitter link"/>
+                    <img className="h-10" src="/twitter.png" alt="twitter link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-10" src="./onlyfans.png" alt="onlyfans link"/>
+                    <img className="h-10" src="/onlyfans.png" alt="onlyfans link"/>
                 </Link>
             </div>
 
             <div className="flex items-center flex-1 gap-1 text-xl">
                 <span className="hidden md:block text-sky-700">Illuminati</span>
-                <img className="h-20" src="./illuminati_bx.png" alt="Illuminati Brussels logo" />
+                <img className="h-20" src="/illuminati_bx.png" alt="Illuminati Brussels logo" />
                 <span className="hidden md:block text-amber-500">Bruxelles</span>
             </div>
 

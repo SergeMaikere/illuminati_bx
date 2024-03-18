@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
-import Link from 'next/link'
+import Link from 'next/Link'
 
 const Footer = ({ className }) => {
     return (
         <div className="lg:flex gap-2 py-10 px-2 border-t border-gray-300">
             <div className="flex gap-2 flex-2">
-                <img className="hidden lg:block h-44" src="illuminati_bx.png" alt="illuminati Bruxelles Logo"/>
+                <img className="hidden lg:block h-44" src="/illuminati_bx.png" alt="illuminati Bruxelles Logo"/>
                 <div>
                     <div className="font-serif text-2xl">
                         <span className="text-sky-700">Illuminati</span>
@@ -14,16 +14,16 @@ const Footer = ({ className }) => {
                     <div className="text-base font-mono py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ex laudantium facere blanditiis accusamus architecto autem rerum perferendis exercitationem odit, doloremque accusantium vitae veritatis, magni iste, ad nobis excepturi nulla!</div>
                     <div className="hidden md:flex flex gap-4">
                         <Link href="/">
-                            <img className="h-8" src="facebook.png" alt="facebook Logo"/>
+                            <img className="h-8" src="/facebook.png" alt="facebook Logo"/>
                         </Link>
                         <Link href="/">
-                            <img className="h-8" src="instagram.png" alt="instagram Logo"/>
+                            <img className="h-8" src="/instagram.png" alt="instagram Logo"/>
                         </Link>
                         <Link href="/">
-                            <img className="h-8" src="twitter.png" alt="twitter Logo"/>
+                            <img className="h-8" src="/twitter.png" alt="twitter Logo"/>
                         </Link>
                         <Link href="/">
-                            <img className="h-8" src="onlyfans.png" alt="onlyfans Logo"/>
+                            <img className="h-8" src="/onlyfans.png" alt="onlyfans Logo"/>
                         </Link>
                     </div>
                 </div>

@@ -6,9 +6,11 @@ const CardList = (props) => {
 
     return (
         <div className="mt-10 pb-12 px-3">
-            <h2 className="text-4xl font-serif">{props.title}</h2>
+            <h2 className="text-4xl font-serif m-4">{props.title}</h2>
             {props.cards.map( 
                 obj => <RecentCard 
+                    key={obj.id}
+                    id={obj.id}
                     date={obj.date} 
                     category={obj.category} 
                     title={obj.title} 
