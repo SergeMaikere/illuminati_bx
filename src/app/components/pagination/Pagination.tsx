@@ -7,7 +7,7 @@ const Pagination = (props) => {
 
     const [ state, dispatch ] = useContext( PaginationContext )
 
-    const handlePrev = () => state < 0 ? dispatch({type: "here"}) : dispatch({type: "prev"})
+    const handlePrev = () => state <= 0 ? dispatch({type: "here"}) : dispatch({type: "prev"})
     const handleNext = () => state < props.length - 1 ? dispatch({type: "next"}) : dispatch({type: "here"})
 
     return (

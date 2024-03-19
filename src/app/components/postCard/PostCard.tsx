@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Button from '../button/Button';
 import { TextCategoryColor } from '../../utils/Categories';
 
-const RecentCard = (props) => {
+const PostCard = (props) => {
     return (
         <div className="lg:grid lg:grid-cols-5 gap-3 items-stretch mb-6 max-w-2xl p-3 border-b rounded border-gray-300 shadow-md">
             <img className="p-1 hidden lg:block object-cover col-span-2" src={props.imgSrc} alt={props.imgAlt}/>
@@ -22,4 +22,4 @@ const RecentCard = (props) => {
     );
 };
 
-export default RecentCard;
+export default PostCard;
