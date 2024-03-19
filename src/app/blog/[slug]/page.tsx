@@ -5,13 +5,9 @@ import { getPostsByCategory } from '../../utils/Posts';
 import { BgCategoryColor, CATEGORIES, getCategory } from '../../utils/Categories';
 
 
-
-
-const gePosts = async category => await getPostsByCategory( category.toLowerCase() )
-
 const BlogPage = async (context) => {
     const category = getCategory( context.params.slug )
-    const posts = await gePosts(category.category)
+    const posts = await getPostsByCategory(category.category.toLowerCase())
 
     return (
         <div>

@@ -1,13 +1,20 @@
+"use client"
 import Pagination from '../pagination/Pagination';
 import RecentCard from '../recentCard/RecentCard';
 import { getRecents } from '../../utils/getRecents';
+import { splicer, voyeur } from '../../utils/Helper';
+import { useContext } from 'react';
+import { PaginationContext } from '../../../context/PaginationContext';
 
 const CardList = (props) => {
 
+    const [ state ] = useContext( PaginationContext )
+    const cards = splicer(props.cards, 1)
+    voyeur(cards)
     return (
         <div className="mt-10 pb-12 px-3">
             <h2 className="text-4xl font-serif m-4">{props.title}</h2>
-            {props.cards.map( 
+            {cards[state].map( 
                 obj => <RecentCard 
                     key={obj.id}
                     id={obj.id}
@@ -20,7 +27,7 @@ const CardList = (props) => {
                     imgAlt={obj.imgAlt}
                 />
             )}
-            <Pagination/>
+            <Pagination length={cards.length}/>
         </div>
     );
 };

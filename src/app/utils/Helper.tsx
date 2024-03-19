@@ -25,3 +25,10 @@ export const pick = (obj: any, props: string[]): any => {
 }
 
 export const addProps = (obj: any, ...props: string[]) => props.map( prop =>({...obj, prop: "" }) )
+
+export const splicer = (arr, n) => arr.reduce( 
+    (acc, item, i) => {
+        if (i % n === 0) acc.push( arr.splice(0, n) )
+        return acc
+    }, []
+)
