@@ -11,9 +11,19 @@ export const pipe = (...fns) => arg => fns.reduce( (g, fn) => fn(g), arg )
 
 export const asyncPipe = (...fns) => arg => fns.reduce( (g, fn) => g.then(fn), Promise.resolve(arg) )
 
-export const asyncVoyeur = async x => {console.log(await `SEEEEEERGE ====> ${JSON.stringify(x)}`); return x}
+export const asyncVoyeur = async x => {
+    console.log('\r\n')
+    console.log(await `SEEEEEERGE ====> ${JSON.stringify(x)}`); 
+    console.log('\r\n')
+    return x
+}
 
-export const voyeur = x => {console.log(`SEEEEEERGE ====> ${JSON.stringify(x)}`); return x}
+export const voyeur = x => {
+    console.log('\r\n')
+    console.log(`SEEEEEERGE ====> ${JSON.stringify(x)}`); 
+    console.log('\r\n')
+    return x
+}
  
 export const pick = (obj: any, props: string[]): any => {
     return props.reduce( 

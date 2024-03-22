@@ -14,8 +14,11 @@ export type Post = {
         name: string;
         username: string;
         email: string;
+        imgSrc: string;
     }
     category: string;
+    imgSrc: string;
+    imgAlt: string;
     tags: string[];
     reactions: string;
 }
@@ -47,11 +50,11 @@ const getImgSrc = async (id:number): string => {
 
 const setUser = async (post: any) => {
     const user = await getUserById(post.userId)
-    return {...post, userData: {firstName: user.firstName, lastName: user.lastName, username: user.username}}
+    return {...post, userData: {firstName: user.firstName, lastName: user.lastName, username: user.username, imgSrc: user.image}}
 }
 
 const getAllPosts = async (): any[] => {
-    const res = await fetch('https://dummyjson.com/posts')
+    const res = await fetch('https://dummyjson.com/posts?limit=100')
     if (!res.ok) throw new Error("Failed")
     const res1 = await res.json()
     return await setCategories(res1.posts)
@@ -66,12 +69,12 @@ export const getPostById = async (id: string): Post => {
     const res = await fetch(`https://dummyjson.com/posts/${id}`)
     if (!res.ok) throw new Error("Failed")
     const post = await res.json()
-    return await setPost(setCategory(post))
+    return await setPost(post)
 }
 
 export const getPostsByCategory = async (cat: string): Post[] => {
     const allPosts = await getAllPosts()
-    let posts = allPosts.filter( post => post.category === cat )
+    const posts = allPosts.filter( post => post.category === cat )
     return await setPosts( posts )
 }
 

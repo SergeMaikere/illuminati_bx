@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Link from 'next/Link'
 import Button from '../button/Button';
 import { TextCategoryColor } from '../../utils/Categories';
 
@@ -16,7 +17,9 @@ const PostCard = (props) => {
                     <span className="text-gray-600 font-mono">{` ${props.subtitle}`}</span>
                 </h3>
                 <p className="text-base text-light font-mono">{props.description}</p>
-                <Button id={props.id} buttonText="Read More"/>
+                <Link href={`http://localhost:3000/${props.id}`}>
+                    <Button buttonText="Read More"/>
+                </Link>
             </div>
         </div>
     );

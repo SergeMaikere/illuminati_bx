@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 
 const Button = (props) => {
     return (
-        <button type="button" className={`
+        <button type={props.type} className={`
             border-b 
             border-gray-500 
             rounded 

@@ -1,25 +1,27 @@
 import React, { PropTypes } from 'react';
-import { router } from 'next/navigation'
+import Link from 'next/Link'
+import Button from '../button/Button';
 
 const   OupsNoContent = ({ className }) => {
 
-    const backHome = () => router.push('http://localhost:3000/')
-    const myApologies = () => router.push('http://localhost:3000/mes_excuses')
-
     return (
         <div className="lg:grid lg:grid-cols-5 gap-3 items-stretch mb-6 max-w-2xl p-3 border-b rounded border-gray-300 shadow-md">
-            <img className="p-1 hidden lg:block object-cover col-span-2" src="britney-spears-oops.jpg" alt="Britney Spears in a red leather catsuit"/>
             <div className="lg:col-span-3">
                 <h3 className="mb-2">
-                    <span className="text-xl font-bold font-serif">Oups...ben du coup on a rien écrit.</span>
-                    <span className="text-gray-600 font-mono">Faut dire quand même que Gégé l'a pas mis dans l'agenda</span>
+                    <span className="text-4xl font-bold font-serif">Oups...aïe, Didier Aguain...</span>
+                    <span className="text-3xl text-gray-600 font-serif"> l'a pas mis dans l'agenda...</span>
                 </h3>
-                <p className="text-base text-light font-mono">Et vu que j'avais piscine en fait, pile au moment ou l'Interne va interiewer Baphomet, mais la grand maman à Didier elle se sent pas bien...voilà.</p>
-                <div>
-                    <Button handleClick={myApologies} buttonText="Read More"/>
-                    <Button handleClick={backHome} buttonText="Accueil"/>
+                <p className="text-lg text-light font-mono">et vu que j'avais piscine en fait, pile au moment ou l'Interne doit interviewer Baphomet, tu vois, vla dis pas que la grand mère à Viviane elle se sent pas bien...du coup on a rien écrit.</p>
+                <div className="flex justify-around">
+                    <Link href="http://lolcalhost:3000/">
+                        <Button buttonText="Accueil"/>
+                    </Link>
+                    <Link href="http://lolcalhost:3000/mes_excuses">
+                        <Button buttonText="Encore plus d'excuses"/>
+                    </Link>
                 </div>
             </div>
+            <img className="p-1 hidden lg:block object-cover col-span-2" src="/britney-spears-oops.jpg" alt="Britney Spears in a red leather catsuit"/>
         </div>
     );
 };
