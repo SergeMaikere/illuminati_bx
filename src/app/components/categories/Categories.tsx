@@ -6,7 +6,7 @@ import { getAllCategories } from '../../utils/Categories';
 const Categories = ({ className }) => {
     return (
         <div className="mt-10 pb-12 border-b border-gray-300">
-            <h1 className="text-4xl font-serif mb-8">Nos Catégories</h1>
+            <div className="text-4xl font-serif mb-8">Nos Catégories</div>
             <div className="flex flex-wrap gap-4">
                 {
                     getAllCategories().map(

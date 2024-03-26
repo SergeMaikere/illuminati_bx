@@ -12,10 +12,10 @@ const PostCard = (props) => {
                     <span>{props.date}</span>
                     <span className={`uppercase ${TextCategoryColor[props.category]}`}>{` ${props.category}`}</span>
                 </div>
-                <h3 className="mb-2">
+                <div className="mb-2">
                     <span className="text-xl font-bold font-serif">{props.title}</span>
                     <span className="text-gray-600 font-mono">{` ${props.subtitle}`}</span>
-                </h3>
+                </div>
                 <p className="text-base text-light font-mono">{props.description}</p>
                 <Link href={`http://localhost:3000/${props.id}`}>
                     <Button buttonText="Read More"/>

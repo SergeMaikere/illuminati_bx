@@ -4,17 +4,23 @@ import Button from '../components/button/Button';
 import Comment from '../components/comment/Comment';
 import { getPostById } from '../utils/Posts';
 import { addComment, getCommentsByPostId } from '../utils/Comments';
+import CommentsArea from '../components/commentsArea/CommentsArea';
 
 const SinglePage = async (context) => {
 
     const post = await getPostById( context.params.slug )
     const comments = await getCommentsByPostId(post.id)
+
     const postComment = async () => {
         "use server"
-        const formData = new FormData(e.currentTarget)
-        const res = await addComment(postId, userId, formData)
+        const comm = { 
+            userId: post.userId,
+            postId: post.id,
+            body: value
+        }
+        const res = await addComment(comm)
+        console.log(res)
     }
-
 
     return (
         <div className="p-3">
@@ -40,18 +46,7 @@ const SinglePage = async (context) => {
                         <p className="mb-2">{post.body}</p>
                         <p className="mb-2">{post.body}</p>
                     </div>
-                    <div className="mt-10">
-                        <h4 className="text-3xl">Commentaires</h4>
-
-                        <div className="flex gap-5 py-4">
-                            <input className="w-full px-2 border-b border-gray-400 focus:outline-gray-400" name="post" type="text" placeholder="C'est une bonne position ça, complotiste ?" />
-                            <Button handleClick={postComment}  buttonText="Poster" type="button" />
-                        </div>
-
-                        <div className="mt-10">
-                            { comments.map(comm => <Comment key={comm.id} comment={comm}/>) }
-                        </div>
-                    </div>
+                    <CommentsArea comments={comments} handleSubmit={postComment}  />
                 </div>
                 <div className="col-span-1">
                     <Menu/>

@@ -45,7 +45,7 @@ export const getCommentsByPostId = async (postId: string): any[] => {
     return await setComments(postComms)
 }
 
-export const addComment = async (postId, userId, data) => {
+export const addComment = async (post: any) => {
     const res = await fetch(
         'https://dummyjson.com/comments/add',
         {
@@ -57,7 +57,7 @@ export const addComment = async (postId, userId, data) => {
             body: {
                 postId: post.id,
                 userId: post.userId,
-                body:JSON.stringify(formData)
+                body:JSON.stringify(post.body)
             }
         }
     )

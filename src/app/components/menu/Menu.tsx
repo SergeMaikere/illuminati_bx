@@ -10,9 +10,9 @@ const Menu = ({ className }) => {
     return (
         <div className="mt-10 px-3">
             <div className="border-b border-gray-300 pb-12">
-                <h3 className="font-serif mb-4">
+                <div className="font-serif mb-4">
                     <div className="text-3xl">Populaires</div>
-                </h3>
+                </div>
                 <div>
                     {
                         getPopular().map(
@@ -32,15 +32,15 @@ const Menu = ({ className }) => {
                 </div>
             </div>
             <div className="mt-10 border-b border-gray-300 pb-12">
-                <h3 className="font-serif mb-4">
+                <div className="font-serif mb-4">
                     <div className="text-3xl">Catégories</div>
-                </h3>
+                </div>
                 <div className="flex flex-wrap gap-2">
                     {CATEGORIES.map( (cat, i) => <CategoryPill key={i+1} category={cat} /> )}
                 </div>
             </div>
             <div className="mt-10 pb-12">
-                <h3 className="font-serif mb-4 text-3xl">Choix de l'éditeur</h3>
+                <div className="font-serif mb-4 text-3xl">Choix de l'éditeur</div>
                 <div>
                     {
                         getEditorChoice().map( 

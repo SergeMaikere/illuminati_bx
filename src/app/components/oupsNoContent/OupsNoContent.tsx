@@ -7,10 +7,10 @@ const   OupsNoContent = ({ className }) => {
     return (
         <div className="lg:grid lg:grid-cols-5 gap-3 items-stretch mb-6 max-w-2xl p-3 border-b rounded border-gray-300 shadow-md">
             <div className="lg:col-span-3">
-                <h3 className="mb-2">
+                <div className="mb-2">
                     <span className="text-4xl font-bold font-serif">Oups...aïe, Didier Aguain...</span>
                     <span className="text-3xl text-gray-600 font-serif"> l'a pas mis dans l'agenda...</span>
-                </h3>
+                </div>
                 <p className="text-lg text-light font-mono">et vu que j'avais piscine en fait, pile au moment ou l'Interne doit interviewer Baphomet, tu vois, vla dis pas que la grand mère à Viviane elle se sent pas bien...du coup on a rien écrit.</p>
                 <div className="flex justify-around">
                     <Link href="http://lolcalhost:3000/">

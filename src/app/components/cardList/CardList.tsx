@@ -14,7 +14,7 @@ const CardList = (props) => {
 
     return (
         <div className="mt-10 pb-12 px-3">
-            <h2 className="text-4xl font-serif m-4">{props.title}</h2>
+            <div className="text-4xl font-serif m-4">{props.title}</div>
             {
                 decks.length === 0 ? <OupsNoContent/> :
                 decks[state].map( 

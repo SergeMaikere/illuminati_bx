@@ -11,7 +11,7 @@ const CategoryCard = (props) => {
             <div className="p-3">
                 <div className="flex gap-2 items-center">
                     <img className="sm:hidden w-9" src={props.logoSrc} alt={props.logoAlt}/>
-                    <h4 className={`uppercase text-xl sm:text-2xl font-serif ${TextCategoryColor[props.category.toLowerCase()]}`}>{props.category}</h4>
+                    <div className={`uppercase text-xl sm:text-2xl font-serif ${TextCategoryColor[props.category.toLowerCase()]}`}>{props.category}</div>
                 </div>
                 <div className="text-xl font-mono border-t rounded border-gray-300">{props.subtitle}</div>
                 <div className="text-sm font-mono">{props.description}</div>

@@ -13,7 +13,7 @@ export const asyncPipe = (...fns) => arg => fns.reduce( (g, fn) => g.then(fn), P
 
 export const asyncVoyeur = async x => {
     console.log('\r\n')
-    console.log(await `SEEEEEERGE ====> ${JSON.stringify(x)}`); 
+    console.log(await `SEEEEEERGE ====> ${JSON.parse(JSON.stringify(x))}`); 
     console.log('\r\n')
     return x
 }

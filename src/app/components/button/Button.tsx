@@ -1,4 +1,3 @@
-"use client"
 import React, { PropTypes } from 'react';
 
 const Button = (props) => {
