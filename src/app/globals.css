@@ -18,5 +18,16 @@ a {
     text-decoration: none;
 }
 
+.quill {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.ql-editor {
+    font-size: 18px;
+    &::placeholder {
+        color: red;
+    }
+}
 
 

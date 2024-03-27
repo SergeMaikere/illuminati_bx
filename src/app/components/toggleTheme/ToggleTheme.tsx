@@ -11,6 +11,7 @@ const ToggleTheme = ({ className }) => {
     const [ moon, setMoon ] = useState('text-amber-500 w-3 h-3 md:w-4 md:h-4')
 
     const ball: ReactElement = () => <div className=" w-3 h-3 md:w-4 md:h-4 bg-sky-700 rounded-full"></div>
+    
     const toggleTheme = () => {
         setTheme(!theme)
         localStorage.setItem('theme', theme )

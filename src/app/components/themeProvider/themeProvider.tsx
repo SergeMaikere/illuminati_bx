@@ -9,7 +9,7 @@ const ThemeProvider = ({ children }) => {
 
     useEffect(
         () => {
-            setMyClass(`w-screen${ theme ? ' dark' : ''}`)
+            setMyClass(`w-screen${ !theme ? ' dark' : ''}`)
 
         },[theme]
 

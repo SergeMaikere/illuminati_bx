@@ -14,7 +14,7 @@ const CommentsArea = (props) => {
 
             <div className="flex gap-5 py-4">
                 <input 
-                className={` w-full px-2 border-b border-gray-400 focus:outline-gray-400 `} 
+                className={`w-full px-2 border-b border-gray-400 focus:outline-gray-400`} 
                 name="post" 
                 type="text" 
                 placeholder="C'est une bonne position ça, complotiste ?"

@@ -52,6 +52,9 @@ const Footer = ({ className }) => {
                     <Link className="block" href="https://www.instagram.com">Instagram</Link>
                     <Link className="block" href="https://www.onlyfans.com">OnlyFSans</Link>
                 </div>
+                <div className="hidden">
+                    Photo by <a href="https://unsplash.com/@dariuszsankowski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dariusz Sankowski</a> on <a href="https://unsplash.com/photos/flat-ray-photography-of-book-pencil-camera-and-with-lens-3OiYMgDKJ6k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div>
             </div>
         </div>
     );
