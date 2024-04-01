@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from 'react';
 import Link from 'next/Link'
 import { FaSquareFacebook, FaSquareXTwitter, FaSquareYoutube  } from "react-icons/fa6";
@@ -11,7 +10,7 @@ const Navbar = ({ className }) => {
     const [ open, setOpen ] = useState( false )
 
     return (
-        <div className="flex items-center px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif">
+        <div className="flex items-center px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
 
             {/*Hidden responsive theme button*/}
             <div className="sm:hidden block flex-1">

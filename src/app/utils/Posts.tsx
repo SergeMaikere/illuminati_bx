@@ -78,3 +78,19 @@ export const getPostsByCategory = async (cat: string): Post[] => {
     return await setPosts( posts )
 }
 
+export const addPost = async (newPost: any) => {
+    const res = await fetch(
+        `https://dummyjson.com/posts/add`,
+        {
+            method: 'POST',
+            header: {
+                'accept': 'application/json',
+                'content': 'application/json',
+            }
+            body: JSON.stringify( {...newPost} )
+        }
+    )
+    if (!res.ok) throw new Error('Failed posting new post')
+    return await res.json()
+}
+

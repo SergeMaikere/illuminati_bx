@@ -3,7 +3,7 @@ import Link from 'next/Link'
 
 const Footer = ({ className }) => {
     return (
-        <div className="lg:flex gap-2 py-10 px-2 border-t border-gray-300">
+        <div className="hidden sm:block lg:flex gap-2 py-10 px-2 border-t border-gray-300">
             <div className="flex gap-2 flex-2">
                 <img className="hidden lg:block h-44" src="/illuminati_bx.png" alt="illuminati Bruxelles Logo"/>
                 <div>
