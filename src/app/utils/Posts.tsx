@@ -86,7 +86,7 @@ export const addPost = async (newPost: any) => {
             header: {
                 'accept': 'application/json',
                 'content': 'application/json',
-            }
+            },
             body: JSON.stringify( {...newPost} )
         }
     )

@@ -16,7 +16,7 @@ const NewPost = ({ className }) => {
 
     return (
         <div className="my-10 text-center md:text-left">
-            <div className="text-4xl md:text-6xl font-serif py-6">Nouvel Article</div>
+            <div className="text-4xl md:text-6xl font-serif py-6">Nouvel Article ?</div>
             <Article hadleSubmit={handleSubmit} />
         </div>
     );

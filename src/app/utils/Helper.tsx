@@ -45,3 +45,7 @@ export const splicer = (arr, n) => {
     }
     return myAcc
 }
+
+export const isLoggedIn = (status: string): boolean => status === 'authenticated'
+export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.email === "sankara.ishema@gmail.com"
+export const isLoading = (status: string): boolean => status === 'loading'

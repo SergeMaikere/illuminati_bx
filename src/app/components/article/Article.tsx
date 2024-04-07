@@ -1,10 +1,13 @@
 "use client"
 import React, { PropTypes, useEffect, useState } from 'react';
+import { useSession } from 'next-auth/react'
 import { CiCirclePlus, CiImageOn, CiImport, CiVideoOn } from "react-icons/ci";
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.bubble.css'
 import { Otis } from '../../utils/Classics';
 import Button from '../button/Button';
+import NoYouCannot from '../noYouCannot/NoYouCannot';
+import { isAdmin } from '../../utils/Helper';
 
 const modules = {
     toolbar: [
@@ -38,6 +41,7 @@ const Article = (props) => {
     const [ subtitle, setSubtitle ] = useState('')
     const [ category, setCategory ] = useState('')
     const [ article, setArticle ] = useState('')
+    const { data, status } = useSession()
 
     useEffect(
         () => {
@@ -46,6 +50,7 @@ const Article = (props) => {
     )
 
     return (
+        !isAdmin(status, data) ? <NoYouCannot /> :
         <div>
             <div className='flex items-center justify-center gap-3'>
                 <div className="hidden md:block w-1/3">
@@ -103,7 +108,7 @@ const Article = (props) => {
                             className={`
                                 font-bold text-xl font-mono px-2.5 pb-0.5 pt-2 
                                 rounded-lg border-b border-gray-300 ml-2
-                                hover:scale-110 hover:bg-zinc-800 hover:text-text-200 focus:outline-gray-400
+                                hover:scale-110 hover:bg-zinc-800 hover:text-gray-200 focus:outline-gray-400
                             `}>
                             <option selected>Champion</option>
                             <option value="france">France</option>
