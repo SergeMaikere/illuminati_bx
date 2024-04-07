@@ -1,7 +1,6 @@
 "use client"
-
 import { useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/Link'
 import { FaSquareFacebook, FaSquareXTwitter, FaSquareYoutube  } from "react-icons/fa6";
 import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';
@@ -11,35 +10,35 @@ const Navbar = ({ className }) => {
     const [ open, setOpen ] = useState( false )
 
     return (
-        <div className="flex items-center px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif">
+        <div className="flex items-center justify-around px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
 
             {/*Hidden responsive theme button*/}
-            <div className="sm:hidden block flex-1">
+            <div className="sm:hidden block ml-3">
                 <ToggleTheme/>
             </div>
 
-            <div className="hidden md:flex md:gap-4 flex-1">
+            <div className="hidden md:flex md:gap-4">
                 <Link href="/">
-                    <img className="h-10" src="./facebook.png" alt="facebook link"/>
+                    <img className="h-8 lg:h-10" src="/facebook.png" alt="facebook link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-10" src="./instagram.png" alt="instagram link"/>
+                    <img className="h-8 lg:h-10" src="/instagram.png" alt="instagram link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-10" src="./twitter.png" alt="twitter link"/>
+                    <img className="h-8 lg:h-10" src="/twitter.png" alt="twitter link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-10" src="./onlyfans.png" alt="onlyfans link"/>
+                    <img className="h-8 lg:h-10" src="/onlyfans.png" alt="onlyfans link"/>
                 </Link>
             </div>
 
-            <div className="flex items-center flex-1 gap-1 text-xl">
-                <span className="hidden md:block text-sky-700">Illuminati</span>
-                <img className="h-20" src="./illuminati_bx.png" alt="Illuminati Brussels logo" />
-                <span className="hidden md:block text-amber-500">Bruxelles</span>
+            <div className="flex items-center gap-1 text-xl">
+                <span className="hidden lg:block text-sky-700">Illuminati</span>
+                <img className="h-20" src="/illuminati_bx.png" alt="Illuminati Brussels logo" />
+                <span className="hidden lg:block text-amber-500">Bruxelles</span>
             </div>
 
-            <div className="hidden sm:flex gap-4 flex-1">
+            <div className="hidden sm:flex gap-4">
                 <ToggleTheme className="hidden sm:block"/>
                 <Link href="/">Home</Link>
                 <Link href="/contact">Contact</Link>
@@ -49,7 +48,8 @@ const Navbar = ({ className }) => {
 
             {/*Responsive Button*/}
             <div onClick={() => setOpen(!open)} className={`
-                flex flex-col justify-around sm:hidden border p-1
+                flex flex-col justify-around items-center sm:hidden
+                border p-1 mr-3 rounded w-8 h-8
                 dark:border-gray-100 border-gray-900
             `}>
                 <div className="border dark:border-gray-100 border-gray-900 mb-0.5 w-4"></div>

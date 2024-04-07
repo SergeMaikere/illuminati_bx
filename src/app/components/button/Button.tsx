@@ -2,13 +2,13 @@ import React, { PropTypes } from 'react';
 
 const Button = (props) => {
     return (
-        <button className={`
-            border-b 
-            border-gray-500 
-            rounded 
-            p-2 mt-5
-            hover:shadow-lg hover:text-red-500 hover:bg-black hover:text-lg
-        `}>{props.buttonText}</button>
+        <button type={props.type} className={`
+            border-b border-gray-500 rounded
+            text-lg sm:text-base
+            sm:p-2 p-3 mt-3 md:mt-6
+            hover:shadow-lg hover:text-sky-700 hover:bg-amber-500 hover:text-lg
+        `}
+        onClick={props.handleClick}>{props.buttonText}</button>
     );
 };
 

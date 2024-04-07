@@ -9,13 +9,43 @@ export const curry = fn => {
 
 export const pipe = (...fns) => arg => fns.reduce( (g, fn) => fn(g), arg )
 
-export const voyeur = x => {console.log('VOYEUR', x); return x}
- 
-export const selectProperties = (keys: string[], obj: any) => keys.reduce( 
-    (acc, key) => {
-        acc[key] = obj.hasOwnProperty(key) ? obj[key] : ""
-        return acc
-    },{} 
-)
+export const asyncPipe = (...fns) => arg => fns.reduce( (g, fn) => g.then(fn), Promise.resolve(arg) )
 
-export const getAllCategories = (): string[] => [ 'science', 'mode', 'histoire', 'enfer', 'france', 'cyprien' ]
+export const asyncVoyeur = async x => {
+    console.log('\r\n')
+    console.log(await `SEEEEEERGE ====> ${JSON.parse(JSON.stringify(x))}`); 
+    console.log('\r\n')
+    return x
+}
+
+export const voyeur = x => {
+    console.log('\r\n')
+    console.log(`SEEEEEERGE ====> ${JSON.stringify(x)}`); 
+    console.log('\r\n')
+    return x
+}
+ 
+export const pick = (obj: any, props: string[]): any => {
+    return props.reduce( 
+        (newObj: any, prop: string) => {
+            newObj[prop] = obj[prop]
+            return newObj
+        },{} 
+    )
+}
+
+export const addProps = (obj: any, ...props: string[]) => props.map( prop =>({...obj, prop: "" }) )
+
+export const splicer = (arr, n) => {
+    if (arr.length === 0) return []
+    const myArr = [...arr]
+    const myAcc = []
+    while (myArr.length > 0) {
+        myAcc.push(myArr.splice(0, n))
+    }
+    return myAcc
+}
+
+export const isLoggedIn = (status: string): boolean => status === 'authenticated'
+export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.email === "sankara.ishema@gmail.com"
+export const isLoading = (status: string): boolean => status === 'loading'

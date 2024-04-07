@@ -10,7 +10,7 @@ export default function Home() {
             <Featured/>
             <Categories/>
             <div className=" mt-10 md:grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div className="md:col-span-2"><CardList cards={getRecents()}/></div>
+                <div className="md:col-span-2"><CardList title="Articles Récents" cards={getRecents()}/></div>
                 <div><Menu/></div>
             </div>
         </div>

@@ -1,6 +1,6 @@
-import myJSON from './FakeData.json'
-import { pipe, selectProperties } from './Helper';
+import { pipe, pick } from './Helper';
 import { getCategory } from './Categories';
+import MyJSON from './FakeData';
 
 type Post = {
     id: string;
@@ -28,9 +28,9 @@ type Article = {
 
 const myKeys = [ 'id', 'date', 'title', 'author', 'category', 'logoSrc', 'logoAlt', 'imgSrc', 'imgAlt' ]
 
-const getRawEditorPosts = (): Post[] => JSON.parse(JSON.stringify(myJSON)).data
+const getRawEditorPosts = (): Post[] => JSON.parse(MyJSON).data
 
-const setProperties = (datas): Article[] => datas.map( obj => selectProperties(myKeys, obj) )
+const setProperties = (datas): Article[] => datas.map( obj => pick(obj, myKeys) )
 const setCategoryLogoSrc = (articles: Article[]) => articles.map( obj => ({...obj, logoSrc: getCategory(obj.category).logoSrc}) )
 const setCategoryLogoAlt = (articles: Article[]) => articles.map( obj => ({...obj, logoAlt: getCategory(obj.category).logoAlt}) )
 

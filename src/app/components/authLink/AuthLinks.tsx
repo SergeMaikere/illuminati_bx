@@ -1,13 +1,15 @@
 "use client"
 import Link from 'next/Link'
+import { useSession, signOut } from 'next-auth/react'
 import { useState } from 'react';
+import { isAdmin, isLoggedIn } from '../../utils/Helper';
 
 const AuthLinks = ({ className }) => {
 
-    let [auth, setAuth] = useState(false)
+    const { data, status } = useSession()
 
     return (
-        auth ? <><Link href="/write">Write</Link><span>Logout</span></> : <Link href="/login">Login</Link>
+        isLoggedIn(status) ? <>{isAdmin(status, data) && <Link href="/write">Write</Link>}<button type="button" onClick={signOut}>Logout</button></> : <Link href="/login">Login</Link>
     );
 };
 

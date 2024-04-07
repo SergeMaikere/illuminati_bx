@@ -1,5 +1,5 @@
-import MyJson from './FakeData.json'
-import { selectProperties } from './Helper'
+import { pick, voyeur } from './Helper'
+import MyJSON from './FakeData';
 
 type Post = {
     id: string;
@@ -24,9 +24,8 @@ type Article = {
     imgAlt: string;
 }
 
-
-const getRawRecentPosts= (): Post[] => JSON.parse(JSON.stringify(MyJson)).data
+const getRawRecentPosts= (): Post[] => JSON.parse(MyJSON).data
 const myKeys = ['id', 'date', 'category', 'title', 'subtitle', 'description', 'imgSrc', 'imgAlt' ]
-const setProperties = (datas): Article[] => datas.map( obj => selectProperties(myKeys, obj) )
+const setProperties = (datas): Article[] => datas.map( obj => pick(obj, myKeys) )
 
 export const getRecents = () => setProperties( getRawRecentPosts() )

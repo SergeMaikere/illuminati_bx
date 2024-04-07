@@ -4,7 +4,9 @@ import './globals.css'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import { ThemeContextProvider } from '../context/ThemeContext';
-import ThemeProvider from './components/themeProvider/themeProvider';
+import { PaginationProvider } from '../context/PaginationContext';
+import AuthProvider from './providers/AuthProvider';
+import ThemeProvider from './providers/themeProvider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,19 +24,23 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body className={inter.className}>
-            <ThemeContextProvider>
-                <ThemeProvider>
-                    <div className={`
-                        bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-200
-                        text-sm md:text-base xl:text-lg
-                        mx-auto max-w-full 2xl:max-w-screen-[1366px] xl:max-w-6xl lg:max-w-5xl md:max-w-3xl md:px-10
-                    `}>
-                        <Navbar/>
-                        {children}
-                        <Footer/>
-                    </div>
-                </ThemeProvider>
-            </ThemeContextProvider>
+            <AuthProvider>
+                <ThemeContextProvider>
+                    <ThemeProvider>
+                        <PaginationProvider>
+                            <div className={`
+                                bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-200
+                                text-sm md:text-base xl:text-lg
+                                mx-auto max-w-fit p-0 2xl:max-w-screen-[1366px] xl:max-w-6xl lg:max-w-5xl md:max-w-3xl md:px-10
+                            `}>
+                                <Navbar/>
+                                {children}
+                                <Footer/>
+                            </div>
+                        </PaginationProvider>
+                    </ThemeProvider>
+                </ThemeContextProvider>
+            </AuthProvider>
         </body>
     </html>
   )
