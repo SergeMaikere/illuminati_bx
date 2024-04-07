@@ -11,6 +11,7 @@ const Categories = ({ className }) => {
                 {
                     getAllCategories().map(
                         obj => <CategoryCard 
+                            key={obj.id}
                             category={obj.category}
                             bgColor={obj.bgColor}
                             textColor={obj.textColor}

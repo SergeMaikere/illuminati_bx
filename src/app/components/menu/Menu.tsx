@@ -36,7 +36,7 @@ const Menu = ({ className }) => {
                     <div className="text-3xl">Catégories</div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    {CATEGORIES.map( (cat, i) => <CategoryPill key={i+1} category={cat} /> )}
+                    {CATEGORIES.map( (cat, i) => <CategoryPill key={cat} category={cat} /> )}
                 </div>
             </div>
             <div className="mt-10 pb-12">

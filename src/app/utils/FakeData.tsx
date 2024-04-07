@@ -81,6 +81,4 @@ const setPost = pipe( setDate, setId )
 
 const MyJSON = JSON.stringify( {data: setPosts(posts)} )
 
-voyeur(MyJSON)
-
 export default MyJSON
