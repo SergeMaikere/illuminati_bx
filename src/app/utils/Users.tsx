@@ -1,16 +1,15 @@
 import { pick } from './Helper';
+import { Post } from './Posts';
+import { Comment } from './Comments';
 
-type User = {
-    id: number;
-    firstName: string;
-    lastName: string;
-    age: number;
-    gender: string;
-    email: string;
-    username: string;
-    password: string;
-    birthDate: string;
-    image: string;
+export type User = {
+  id: string;    
+  name: string;
+  email: string;    
+  image: string;
+  status: string;
+  posts: Post[];
+  comment: Comment[];
 }
 
 const myKeys = [ 'id', 'firstName', 'lastName', 'age', 'gender', 'email', 'username', 'password', 'birthDate', 'image' ]

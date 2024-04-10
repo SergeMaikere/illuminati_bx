@@ -43,11 +43,56 @@ model Session {
 model User {
   id            String    @id @default(cuid()) @map("_id")
   name          String?
-  email         String?   @unique
+  email         String    @unique
   emailVerified DateTime?
   image         String?
+  status        String
+  posts         Post[]
+  comment       Comment[]
   accounts      Account[]
   sessions      Session[]
+}
+
+model Category {
+    id          String      @id @default(cuid()) @map("_id")
+    slug        String      @unique
+    name        String      @unique
+    subtitle    String
+    description String
+    logo        String
+    logoAlt     String
+    image       String
+    imageAlt    String
+    posts       Post[]           
+}
+
+model Post {
+    id          String      @id @default(cuid()) @map("_id")
+    createdAt   DateTime    @default( now() )
+    slug        String      @unique
+    title       String     
+    subtitle    String?
+    description String
+    body        String
+    image       String
+    imageAlt    String?
+    catSlug     String
+    cat         Category    @relation( fields: [catSlug], references: [slug] ) 
+    userEmail   String
+    user        User        @relation( fields: [userEmail], references: [email] )
+    views       Int         @default( 0 )
+    editorLike  Boolean     @default( false )
+    comments    Comment[]
+}
+
+model Comment {
+    id          String      @id @default(cuid()) @map("_id")
+    createdAt   DateTime    @default( now() )
+    body        String
+    postSlug    String
+    post        Post        @relation( fields: [postSlug], references: [slug] )
+    userEmail   String
+    user        User        @relation( fields: [userEmail], references: [email] )
 }
 
 model VerificationToken {
