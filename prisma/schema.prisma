@@ -35,7 +35,7 @@ model Account {
 model Session {
   id           String   @id @default(cuid()) @map("_id")
   sessionToken String   @unique
-  userId       String
+  userId       String   @unique
   expires      DateTime
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
@@ -46,7 +46,7 @@ model User {
   email         String    @unique
   emailVerified DateTime?
   image         String?
-  status        String
+  role          Role      @default( USER )
   posts         Post[]
   comment       Comment[]
   accounts      Account[]
@@ -103,3 +103,9 @@ model VerificationToken {
   @@unique([identifier, token])
 }
  
+enum Role {
+    USER
+    WRITER
+    EDITOR
+    ADMIN
+}

@@ -4,9 +4,11 @@ import CategoryPill from '../categoryPill/CategoryPill';
 import EditorCard from '../editorCard/EditorCard';
 import { getPopular } from '../../utils/getPopular';
 import { getEditorChoice } from '../../utils/getEditorsChoice';
-import { CATEGORIES } from '../../utils/Categories';
+import { getAllCategories } from '../../utils/Categories';
 
-const Menu = ({ className }) => {
+const Menu = async () => {
+    const categories = await getAllCategories()
+
     return (
         <div className="mt-10 px-3">
             <div className="border-b border-gray-300 pb-12">
@@ -36,7 +38,7 @@ const Menu = ({ className }) => {
                     <div className="text-3xl">Catégories</div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    {CATEGORIES.map( (cat, i) => <CategoryPill key={cat} category={cat} /> )}
+                    {categories.map( (cat, i) => <CategoryPill key={cat.id} category={cat.name} /> )}
                 </div>
             </div>
             <div className="mt-10 pb-12">

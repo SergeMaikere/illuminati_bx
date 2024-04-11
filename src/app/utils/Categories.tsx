@@ -29,10 +29,6 @@ export const TextCategoryColor = {
     science: 'text-orange-600'
 }
 
-export const CATEGORIES = [ 'enfer', 'france', 'cyprien', 'histoire', 'mode', 'science' ]
-
-// export const getAllCategories = (): Category[] => JSON.parse(JSON.stringify(myJSON)).data
-
 export const getAllCategories = async (): Category[] => {
     const res = await fetch(
         'http://localhost:3000/api/categories', 
