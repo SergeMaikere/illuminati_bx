@@ -1,4 +1,4 @@
-import { pipe, pick, voyeur } from './Helper';
+import { pipe, pick } from './Helper';
 import { getCategory } from './Categories';
 import MyJSON from './FakeData';
 
