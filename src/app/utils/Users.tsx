@@ -1,4 +1,3 @@
-import { pick } from './Helper';
 import { Post } from './Posts';
 import { Comment } from './Comments';
 
@@ -7,19 +6,56 @@ export type User = {
   name: string;
   email: string;    
   image: string;
+  password: string;
   status: string;
   posts: Post[];
   comment: Comment[];
 }
 
-const myKeys = [ 'id', 'firstName', 'lastName', 'age', 'gender', 'email', 'username', 'password', 'birthDate', 'image' ]
- 
-const setUser = (user: any): User => pick(user, myKeys)
-
-export const getUserById = async (id: number) => {
-    const res = await fetch( `https://dummyjson.com/users/${id}` )
-    if (!res.ok) throw new Error("Failed")
-    const user = await res.json()
-    return setUser( user )
+export const login = async (cred: any) => {
+    const res = await fetch(
+        'http://localhost:3000/api/user?login=true',
+        {
+            method: 'GET',
+            body: JSON.stringify(credentials),
+            headers: {
+                "Accept": 'application/json',
+                "Content-Type": 'application/json'
+            }
+        }
+    )
+    if (!res.ok) return null
+    return res.json()           
 }
-    
+
+export const getUser = async (email: string): User => {
+    const res = await fetch(
+        "http://localhost:3000/api/user?login=false", 
+        {
+            method: 'GET', 
+            body: JSON.stringify( {email} ),
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('User not found')
+    return res.json()
+}
+ 
+export const addUser =  async (user: any) => {
+    const res = await fetch(
+        "http://localhost:3000/api/user", 
+        {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(user)
+        }
+    )
+    if (!res.ok) throw new Error('SignIn Failed')
+    return res.json()
+}   
