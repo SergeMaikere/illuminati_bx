@@ -1,4 +1,5 @@
 import myJSON from './Categories.json'
+import { voyeur } from './Helper';
 
 type Category = {
     id: number;
@@ -31,7 +32,7 @@ export const TextCategoryColor = {
 
 export const getAllCategories = async (): Category[] => {
     const res = await fetch(
-        'http://localhost:3000/api/categories', 
+        'http://localhost:3000/api/categories?category=all', 
         {
             cache: 'no-store',
             headers: {
@@ -45,9 +46,18 @@ export const getAllCategories = async (): Category[] => {
     return res.json()
 }
 
-// export const getCategory = category => getAllCategories().find( obj => obj.category.toLowerCase() === category.toLowerCase() )
-
 export const getCategory = async (cat: string): Category => {
-    const categories = await getAllCategories()
-    return categories.find( category => category.slug === cat )
+    const res = await fetch(
+        `http://localhost:3000/api/categories?category=${cat.toLowerCase()}`, 
+        {
+            cache: 'no-store',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            method: 'GET'
+        }
+    )
+    if ( !res.ok ) throw new Error('Failed')
+    return res.json()
 }

@@ -10,6 +10,7 @@ import { login } from '../../../utils/Users';
 const handler = NextAuth( 
     {
         adapter: PrismaAdapter(prisma),
+        session: { strategy: 'jwt' },
         providers: [
             GithubProvider(
                 {
@@ -31,17 +32,26 @@ const handler = NextAuth(
             ),
             CredentialsProvider(
                 {
-                    name: 'Credentials',
                     credentials: {
                         email: { label: "Email", type: "email", placeholder: "g.soros@nwo.com" },
                         password: { label: 'Mot de passe', type: "password", placeholder: "3p5731nD1dn7K1llH1m53lf" }
                     },
-                    async authorize (credentials) {
-                        return login(credentials)
+                    async authorize (credentials, req) {
+                        return await login(credentials)
                     }
                 }
             )
-        ]
+        ],
+        callbacks: {
+            jwt: async ( {token, user} ) => {
+                if (user) token.user = user
+                return token
+            },
+            session: async ( {session, token} ) => {
+                session.user = token.user
+                return session
+            }
+        }
     }
 )
 
