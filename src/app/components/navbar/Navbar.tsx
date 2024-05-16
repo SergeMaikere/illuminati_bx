@@ -4,13 +4,14 @@ import Link from 'next/Link'
 import { FaSquareFacebook, FaSquareXTwitter, FaSquareYoutube  } from "react-icons/fa6";
 import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';
+import classNames from 'classnames'
 
 const Navbar = ({ className }) => {
 
     const [ open, setOpen ] = useState( false )
 
     return (
-        <div className="flex items-center justify-around px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
+        <div className="flex items-center justify-between px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
 
             {/*Hidden responsive theme button*/}
             <div className="sm:hidden block ml-3">
@@ -19,16 +20,16 @@ const Navbar = ({ className }) => {
 
             <div className="hidden md:flex md:gap-4">
                 <Link href="/">
-                    <img className="h-8 lg:h-10" src="/facebook.png" alt="facebook link"/>
+                    <img className="h-8 lg:h-9" src="/facebook.png" alt="facebook link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-8 lg:h-10" src="/instagram.png" alt="instagram link"/>
+                    <img className="h-8 lg:h-9" src="/instagram.png" alt="instagram link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-8 lg:h-10" src="/twitter.png" alt="twitter link"/>
+                    <img className="h-8 lg:h-9" src="/twitter.png" alt="twitter link"/>
                 </Link>
                 <Link href="/">
-                    <img className="h-8 lg:h-10" src="/onlyfans.png" alt="onlyfans link"/>
+                    <img className="h-8 lg:h-9" src="/onlyfans.png" alt="onlyfans link"/>
                 </Link>
             </div>
 
@@ -38,13 +39,18 @@ const Navbar = ({ className }) => {
                 <span className="hidden lg:block text-amber-500">Bruxelles</span>
             </div>
 
-            <div className="hidden sm:flex gap-4">
+            <div className="hidden sm:flex">
                 <ToggleTheme className="hidden sm:block"/>
+            </div>
+
+            
+            <div className="hidden sm:flex gap-4">
                 <Link href="/">Home</Link>
                 <Link href="/contact">Contact</Link>
                 <Link href="/about">About</Link>
-                <AuthLinks/>
             </div>
+            
+            <AuthLinks/>
 
             {/*Responsive Button*/}
             <div onClick={() => setOpen(!open)} className={`
@@ -58,11 +64,11 @@ const Navbar = ({ className }) => {
             </div>
 
             {/*Responsive Menu*/}
-            <div className={`
-                ${!open ? 'hidden' : 'flex'} flex-col justify-around
-                top-[3rem] left-0 w-screen h-[calc(100%-3rem)] absolute
-                bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-2xl text-center 
-            `}>
+            <div className={classNames(`
+                            flex flex-col justify-around
+                            top-[3rem] left-0 w-screen h-[calc(100%-3rem)] absolute
+                            bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-2xl text-center 
+                        `, {hidden: !open})}>
                 <Link href="/">Home</Link>
                 <Link href="/contact">Contact</Link>
                 <Link href="/about">About</Link>

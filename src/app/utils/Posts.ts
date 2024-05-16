@@ -1,18 +1,17 @@
-import { CATEGORIES } from './Categories'
 import { asyncPipe, asyncVoyeur, voyeur } from './Helper'
 import { faker } from '@faker-js/faker'
 import { getUserById } from './Users'
 
-export type Post = {
+type Post = {
     id: string;      
     createdAt: string;    
     slug: string;      
     title: string;     
-    subtitle: string;?
+    subtitle: string;
     description: string;
     body: string;
     image: string;
-    imageAlt: string;?
+    imageAlt: string;
     catSlug: string;
     cat: Category;
     userEmail: string;
@@ -20,8 +19,9 @@ export type Post = {
     views: integer;     
     editorLike: boolean; 
     comments: Comment[];
-};
+}
 
+const CATEGORIES = [ 'mode', 'histoire', 'science', 'mode', 'cyprien', 'enfer' ]
 
 const getRandomCategory = (): string => CATEGORIES[ Math.floor(Math.random() * CATEGORIES.length) ]
 

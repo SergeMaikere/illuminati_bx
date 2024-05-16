@@ -34,6 +34,10 @@ export const pick = (obj: any, props: string[]): any => {
     )
 }
 
+export const except = (obj: any, props: string[]): any => {
+    return Object.fromEntries( Object.entries(obj).filter(tuple => !props.includes(tuple[0])) )
+}
+
 export const addProps = (obj: any, ...props: string[]) => props.map( prop =>({...obj, prop: "" }) )
 
 export const splicer = (arr, n) => {
@@ -47,5 +51,7 @@ export const splicer = (arr, n) => {
 }
 
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'
-export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.email === "sankara.ishema@gmail.com"
+export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "ADMIN"
+export const isEditor = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "EDITOR"
+export const isWriter = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "WRITER"
 export const isLoading = (status: string): boolean => status === 'loading'

@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-const Loading = ({ className }) => {
+const LoadingScreen = ({ className }) => {
     return (
         <div className="flex justify-center items-center min-h-80">
             <span className={`
@@ -11,4 +11,4 @@ const Loading = ({ className }) => {
     );
 };
 
-export default Loading;
+export default LoadingScreen;

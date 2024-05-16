@@ -7,6 +7,8 @@ import { ThemeContextProvider } from '../context/ThemeContext';
 import { PaginationProvider } from '../context/PaginationContext';
 import AuthProvider from './providers/AuthProvider';
 import ThemeProvider from './providers/themeProvider';
+import Loading from './loading';
+import { Suspense } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,7 +36,7 @@ export default function RootLayout({
                                 mx-auto max-w-fit p-0 2xl:max-w-screen-[1366px] xl:max-w-6xl lg:max-w-5xl md:max-w-3xl md:px-10
                             `}>
                                 <Navbar/>
-                                {children}
+                                <Suspense fallback={<Loading/>}>{children}</Suspense>
                                 <Footer/>
                             </div>
                         </PaginationProvider>

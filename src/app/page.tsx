@@ -4,6 +4,7 @@ import CardList from './components/cardList/CardList';
 import Menu from './components/menu/Menu';
 import { getRecents } from './utils/getRecents';
 import { getAllCategories } from './utils/Categories';
+import { voyeur } from './utils/Helper';
 
 export default async function Home() {
     const categories = await getAllCategories()
