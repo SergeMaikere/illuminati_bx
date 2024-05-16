@@ -44,10 +44,12 @@ const User = (props) => {
                     minLength="8" 
                     placeholder="Mot de passe béton"
                     required/>
-                <div className={classNames("bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3", {hidden: valid})} role="alert">
-                    <p className="font-bold">Informational message</p>
-                    <p className="text-sm">Some additional text to explain said message.</p>
+
+                <div className={classNames("bg-orange-100 border-t border-b border-orange-500 text-orange-700 px-4 py-3", {hidden: valid})} role="alert">
+                    <p className="font-bold font-serif">N'oublie jamais</p>
+                    <p className="text-sm font-mono">L'idée c'est que les 2 mots de passe soient identiques</p>
                 </div>
+
                 <input 
                     className="bg-transparent font-serif text-2xl md:text-4xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     type="password"
@@ -55,7 +57,7 @@ const User = (props) => {
                     onChange={e => setPswd2(e.target.value)}
                     minLength="8" 
                     placeholder="Retour du Mot de Passe Béton"
-                    required/>
+                    requiorange/>
                 <input 
                     id="image"
                     className="hidden" 

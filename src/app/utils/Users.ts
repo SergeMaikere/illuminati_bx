@@ -3,7 +3,7 @@ import { Comment } from './Comments';
 import bcrypt from 'bcrypt'
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage"
 import { app } from './firebase';
-import { asyncPipe, except, voyeur } from './Helper';
+import { asyncPipe } from './Helper';
 
 export type User = {
   id: string;    
@@ -32,6 +32,8 @@ const setPswd = async (user: any): any => {
     return { ...user, password: hashed }
 }
 
+const comparePasswords = async (pswd, hash) => ( !pswd || !hash ) ? false : await bcrypt.compare( pswd, hash )
+
 const getImgUrl = async (user: any): any => {
     if (user.image.name === 'undefined') return { ...user, image: process.env.DEFAULT_PP }
     const url = await storageCloud(user.image)
@@ -43,21 +45,28 @@ const setUser = asyncPipe( setPswd, getImgUrl )
 export const login = async cred => {
     let user = null
     const { email, password } = cred
-    user = await getUser(email)
-    const valid = await comparePasswords(password, user.password)
-    return (!user || !valid) ? null : except(user, ['password', 'id'])
+    user = await getUserByEmail(email)
+    const valid = await comparePasswords(password, user?.password)
+    return (!user || !valid) ? null : user
 }
 
-export const comparePasswords = async (pswd: string, hash: string): boolean => await bcrypt.compare( pswd, hash )
-
-export const getUserById = async id => {
-    const res = await fetch(`https://dummyjson.com/products/${id}`)
-    if ( !res.ok ) throw new Error('Failed user fetch')
-    return res.json()
-    
+export const getUserById = async userId => {
+    const res = await fetch(
+        `http://localhost:3000/api/user?action=userId`,
+        {
+            method: 'POST',
+            body: JSON.stringify( {userId} ),
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('User not found')
+    return await res.json()
 }
 
-export const getUser = async (email)=> {
+export const getUserByEmail = async email => {
     const res = await fetch(
         "http://localhost:3000/api/user?action=user", 
         {
@@ -70,7 +79,7 @@ export const getUser = async (email)=> {
         }
     )
     if (!res.ok) throw new Error('User not found')
-    return res.json()
+    return await res.json()
 }
  
 export const addUser =  async (user: any) => {
@@ -87,5 +96,5 @@ export const addUser =  async (user: any) => {
         }
     )
     if (!res.ok) throw new Error('SignIn Failed')
-    return res.json()
+    return await res.json()
 }   
