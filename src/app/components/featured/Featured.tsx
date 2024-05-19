@@ -20,7 +20,7 @@ const Featured = ({ className }) => {
                     <p className="font-mono text-base">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi voluptate, voluptates sunt odit rerum maxime explicabo natus nam dolor iusto ullam quia assumenda rem doloremque exercitationem dicta inventore. Quod.
                     </p>  
-                    <Button buttonText="Read More" />
+                    <Button children="Read More" />
                 </div>
             </div>
         </div>

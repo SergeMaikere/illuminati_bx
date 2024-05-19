@@ -1,6 +1,7 @@
 import { asyncPipe, asyncVoyeur, voyeur } from './Helper'
 import { faker } from '@faker-js/faker'
 import { getUserById } from './Users'
+import { getImgUrl } from './mediaHandler';
 
 type Post = {
     id: string;      
@@ -59,10 +60,14 @@ const getAllPosts = async (): any[] => {
     return await setCategories(res1.posts)
 
 }
+
+const setTitleSlug = post => ( {...post, slug: post.title.toLowerCase().split(' ').join('_')} )
     
 const setPost = asyncPipe( setCategory, setDate, setDescription, setSubtitle, setImg, setUser )
 
 const setPosts = async (posts: any[]): Post[] => await Promise.all( posts.map(async (post: any) => await setPost(post)) )
+
+const setNewPost = asyncPipe( getImgUrl, setTitleSlug )
 
 export const getPostById = async (id: string): Post => {
     const res = await fetch(`https://dummyjson.com/posts/${id}`)
@@ -77,16 +82,17 @@ export const getPostsByCategory = async (cat: string): Post[] => {
     return await setPosts( posts )
 }
 
-export const addPost = async (newPost: any) => {
+export const addPost = async (post: any) => {
+    const newPost = await setNewPost( post )
     const res = await fetch(
-        `https://dummyjson.com/posts/add`,
+        "http://localhost:3000/api/post?action=create", 
         {
-            method: 'POST',
-            header: {
-                'accept': 'application/json',
-                'content': 'application/json',
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
-            body: JSON.stringify( {...newPost} )
+            body: JSON.stringify(newPost)
         }
     )
     if (!res.ok) throw new Error('Failed posting new post')

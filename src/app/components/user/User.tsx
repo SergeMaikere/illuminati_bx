@@ -17,7 +17,7 @@ const User = (props) => {
     const handleSubmit = e => {
         e.preventDefault()
         const formData = new FormData(e.target)
-        props.handleSubmit(formData)
+        props.handleSubmit(formData) 
     }
 
     return (

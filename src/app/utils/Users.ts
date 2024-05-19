@@ -1,9 +1,9 @@
 import { Post } from './Posts';
 import { Comment } from './Comments';
 import bcrypt from 'bcrypt'
-import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage"
 import { app } from './firebase';
 import { asyncPipe } from './Helper';
+import { getImgUrl } from './mediaHandler';
 
 export type User = {
   id: string;    
@@ -20,25 +20,12 @@ const saltRounds = 10
 
 const hash = async (pswd: string): string => await bcrypt.hash( pswd, saltRounds)
 
-const storageCloud = async (file) => {
-    const storage =  getStorage(app)
-    const storageRef = ref(storage, `images/${new Date().getTime()}${file.name}`)
-    const snapshot = await uploadBytes(storageRef, file)
-    return await getDownloadURL(snapshot.ref)
-}
-
 const setPswd = async (user: any): any => {
     const hashed = await hash(user.password)
     return { ...user, password: hashed }
 }
 
 const comparePasswords = async (pswd, hash) => ( !pswd || !hash ) ? false : await bcrypt.compare( pswd, hash )
-
-const getImgUrl = async (user: any): any => {
-    if (user.image.name === 'undefined') return { ...user, image: process.env.DEFAULT_PP }
-    const url = await storageCloud(user.image)
-    return { ...user, image: url }
-}
 
 const setUser = asyncPipe( setPswd, getImgUrl )
 

@@ -12,8 +12,8 @@ const Pagination = (props) => {
 
     return (
         <div className="flex justify-between">
-            <Button handleClick={handlePrev} buttonText="Précédente"/>
-            <Button handleClick={handleNext} buttonText="Suivante"/>
+            <Button handleClick={handlePrev} children="Précédente"/>
+            <Button handleClick={handleNext} children="Suivante"/>
         </div>
     );
 };

@@ -50,6 +50,15 @@ export const splicer = (arr, n) => {
     return myAcc
 }
 
+export const formDataToObject = formData => {
+    return [ ...formData.entries() ].reduce(
+        (obj, pair) => {
+            obj[pair[0]] = pair[1]
+            return obj
+        }, {}
+    )
+}
+
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'
 export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "ADMIN"
 export const isEditor = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "EDITOR"

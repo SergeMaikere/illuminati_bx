@@ -14,10 +14,10 @@ const   OupsNoContent = ({ className }) => {
                 <p className="text-lg text-light font-mono">et vu que j'avais piscine en fait, pile au moment ou l'Interne doit interviewer Baphomet, tu vois, vla dis pas que la grand mère à Viviane elle se sent pas bien...du coup on a rien écrit.</p>
                 <div className="flex justify-around">
                     <Link href="http://lolcalhost:3000/">
-                        <Button buttonText="Accueil"/>
+                        <Button children="Accueil"/>
                     </Link>
                     <Link href="http://lolcalhost:3000/mes_excuses">
-                        <Button buttonText="Encore plus d'excuses"/>
+                        <Button children="Encore plus d'excuses"/>
                     </Link>
                 </div>
             </div>

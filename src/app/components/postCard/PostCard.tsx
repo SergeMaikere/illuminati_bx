@@ -18,7 +18,7 @@ const PostCard = (props) => {
                 </div>
                 <p className="text-base text-light font-mono">{props.description}</p>
                 <Link href={`http://localhost:3000/${props.id}`}>
-                    <Button buttonText="Read More"/>
+                    <Button children="Read More"/>
                 </Link>
             </div>
         </div>
