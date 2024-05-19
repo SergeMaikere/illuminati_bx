@@ -9,7 +9,7 @@ const SelectCategory = (props) => {
 
     return (
         <div>
-            <label htmlFor="categories" className="font-serif text-2xl">Choisis ta Catégorie: </label>
+            <label htmlFor="categories" className="font-serif text-2xl hidden lg:inline-block">Choisis ta Catégorie: </label>
             <select 
                 id="categories" 
                 name="categories"

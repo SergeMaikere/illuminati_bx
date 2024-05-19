@@ -1,5 +1,6 @@
 "use client"
 import React, { PropTypes, useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation'
 import { CiImageOn } from 'react-icons/ci';
 import Button from '../button/Button';
 import { voyeur } from '../../utils/Helper';
@@ -11,6 +12,7 @@ const User = (props) => {
     const [ valid, setValid ] = useState(true)
     const [ pswd1, setPswd1 ] = useState('')
     const [ pswd2, setPswd2 ] = useState('')
+    const router = useRouter()
 
     useEffect( () => setValid(isSameString(pswd1, pswd2)), [pswd2] )
 
@@ -18,6 +20,8 @@ const User = (props) => {
         e.preventDefault()
         const formData = new FormData(e.target)
         props.handleSubmit(formData) 
+        router.push('/')
+
     }
 
     return (

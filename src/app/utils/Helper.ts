@@ -59,6 +59,8 @@ export const formDataToObject = formData => {
     )
 }
 
+export const slugify = str => str.toLowerCase().split(' ').join('_')
+
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'
 export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "ADMIN"
 export const isEditor = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "EDITOR"

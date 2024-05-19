@@ -1,4 +1,4 @@
-import { asyncPipe, asyncVoyeur, voyeur } from './Helper'
+import { asyncPipe, asyncVoyeur, slugify, voyeur } from './Helper'
 import { faker } from '@faker-js/faker'
 import { getUserById } from './Users'
 import { getImgUrl } from './mediaHandler';
@@ -61,7 +61,7 @@ const getAllPosts = async (): any[] => {
 
 }
 
-const setTitleSlug = post => ( {...post, slug: post.title.toLowerCase().split(' ').join('_')} )
+const setTitleSlug = post => ( {...post, slug: slugify(post.title)} )
     
 const setPost = asyncPipe( setCategory, setDate, setDescription, setSubtitle, setImg, setUser )
 
@@ -82,6 +82,23 @@ export const getPostsByCategory = async (cat: string): Post[] => {
     return await setPosts( posts )
 }
 
+export const getPostBySlug = async ( slug: string ): Post[] => {
+    console.log('getPostBySlug', slug)
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=slug", 
+        {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({slug})
+        }
+    )
+    if (!res.ok) throw new Error('Failed finding post')
+    return await res.json()
+}
+
 export const addPost = async (post: any) => {
     const newPost = await setNewPost( post )
     const res = await fetch(
@@ -95,7 +112,7 @@ export const addPost = async (post: any) => {
             body: JSON.stringify(newPost)
         }
     )
-    if (!res.ok) throw new Error('Failed posting new post')
+    if (!res.ok) throw new Error('Failed creating new post')
     return await res.json()
 }
 

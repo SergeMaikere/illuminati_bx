@@ -1,5 +1,6 @@
 "use client"
 import React, { PropTypes, useState } from 'react';
+import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { CiCirclePlus, CiImageOn, CiImport, CiVideoOn } from "react-icons/ci";
 import Button from '../button/Button';
@@ -8,18 +9,21 @@ import UploadFiles from '../uploadFiles/uploadFiles';
 import SelectCategory from '../selectCategory/SelectCategory';
 import TextEditor from '../textEditor/TextEditor';
 import classNames from 'classnames'
-import { isWriter } from '../../utils/Helper';
+import { isWriter, slugify } from '../../utils/Helper';
+import { Otis } from '../../utils/Classics';
 
 const Article = (props) => {
 
     const { data, status } = useSession()
-    const [ title, setTitle ] = useState('Titre impactant')
-    const [ description, setDescription ] = useState('Description sagace et inspirée')
-    const [ subtitle, setSubtitle ] = useState('Subtitle')
-    const [ category, setCategory ] = useState('histoire')
+    const [ title, setTitle ] = useState('')
+    const [ description, setDescription ] = useState('')
+    const [ subtitle, setSubtitle ] = useState('')
+    const [ category, setCategory ] = useState('')
     const [ imageAlt, setImageAlt ] = useState('nice pic')
-    const [ body, setBody ] = useState('Voili voilà')
+    const [ body, setBody ] = useState(Otis)
     const [ files, setFiles ] = useState(null)
+
+    const router = useRouter()
 
     const handleSubmit = () => {
         if ( !files ) return alert('Met une image au moins!')
@@ -34,6 +38,7 @@ const Article = (props) => {
             userEmail: data.user.email
         }
         props.handleSubmit( postDatas )
+        router.push( `/${slugify(title)}` )
     }
 
     return (
@@ -76,7 +81,7 @@ const Article = (props) => {
                     <div className="min-h-64 md:min-h-80 border-b border-gray-300 rounded">
                         <TextEditor value={body} handleChange={setBody} />
                     </div>
-                    <div className="flex justify-around"> 
+                    <div className="flex flex-col gap-3 md:flex-row md:justify-between"> 
                         <UploadFiles handleSubmit={files => setFiles(files)} />
                         <SelectCategory category={cat => setCategory(cat)} />
                     </div>
