@@ -15,9 +15,8 @@ const create = async (req) => {
 
 const getPostBySlug = async (req) => {
     const { slug } = await req.json()
-    console.log('POST : ', slug)
     try {
-        const res = await prisma.post.findUnique( {where: {slug: slug}} )
+        const res = await prisma.post.findUnique( {where: {slug: slug}, include: {user: true}} )
         return new NextResponse( JSON.stringify(res, {status: 200}) )
     }
     catch (err) {
@@ -26,7 +25,6 @@ const getPostBySlug = async (req) => {
 }
 
 export const POST = async (req) => {
-    console.log('POST => ')
     const { searchParams } = new URL(req.url)
     const action = searchParams.get('action')
     if ( action === 'create' ) return await create(req)

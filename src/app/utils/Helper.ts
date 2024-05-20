@@ -1,3 +1,4 @@
+import latinize from 'latinize'
 
 export const curry = fn => {
     const curried = (...args) => {
@@ -59,7 +60,7 @@ export const formDataToObject = formData => {
     )
 }
 
-export const slugify = str => str.toLowerCase().split(' ').join('_')
+export const slugify = str => latinize( str.toLowerCase().split(' ').join('_').replace(/[*+~.()'"!:@,]/g, '') )
 
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'
 export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "ADMIN"

@@ -83,7 +83,7 @@ export const getPostsByCategory = async (cat: string): Post[] => {
 }
 
 export const getPostBySlug = async ( slug: string ): Post[] => {
-    console.log('getPostBySlug', slug)
+    console.log('getPostBySlug', JSON.stringify({slug}))
     const res = await fetch(
         "http://localhost:3000/api/post?action=slug", 
         {
@@ -95,6 +95,7 @@ export const getPostBySlug = async ( slug: string ): Post[] => {
             body: JSON.stringify({slug})
         }
     )
+    console.log(res.body)
     if (!res.ok) throw new Error('Failed finding post')
     return await res.json()
 }
