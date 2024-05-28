@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Menu from '../components/menu/Menu';
 import Button from '../components/button/Button';
 import Comment from '../components/comment/Comment';
-import { getPostBySlug } from '../utils/Posts';
+import { getPostBySlug, updatePostViews } from '../utils/Posts';
 import { addComment, getCommentsByPostId } from '../utils/Comments';
 import CommentsArea from '../components/commentsArea/CommentsArea';
 import OupsNoContent from '../components/oupsNoContent/OupsNoContent';
@@ -11,6 +11,8 @@ import classNames from 'classnames'
 const SinglePage = async (context) => {
 
     const post = await getPostBySlug( context.params.slug )
+    const views = await updatePostViews(post.id)
+    console.log({views})
     // const comments = await getCommentsByPostId(post.id)
 
     // const postComment = async () => {
@@ -30,21 +32,21 @@ const SinglePage = async (context) => {
                 <OupsNoContent />
             </div>
             <div className={classNames("p-3", {hidden: !post})}>
+                <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
                 <div className="md:mt-10 lg:flex gap-2">
+                    <div className="md:flex-1">
+                        <img className="" src={post?.image} alt={post?.imgageAlt}/>
+                    </div>
                     <div className="flex flex-col justify-around md:flex-1">
                         <div>
-                            <h1 className="text-3xl md:text-5xl font-serif mb-3">{post?.title}</h1>
-                            <div className="text-2xl font-extralight">{` ${post?.subtitle}`}</div>
+                            <div className="text-4xl font-mono">{` ${post?.subtitle}`}</div>
                         </div>
-                        <div className="font-mono md:text-xl">{post?.description}</div>
+                        <div className="font-mono font-extralight">{post?.description}</div>
                         <div className="flex items-center gap-2 h-10 mt-5">
                             <img className="w-10 rounded-full" src={post?.user?.image} alt="author Profile picture"/>
                             <div className="font-bold">{post?.user?.name}</div>
                             <div className="text-sm">{new Date(post?.createdAt).toLocaleDateString()}</div>
                         </div>
-                    </div>
-                    <div className="md:flex-1">
-                        <img className="" src={post?.image} alt={post?.imgageAlt}/>
                     </div>
                 </div>
                 <div className="md:grid md:grid-cols-3">
