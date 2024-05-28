@@ -95,7 +95,6 @@ export const getPostBySlug = async ( slug: string ): Post[] => {
             body: JSON.stringify({slug})
         }
     )
-    console.log(res.body)
     if (!res.ok) throw new Error('Failed finding post')
     return await res.json()
 }

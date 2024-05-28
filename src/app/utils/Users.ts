@@ -71,6 +71,7 @@ export const getUserByEmail = async email => {
  
 export const addUser =  async (user: any) => {
     const newUser = await setUser(user)
+    console.log('addUser =>', newUser)
     const res = await fetch(
         "http://localhost:3000/api/user?action=create", 
         {

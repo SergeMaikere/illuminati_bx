@@ -9,7 +9,7 @@ import UploadFiles from '../uploadFiles/uploadFiles';
 import SelectCategory from '../selectCategory/SelectCategory';
 import TextEditor from '../textEditor/TextEditor';
 import classNames from 'classnames'
-import { isWriter, slugify } from '../../utils/Helper';
+import { isWriter, slugify, getFormDataByObject } from '../../utils/Helper';
 import { Otis } from '../../utils/Classics';
 
 const Article = (props) => {
@@ -19,13 +19,11 @@ const Article = (props) => {
     const [ description, setDescription ] = useState('')
     const [ subtitle, setSubtitle ] = useState('')
     const [ category, setCategory ] = useState('')
+    const [ files, setFiles ] = useState(null)
     const [ imageAlt, setImageAlt ] = useState('nice pic')
     const [ body, setBody ] = useState(Otis)
-    const [ files, setFiles ] = useState(null)
 
-    const router = useRouter()
-
-    const handleSubmit = () => {
+    const handleSubmit = obj => {
         if ( !files ) return alert('Met une image au moins!')
         const postDatas = {
             title: title,
@@ -34,11 +32,11 @@ const Article = (props) => {
             body: body,
             catSlug: category,
             imageAlt: imageAlt,
-            files: files,
+            image: files,
             userEmail: data.user.email
         }
-        props.handleSubmit( postDatas )
-        router.push( `/${slugify(title)}` )
+        const formDatas = getFormDataByObject( postDatas )
+        props.handleSubmit( formDatas )
     }
 
     return (
@@ -82,12 +80,12 @@ const Article = (props) => {
                         <TextEditor value={body} handleChange={setBody} />
                     </div>
                     <div className="flex flex-col gap-3 md:flex-row md:justify-between"> 
-                        <UploadFiles handleSubmit={files => setFiles(files)} />
+                        <UploadFiles setImageAlt={str => setImageAlt(str)} setImage={fileObj => setFiles(fileObj)} />
                         <SelectCategory category={cat => setCategory(cat)} />
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <Button handleClick={() => handleSubmit()} children="Et c'est parti!" />
+                    <Button type="button" handleClick={e => handleSubmit({})} children="Et c'est parti!" />
                 </div>             
             </div>
         </div>

@@ -60,6 +60,15 @@ export const formDataToObject = formData => {
     )
 }
 
+export const getFormDataByObject = obj => {
+    return [ ...Object.entries(obj) ].reduce(
+        (formData, pair) => {
+            formData.append(pair[0], pair[1])
+            return formData
+        }, new FormData()
+    )
+}
+
 export const slugify = str => latinize( str.toLowerCase().split(' ').join('_').replace(/[*+~.()'"!:@,]/g, '') )
 
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'

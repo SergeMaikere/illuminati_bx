@@ -16,7 +16,21 @@ const create = async (req) => {
 const getPostBySlug = async (req) => {
     const { slug } = await req.json()
     try {
-        const res = await prisma.post.findUnique( {where: {slug: slug}, include: {user: true}} )
+        const res = await prisma.post.findUnique( 
+            {
+                where: {slug: slug}, 
+                include: {
+                    user: {
+                            select: {
+                            id: true,
+                            name: true,
+                            email: true,
+                            image: true
+                        }
+                    }
+                }
+            } 
+        )
         return new NextResponse( JSON.stringify(res, {status: 200}) )
     }
     catch (err) {

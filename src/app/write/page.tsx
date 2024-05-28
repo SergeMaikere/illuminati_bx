@@ -1,20 +1,21 @@
 import React, { PropTypes, useEffect, useState } from 'react';
+import { redirect } from 'next/navigation'
 import { isMoreThanNChar, isNotEmptyString, isString, validate } from '../utils/Validation';
 import Article from '../components/article/Article';
 import { addPost } from '../utils/Posts';
-import { except, formDataToObject } from '../utils/Helper';
+import { formDataToObject, slugify } from '../utils/Helper';
 
 const NewPost = ({ className }) => {
     
     const isInputValid = validate( isString, isNotEmptyString, isMoreThanNChar )
     const isNewPostValid = obj => Object.keys(obj).every( k => isInputValid(obj[k]) )
 
-    const handleSubmit = async postDatas => {
+    const handleSubmit = async formDatas => {
         "use server"
         // if (!isNewPostValid(postDatas)) return displayInvalidInput()
-        const post = except({ ...postDatas, image: formDataToObject(postDatas.files).image }, ['files'])
+        const post = formDataToObject( formDatas ) 
         const res = await addPost(post)
-        console.log(res)
+        redirect( `/${slugify(post.title)}` )
     }
 
     return (
