@@ -7,7 +7,7 @@ import { voyeur } from '../../utils/Helper';
 
 const BlogPage = async (context) => {
     const cat = await getCategory( context.params.slug )
-    const posts = await getPostsByCategory(cat.slug)
+    const posts = cat.posts
 
     return (
         <div>

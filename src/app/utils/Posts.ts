@@ -33,23 +33,6 @@ export const getPostById = async (id: string): Post => {
     return await setPost(post)
 }
 
-export const getPostsByCategory = async (category: string): Post[] => {
-    if (!category) return
-    const res = await fetch(
-        "http://localhost:3000/api/post?action=category", 
-        {
-            method: 'POST', 
-            headers: {
-                'Content-Type': 'applicategoryion/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({cat})
-        }
-    )
-    if (!res.ok) throw new Error('Failed updating post')
-    return await res.json()
-}
-
 export const updatePostViews = async id => {
     if (!id) return
     const res = await fetch(

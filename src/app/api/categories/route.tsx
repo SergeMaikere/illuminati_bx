@@ -5,7 +5,14 @@ import { voyeur } from '../../utils/Helper';
 
 const getAllCategories = async (): Category[] => await prisma.category.findMany({})
 
-const getCategory = async (cat: string): Category => await prisma.category.findUnique({where: {slug: cat}})
+const getCategory = async (cat: string): Category => {
+    return await prisma.category.findUnique(
+        {
+            where: {slug: cat},
+            include: {posts: true}
+        }
+    )
+}
 
 export const GET = async (req): any => {
     const {searchParams} = new URL(req.url)
