@@ -38,7 +38,7 @@ export const updatePostViews = async id => {
     const res = await fetch(
         "http://localhost:3000/api/post?action=views", 
         {
-            method: 'POST', 
+            method: 'PUT', 
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -50,17 +50,32 @@ export const updatePostViews = async id => {
     return await res.json()
 }
 
-export const getPostBySlug = async ( slug: string ): Post[] => {
-    if (!slug) return
+export const updateEditorLike = async (id, like) => {
     const res = await fetch(
-        "http://localhost:3000/api/post?action=slug", 
+        "http://localhost:3000/api/post?action=like", 
         {
-            method: 'POST', 
+            method: 'PUT', 
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify({slug})
+            body: JSON.stringify({id, like})
+        }
+    )
+    if (!res.ok) throw new Error('Failed updating post')
+    return await res.json()
+}
+
+export const getPostBySlug = async ( slug: string ): Post[] => {
+    if (!slug) return
+    const res = await fetch(
+        `http://localhost:3000/api/post?slug=${slug}`, 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
         }
     )
     if (!res.ok) throw new Error('Failed finding post')

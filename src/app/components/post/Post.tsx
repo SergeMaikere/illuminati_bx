@@ -4,8 +4,15 @@ import classNames from 'classnames'
 import OupsNoContent from '../oupsNoContent/OupsNoContent';
 import Menu from '../menu/Menu';
 import CommentsArea from '../commentsArea/CommentsArea';
+import CategoryPill from '../categoryPill/CategoryPill';
+import EditorOptions from '../editorOptions/EditorOptions';
 
-const Post = ({post}) => {
+const Post = ({post, updateLike}) => {
+
+    const setTextBody = text => {
+        if (!text) return ''
+        return { __html: text }
+    }
 
     useEffect(
         () => {
@@ -29,13 +36,16 @@ const Post = ({post}) => {
         }, []
     )
 
-
     return (
         <div>
             <div className={classNames({hidden: post})}>
                 <OupsNoContent />
             </div>
             <div className={classNames("p-3", {hidden: !post})}>
+                <div className="flex gap-2">
+                    <CategoryPill category={post.catSlug} />
+                    <EditorOptions liked={post?.editorLike} updateLike={updateLike} />
+                </div>
                 <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
                 <div className="md:mt-10 lg:flex gap-2">
                     <div className="md:flex-1">
@@ -53,7 +63,7 @@ const Post = ({post}) => {
                         </div>
                     </div>
                 </div>
-                <div className="md:mt-10 font-mono">{post?.body}</div>
+                <div className="md:mt-10 font-mono" dangerouslySetInnerHTML={setTextBody(post?.body)}></div>
             </div>
         </div>
     );
