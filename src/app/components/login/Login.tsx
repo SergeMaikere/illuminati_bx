@@ -85,7 +85,7 @@ const Login = () => {
                         placeholder="3p5731nD1dn7K1llH1m53lf"
                         required/>
                     <div className="text-center">
-                        <Button type="submit" buttonText="Allé zou" />
+                        <Button type="submit" children="Allé zou" />
                     </div>
                 </div>
             </form>

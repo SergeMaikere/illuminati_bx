@@ -1,6 +1,9 @@
 import React, { PropTypes, useEffect, useState } from 'react';
+import { redirect } from 'next/navigation'
 import { isMoreThanNChar, isNotEmptyString, isString, validate } from '../utils/Validation';
 import Article from '../components/article/Article';
+import { addPost } from '../utils/Posts';
+import { formDataToObject, slugify } from '../utils/Helper';
 
 const NewPost = ({ className }) => {
     
@@ -9,15 +12,16 @@ const NewPost = ({ className }) => {
 
     const handleSubmit = async formDatas => {
         "use server"
-        if (!isNewPostValid(formDatas)) return displayInvalidInput()
-        const res = await addPost(formDatas)
-        console.log(res)
+        // if (!isNewPostValid(postDatas)) return displayInvalidInput()
+        const post = formDataToObject( formDatas ) 
+        const res = await addPost(post)
+        redirect( `/${slugify(post.title)}` )
     }
 
     return (
         <div className="my-10 text-center md:text-left">
             <div className="text-4xl md:text-6xl font-serif py-6">Nouvel Article ?</div>
-            <Article hadleSubmit={handleSubmit} />
+            <Article handleSubmit={handleSubmit} />
         </div>
     );
 };

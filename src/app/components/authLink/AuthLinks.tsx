@@ -25,11 +25,16 @@ const AuthLinks = ({ className }) => {
                     onClick={() => setOpen(!open)} 
                     src={data?.user?.image} 
                     alt="Profile picture" />
-                <div className={classNames('flex flex-col gap-1 absolute rounded mt-1 p-2 min-w-40 bg-gray-800 text-gray-200 translate-y-1/4 -translate-x-1/4', {hidden: !open})}>
-                    <div className="rounded border-b border-gray-300 mb-2">{data?.user?.name}</div>
-                    <Link className="font-mono hover:text-amber-400" href={`/user/${data?.user?.id}`}>Profile</Link>
-                    { isWriter(status, data) && <Link href="/write">Write</Link> }
-                    <div className="cursor-pointer font-mono hover:text-amber-400" onClick={signOut}>Logout</div>
+                <div 
+                    className={
+                        classNames('flex flex-col gap-1 absolute rounded mt-1 p-2 min-w-40 bg-gray-800 text-gray-200 translate-y-1/4 -translate-x-1/4', {hidden: !open})
+                    }
+                    onClick={() => setOpen(!open)}
+                >
+                    <div className="pl-2 rounded border-b border-gray-300 mb-2">{data?.user?.name}</div>
+                    <Link className="pl-2 font-mono hover:text-amber-400" href={`/user/${data?.user?.id}`}>Profile</Link>
+                    { isWriter(status, data) && <Link className="pl-2" href="/write">Write</Link> }
+                    <div className="pl-2 cursor-pointer font-mono hover:text-amber-400" onClick={signOut}>Logout</div>
                 </div>
             </div>
             <div className={classNames("flex gap-3", {hidden: isLogged})}>

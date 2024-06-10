@@ -20,7 +20,7 @@ const CommentsArea = (props) => {
                 placeholder="C'est une bonne position ça, complotiste ?"
                 value={value}
                 onChange={e => setValue(e.target.value)} />
-                <Button handleClick={props.handleSubmit} buttonText="Poster" type="button" />
+                <Button handleClick={props.handleSubmit} children="Poster" type="button" />
             </div>
 
             <div className="mt-10">

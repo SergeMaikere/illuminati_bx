@@ -1,3 +1,4 @@
+import latinize from 'latinize'
 
 export const curry = fn => {
     const curried = (...args) => {
@@ -49,6 +50,28 @@ export const splicer = (arr, n) => {
     }
     return myAcc
 }
+
+export const formDataToObject = formData => {
+    return [ ...formData.entries() ].reduce(
+        (obj, pair) => {
+            obj[pair[0]] = pair[1]
+            return obj
+        }, {}
+    )
+}
+
+export const getFormDataByObject = obj => {
+    return [ ...Object.entries(obj) ].reduce(
+        (formData, pair) => {
+            formData.append(pair[0], pair[1])
+            return formData
+        }, new FormData()
+    )
+}
+
+export const  addMonths = ( date, n ) => new Date(date.setMonth( date.getMonth() + n ))
+
+export const slugify = str => latinize( str.toLowerCase().split(' ').join('_').replace(/[*+~.()'"!:@,]/g, '') )
 
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'
 export const isAdmin = (status: string, data:any): boolean => isLoggedIn(status) && data.user.role === "ADMIN"

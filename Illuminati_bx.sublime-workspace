@@ -4,12 +4,152 @@
 		"selected_items":
 		[
 			[
-				"justi",
+				"cla",
+				"className"
+			],
+			[
+				"class",
+				"classNames"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"item",
+				"items-center "
+			],
+			[
+				"center",
+				"items-center "
+			],
+			[
+				"ali",
+				"align-middle "
+			],
+			[
+				"Ed",
+				"EditorOptions"
+			],
+			[
+				"Categ",
+				"CategoryPill"
+			],
+			[
+				"setTe",
+				"setTextBody"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"bg-",
+				"bg-black "
+			],
+			[
+				"h-m",
+				"min-h-min "
+			],
+			[
+				"justify-stretch",
+				"justify-items-stretch "
+			],
+			[
+				"font-extra",
+				"font-extralight "
+			],
+			[
+				"Ne",
+				"NextResponse"
+			],
+			[
+				"formD",
+				"formDataToObject"
+			],
+			[
+				"font-bo",
+				"font-semibold "
+			],
+			[
+				"align",
+				"align-middle "
+			],
+			[
+				"items",
+				"items-center "
+			],
+			[
+				"just",
 				"justify-center "
 			],
 			[
-				"cla",
-				"className"
+				"font-",
+				"font-extralight "
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"border",
+				"border-black "
+			],
+			[
+				"border-b",
+				"border-b-2 "
+			],
+			[
+				"inl",
+				"inline-block "
+			],
+			[
+				"pointer",
+				"cursor-pointer "
+			],
+			[
+				"as",
+				"asyncPipe"
+			],
+			[
+				"getIm",
+				"getImgUrl"
+			],
+			[
+				"Text",
+				"TextEditor"
+			],
+			[
+				"setC",
+				"setCategory"
+			],
+			[
+				"C",
+				"CiCirclePlus"
+			],
+			[
+				"handle",
+				"handleSubmit"
+			],
+			[
+				"setD",
+				"setDocu"
+			],
+			[
+				"descri",
+				"description"
+			],
+			[
+				"subt",
+				"subtitle"
+			],
+			[
+				"justi",
+				"justify-center "
 			],
 			[
 				"isLo",
@@ -40,20 +180,8 @@
 				"LoginPage"
 			],
 			[
-				"just",
-				"justify-around "
-			],
-			[
 				"compa",
 				"comparePasswords"
-			],
-			[
-				"Ne",
-				"NextResponse"
-			],
-			[
-				"pointer",
-				"cursor-pointer "
 			],
 			[
 				"righ",
@@ -96,16 +224,8 @@
 				"translate-x-1/2 "
 			],
 			[
-				"inl",
-				"inline-block "
-			],
-			[
 				"jus",
 				"justify-between "
-			],
-			[
-				"items",
-				"items-center "
 			],
 			[
 				"inline",
@@ -118,10 +238,6 @@
 			[
 				"border-gray",
 				"border-gray-300 "
-			],
-			[
-				"border",
-				"border-b "
 			],
 			[
 				"w-",
@@ -146,10 +262,6 @@
 			[
 				"min-h-",
 				"min-h-full "
-			],
-			[
-				"item",
-				"items-center "
 			],
 			[
 				"height",
@@ -206,10 +318,6 @@
 			[
 				"outline-",
 				"outline-1 "
-			],
-			[
-				"setC",
-				"setComments"
 			],
 			[
 				"asy",
@@ -364,20 +472,12 @@
 				"Category"
 			],
 			[
-				"cat",
-				"categoryColor"
-			],
-			[
 				"getCa",
 				"getCategoryTextColor"
 			],
 			[
 				"justify-",
 				"justify-end "
-			],
-			[
-				"font-",
-				"font-serif "
 			],
 			[
 				"flex",
@@ -414,170 +514,158 @@
 			[
 				"getCategory",
 				"getCategoryColor"
-			],
-			[
-				"bor",
-				"border "
-			],
-			[
-				"col-s",
-				"col-span-2 "
-			],
-			[
-				"col",
-				"columns-3 "
-			],
-			[
-				"font-extra",
-				"font-extralight "
-			],
-			[
-				"betw",
-				"justify-between "
-			],
-			[
-				"txt-re",
-				"text-red-400 "
-			],
-			[
-				"grid-r",
-				"grid-rows-3 "
-			],
-			[
-				"font-ex",
-				"font-extralight "
-			],
-			[
-				"max-h-",
-				"max-h-16 "
-			],
-			[
-				"h-",
-				"h-min "
-			],
-			[
-				"inline-",
-				"inline-flex "
-			],
-			[
-				"text-red",
-				"text-red-500 "
-			],
-			[
-				"te",
-				"text-6xl "
-			],
-			[
-				"shadow",
-				"shadow-md "
-			],
-			[
-				"max",
-				"max-h-0 "
-			],
-			[
-				"alig",
-				"align-bottom "
-			],
-			[
-				"align",
-				"align-middle "
-			],
-			[
-				"center",
-				"content-center "
-			],
-			[
-				"text",
-				"text-3xl "
-			],
-			[
-				"fle",
-				"flex-wrap "
-			],
-			[
-				"rounded",
-				"rounded-lg "
-			],
-			[
-				"font-e",
-				"font-extralight "
-			],
-			[
-				"font",
-				"font-extralight "
-			],
-			[
-				"bold",
-				"font-bold "
-			],
-			[
-				"basel",
-				"align-baseline "
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "Package Control Messages\n========================\n\n\nJavaScript Completions\n----------------------\n\n  JavaScript Completions Package\n  ===============================\n  \n  🎉🎉 ANNOUNCEMENT - NEW PLUGIN \"JavaScript Enhancements\" RELEASED 🎉🎉\n  =======================================================================\n  \n  I developed a new plugin with new features thanks to Flow (javascript static type checker from Facebook).\n  \n  So, I will NO LONGER SUPPORT \"JavaScript Completions\" plugin, except in particular cases. \n  I'm going to focus only on this new one!\n  \n  You can find it on: 👉👉 https://github.com/pichillilorenzo/JavaScriptEnhancements 👈👈\n  \n  This new plugin offers not only a BETTER AUTOCOMPLETE but a lot of FEATURES about creating, \n  developing and managing javascript projects, such as:\n  \n  - JavaScript real-time errors\n  - Code Refactoring\n  - Local bookmarks project\n  - Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)\n  - Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)\n  - Angular v1 and v2 (it includes also v4 and v5) projects\n  - Vue projects (only about the creation at this moment)\n  - React projects (only about the creation at this moment)\n  - React Native projects (only about the creation at this moment. I will add also **NativeScript** support)\n  - Express projects (only about the creation at this moment)\n  - Yeoman generators\n  - etc.\n  \n  You could use it also in existing projects!! \n  \n  SEE the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki\n  to get the complete list of the features that it offers!\n  \n  It will turn Sublime Text into a JavaScript IDE like!\n  =====================================================\n  \n  ## OS SUPPORTED NOW by this new plugin:\n  =======================================\n  \n  👉 Linux (64-bit)\n  👉 Mac OS X \n  👉 Windows (64-bit)\n  \n  Email me for any questions or doubts about this new project on: pichillilorenzo@gmail.com\n  \n  Thanks for your support!!!\n  \n  \n  \n  \n  How To USE \"JavaScript Completions\"\n  ===================================\n  \n  To try it, just write.\n  \n  If you like this plugin, \"Star\" it on ---> https://github.com/pichillilorenzo/JavaScript-Completions <---\n  \n  jQuery and NativeScript completions disabled by default!\n  You can enable them on Preferences -> Package Settings -> JavaScript Completions.\n  \n  Some features could use npm!\n  It will be downloaded automatically with nodejs.\n  \n  Features list:\n  - \"Find JavaScript Description\" Feature\n  - \"On Hover Description\" Feature\n  - \"Evaluate JavaScript\" Feature\n  - \"Can I use?\" Feature\n  - \"JSDoc\" Feature\n  - Context menu options\n  \n  \n  ENABLE or DISABLE completions\n  =============================\n  \n  You can ENABLE or DISABLE completions! Just go to Preferences -> Package Settings -> JavaScript Completions\n  \n  \n  \"Find JavaScript Description\" Feature\n  =====================================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  You can check the description of function/property/method by selecting the word (or, in case, it will take the first word near the blinking cursor) you want find. \n  \"right-click\" on your mouse and click on \"Find JavaScript Description\".\n  It will show a popup with the list of possible descriptions or, in some case, the direct description. \n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \"On Hover Description\" Feature\n  ==============================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  Just put the cursor over a name of a function, property or constructor and it will appear a little popup with all matching found from the \"/sublime-completions\" list enabled. \n  \n  - F = function\n  - P = property\n  - C = constructor\n  \n  \n  \"Evaluate JavaScript\" Feature\n  =============================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  This feature uses node.js installed locally by this plugin.\n  \n  You can change the path of \"node.js\" and \"npm\" on Preferences -> Package Settings ->  JavaScript Completions -> Settings - Default\n  \n  You can evaluate the entire text selection or the current line! \n  If you select a text region and evaluate it, in the gutter of the editor will appear 2 white dots.\n  The first white dot represents the start of the region and the second white dot represents the end of the region.\n  You can eventually modify the region and, without reselect the same region, you can evaluate it again! \n  If you want hide this 2 dots, there is an entry on the context menu \"Evaluate JavaScript\".\n  \n  When you evaluate code, this plugin will prepend \"use strict\"; automaticaly!\n  \n  There are two main mode to evaluate code:\n  - eval, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_e_eval_script\n  - print, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_p_print_script\n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \n  \"Can I use?\" Feature\n  ====================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  This feature uses \"can i use\" json data from this repository: https://github.com/Fyrd/caniuse, that contains raw data from the http://caniuse.com support tables.\n  Thanks to @Fyrd.\n  \n  You can use this feature in HTML, CSS and JavaScript context!\n  Just put the cursor on the word you want to check, \"right-click\" -> \"Can I use?\" and it will appear an input panel with all items that have a name matching with the word.\n  You can use key-map: ctrl+alt+w. Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  After selecting an item from the list, it will appear a popup with all information from the http://caniuse.com support tables.\n  You can find it under \"Tools\" menu -> \"JavaScript Completions\" -> Search on \"Can I use\" list.\n  \n  \n  \"JSDoc\" Feature\n  ===============\n  \n  Supported only by Sublime Text 3\n  \n  Requires npm\n  \n  This feature uses https://github.com/jsdoc3/jsdoc to generate API documentation.\n  \n  You can find it under \"Tools\" menu -> \"JavaScript Completions\".\n  \n  There are 2 main menu items:\n  - Generate Documentation\n  - Add jsdoc configuration file to the current project folder\n  \n  These items can be used only with a project folder opened.\n  \"Generate Documentation\" uses the jsdoc command line to generate documentation.\n  It uses conf.json file for configuration.\n  The options (with default values) availables are:\n  {\n    \"tags\": {\n      \"allowUnknownTags\": true,\n      \"dictionaries\": [\"jsdoc\",\"closure\"]\n    },\n    \"source\": {\n      \"include\": [  ],\n      \"exclude\": [  ],\n      \"includePattern\": \".+\\\\.js(doc|x)?$\",\n      \"excludePattern\": \"(^|\\\\/|\\\\\\\\)_\"\n    },\n    \"opts\": {\n      \"template\": \"templates/default\",\n      \"encoding\": \"utf8\",\n      \"destination\": \"./out/\",\n      \"recurse\": true,\n      \"tutorials\": \"\"\n    },\n    \"plugins\": [],\n    \"templates\": {\n      \"cleverLinks\": false,\n      \"monospaceLinks\": false\n    }\n  }\n  \n  \"Add jsdoc configuration file to the current project folder\" will add a conf.json file with default values to the current project folder.\n  \n  How to use JSDoc: http://usejsdoc.org/\n  \n  \n  Context menu options\n  ====================\n  \n  Context menu options:\n  - Surround With\n  - Delete Surrounded\n  - Create Class from object literal\n  - Sort array\n  - Split string lines to variable\n  \n  ## Surround With ##\n  \n  You MUST first select text to \"enable\" these options.\n  \n  You can surround code with:\n  - if statement\n  - if else statement (this works only if you selected 2 regions)\n  - while statement\n  - do while statement\n  - for statement\n  - try catch statement\n  - try catch finally statement\n  \n  This option works also on multiple selections at once.\n  \n  ## Delete Surrounded ##\n  \n  Options are:\n  - Strip quoted string\n  \n  This option works also on multiple selections at once.\n  \n  ## Create Class from object literal ##\n  \n  This option create a JavaScript Class from an object literal (Constructor with all setter and getter for each field).\n  You can set default values or use the string \"required\" to say that a field hasn't a default value.\n  To work properly, you MUST declare a variable and assign an object literal to it, like this example:\n  \n  var Person = {\n    name: \"required\",\n    surname: \"required\",\n    email: \"\",\n    age: 18\n  }\n  \n  This option works also on multiple selections at once.\n  \n  ## Sort array ##\n  \n  Just put the cursor between brackets and will appear a menu with these options:\n  - Sort array ASC ( compare function: function(x,y){return x-y;} )\n  - Sort array DESC ( compare function: function(x,y){return y-x;} )\n  - Sort array alphabetically ASC\n  - Sort array alphabetically DESC\n  \n  This option works also on multiple selections at once.\n  \n  ## Split string lines to variable ##\n  \n  Just put the cursor between a string with multiple lines and this option will appear in the context menu.\n  It will split the string and for each line will be concatenated to a variable named \"str\".\n  This option works also on multiple selections at once.\n  \n  MIT License\n\n\nJavaScript Enhancements\n-----------------------\n\n  =================================================================\n  ** THIS PLUGIN IS IN BETA! Thanks for your support in advance! **\n  =================================================================\n  \n  If you like it, remember to star it ⭐ on GitHub: https://github.com/pichillilorenzo/JavaScriptEnhancements\n  \n  ** USAGE **\n  ===========\n  \n  See how it works on the Wiki: 👉👉 https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki 👈👈\n  \n  A little introduction to this plugin could be found in this css-tricks.com article: \"Turn Sublime Text 3 into a JavaScript IDE\"\n  👉👉 https://css-tricks.com/turn-sublime-text-3-into-a-javascript-ide 👈👈\n  \n  \n  *****************************************************************************\n  *                                                                           *\n  *             Do you want to help me develop this plugin?                   *\n  *                                                                           *\n  *                     Become a member of the team!                          *\n  * (see https://github.com/pichillilorenzo/JavaScriptEnhancements/issues/51) *\n  *                                                                           *\n  *****************************************************************************\n  \n  \n  ** WHAT IS THIS? **\n  ===================\n  \n  This plugin uses Flow (javascript static type checker from Facebook) under the hood.\n  \n  It offers better javascript autocomplete and a lot of features about creating, \n  developing and managing javascript projects, such as:\n  \n  - Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)\n  - Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)\n  - Angular v1 and v2 (it includes also v4 and v5) projects\n  - Vue projects (only about the creation at this moment, see https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Example-Vue.js-project)\n  - React projects (only about the creation at this moment)\n  - React Native projects (only about the creation at this moment. I will add also NativeScript support)\n  - Express projects (only about the creation at this moment)\n  - Yeoman generators\n  - Local bookmarks project\n  - JavaScript real-time errors\n  - Code Refactoring\n  - etc.\n  \n  You could use it also in existing projects (see the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Using-it-with-an-existing-project)!\n  \n  It turns Sublime Text into a JavaScript IDE like!\n  \n  This project is based on my other Sublime Text plugin JavaScript Completions (https://github.com/pichillilorenzo/JavaScript-Completions)\n  \n  ** NOTE **\n  If you want use this plugin, you may want uninstall/disable the JavaScript Completions plugin, if installed.\n  \n  ** OS SUPPORTED **\n  ==================\n  \n  👉 Linux (64-bit)\n  👉 Mac OS X \n  👉 Windows (64-bit): released without the use of TerminalView plugin. For each feature (like also creating a project) will be used the cmd.exe shell (so during the creation of a project don't close it until it finishes!). Unfortunately the TerminalView plugin supports only Linux-based OS 😞. See https://github.com/Wramberg/TerminalView/issues/3#issuecomment-390434623, that is a workaround using WSL (Windows Subsystem for Linux).\n  \n  ❗❗ Dependencies ❗❗\n  =======================\n  \n  In order to work properly, this plugin has some dependencies:\n  \n  👉 Sublime Text 3 (build 3124 or newer)\n  👉 Node.js and npm (https://nodejs.org or nvm (https://github.com/creationix/nvm))\n  👉 TerminalView (only for Linux and Mac OS X) sublime text plugin (https://github.com/Wramberg/TerminalView)\n  \n  Not required, but useful for typescript files (Flow wont work on this type of files):\n  \n  👉 TypeScript sublime text plugin (https://github.com/Microsoft/TypeScript-Sublime-Plugin) \n  \n  ** Flow Requirements **\n  =======================\n  \n  It use [Flow](https://github.com/facebook/flow) for type checking and auto-completions.\n  \n  👉 Mac OS X\n  👉 Linux (64-bit)\n  👉 Windows (64-bit)\n  \n  Email me for any questions or doubts about this new project on: pichillilorenzo@gmail.com\n  \n  ** Donation **\n  ==============\n  \n  If this project help you reduce time to develop and also you like it, please support it with a donation 😄👍. Thanks!\n  \n  Open Collective: https://opencollective.com/javascriptenhancements/donate\n  PayPal: https://www.paypal.me/LorenzoPichilli\n  \n  Thanks anyway for your support! 😄😄\n  \n  MIT License\n",
+			"file": "prisma/schema.prisma",
 			"settings":
 			{
-				"buffer_size": 13716,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 3035,
+				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
-				[
-					1,
-					1,
-					"package_control_message",
-					{
-						"message": "\n\nJavaScript Completions\n----------------------\n\n  JavaScript Completions Package\n  ===============================\n  \n  🎉🎉 ANNOUNCEMENT - NEW PLUGIN \"JavaScript Enhancements\" RELEASED 🎉🎉\n  =======================================================================\n  \n  I developed a new plugin with new features thanks to Flow (javascript static type checker from Facebook).\n  \n  So, I will NO LONGER SUPPORT \"JavaScript Completions\" plugin, except in particular cases. \n  I'm going to focus only on this new one!\n  \n  You can find it on: 👉👉 https://github.com/pichillilorenzo/JavaScriptEnhancements 👈👈\n  \n  This new plugin offers not only a BETTER AUTOCOMPLETE but a lot of FEATURES about creating, \n  developing and managing javascript projects, such as:\n  \n  - JavaScript real-time errors\n  - Code Refactoring\n  - Local bookmarks project\n  - Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)\n  - Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)\n  - Angular v1 and v2 (it includes also v4 and v5) projects\n  - Vue projects (only about the creation at this moment)\n  - React projects (only about the creation at this moment)\n  - React Native projects (only about the creation at this moment. I will add also **NativeScript** support)\n  - Express projects (only about the creation at this moment)\n  - Yeoman generators\n  - etc.\n  \n  You could use it also in existing projects!! \n  \n  SEE the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki\n  to get the complete list of the features that it offers!\n  \n  It will turn Sublime Text into a JavaScript IDE like!\n  =====================================================\n  \n  ## OS SUPPORTED NOW by this new plugin:\n  =======================================\n  \n  👉 Linux (64-bit)\n  👉 Mac OS X \n  👉 Windows (64-bit)\n  \n  Email me for any questions or doubts about this new project on: pichillilorenzo@gmail.com\n  \n  Thanks for your support!!!\n  \n  \n  \n  \n  How To USE \"JavaScript Completions\"\n  ===================================\n  \n  To try it, just write.\n  \n  If you like this plugin, \"Star\" it on ---> https://github.com/pichillilorenzo/JavaScript-Completions <---\n  \n  jQuery and NativeScript completions disabled by default!\n  You can enable them on Preferences -> Package Settings -> JavaScript Completions.\n  \n  Some features could use npm!\n  It will be downloaded automatically with nodejs.\n  \n  Features list:\n  - \"Find JavaScript Description\" Feature\n  - \"On Hover Description\" Feature\n  - \"Evaluate JavaScript\" Feature\n  - \"Can I use?\" Feature\n  - \"JSDoc\" Feature\n  - Context menu options\n  \n  \n  ENABLE or DISABLE completions\n  =============================\n  \n  You can ENABLE or DISABLE completions! Just go to Preferences -> Package Settings -> JavaScript Completions\n  \n  \n  \"Find JavaScript Description\" Feature\n  =====================================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  You can check the description of function/property/method by selecting the word (or, in case, it will take the first word near the blinking cursor) you want find. \n  \"right-click\" on your mouse and click on \"Find JavaScript Description\".\n  It will show a popup with the list of possible descriptions or, in some case, the direct description. \n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \"On Hover Description\" Feature\n  ==============================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  Just put the cursor over a name of a function, property or constructor and it will appear a little popup with all matching found from the \"/sublime-completions\" list enabled. \n  \n  - F = function\n  - P = property\n  - C = constructor\n  \n  \n  \"Evaluate JavaScript\" Feature\n  =============================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  This feature uses node.js installed locally by this plugin.\n  \n  You can change the path of \"node.js\" and \"npm\" on Preferences -> Package Settings ->  JavaScript Completions -> Settings - Default\n  \n  You can evaluate the entire text selection or the current line! \n  If you select a text region and evaluate it, in the gutter of the editor will appear 2 white dots.\n  The first white dot represents the start of the region and the second white dot represents the end of the region.\n  You can eventually modify the region and, without reselect the same region, you can evaluate it again! \n  If you want hide this 2 dots, there is an entry on the context menu \"Evaluate JavaScript\".\n  \n  When you evaluate code, this plugin will prepend \"use strict\"; automaticaly!\n  \n  There are two main mode to evaluate code:\n  - eval, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_e_eval_script\n  - print, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_p_print_script\n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \n  \"Can I use?\" Feature\n  ====================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  This feature uses \"can i use\" json data from this repository: https://github.com/Fyrd/caniuse, that contains raw data from the http://caniuse.com support tables.\n  Thanks to @Fyrd.\n  \n  You can use this feature in HTML, CSS and JavaScript context!\n  Just put the cursor on the word you want to check, \"right-click\" -> \"Can I use?\" and it will appear an input panel with all items that have a name matching with the word.\n  You can use key-map: ctrl+alt+w. Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  After selecting an item from the list, it will appear a popup with all information from the http://caniuse.com support tables.\n  You can find it under \"Tools\" menu -> \"JavaScript Completions\" -> Search on \"Can I use\" list.\n  \n  \n  \"JSDoc\" Feature\n  ===============\n  \n  Supported only by Sublime Text 3\n  \n  Requires npm\n  \n  This feature uses https://github.com/jsdoc3/jsdoc to generate API documentation.\n  \n  You can find it under \"Tools\" menu -> \"JavaScript Completions\".\n  \n  There are 2 main menu items:\n  - Generate Documentation\n  - Add jsdoc configuration file to the current project folder\n  \n  These items can be used only with a project folder opened.\n  \"Generate Documentation\" uses the jsdoc command line to generate documentation.\n  It uses conf.json file for configuration.\n  The options (with default values) availables are:\n  {\n    \"tags\": {\n      \"allowUnknownTags\": true,\n      \"dictionaries\": [\"jsdoc\",\"closure\"]\n    },\n    \"source\": {\n      \"include\": [  ],\n      \"exclude\": [  ],\n      \"includePattern\": \".+\\\\.js(doc|x)?$\",\n      \"excludePattern\": \"(^|\\\\/|\\\\\\\\)_\"\n    },\n    \"opts\": {\n      \"template\": \"templates/default\",\n      \"encoding\": \"utf8\",\n      \"destination\": \"./out/\",\n      \"recurse\": true,\n      \"tutorials\": \"\"\n    },\n    \"plugins\": [],\n    \"templates\": {\n      \"cleverLinks\": false,\n      \"monospaceLinks\": false\n    }\n  }\n  \n  \"Add jsdoc configuration file to the current project folder\" will add a conf.json file with default values to the current project folder.\n  \n  How to use JSDoc: http://usejsdoc.org/\n  \n  \n  Context menu options\n  ====================\n  \n  Context menu options:\n  - Surround With\n  - Delete Surrounded\n  - Create Class from object literal\n  - Sort array\n  - Split string lines to variable\n  \n  ## Surround With ##\n  \n  You MUST first select text to \"enable\" these options.\n  \n  You can surround code with:\n  - if statement\n  - if else statement (this works only if you selected 2 regions)\n  - while statement\n  - do while statement\n  - for statement\n  - try catch statement\n  - try catch finally statement\n  \n  This option works also on multiple selections at once.\n  \n  ## Delete Surrounded ##\n  \n  Options are:\n  - Strip quoted string\n  \n  This option works also on multiple selections at once.\n  \n  ## Create Class from object literal ##\n  \n  This option create a JavaScript Class from an object literal (Constructor with all setter and getter for each field).\n  You can set default values or use the string \"required\" to say that a field hasn't a default value.\n  To work properly, you MUST declare a variable and assign an object literal to it, like this example:\n  \n  var Person = {\n    name: \"required\",\n    surname: \"required\",\n    email: \"\",\n    age: 18\n  }\n  \n  This option works also on multiple selections at once.\n  \n  ## Sort array ##\n  \n  Just put the cursor between brackets and will appear a menu with these options:\n  - Sort array ASC ( compare function: function(x,y){return x-y;} )\n  - Sort array DESC ( compare function: function(x,y){return y-x;} )\n  - Sort array alphabetically ASC\n  - Sort array alphabetically DESC\n  \n  This option works also on multiple selections at once.\n  \n  ## Split string lines to variable ##\n  \n  Just put the cursor between a string with multiple lines and this option will appear in the context menu.\n  It will split the string and for each line will be concatenated to a variable named \"str\".\n  This option works also on multiple selections at once.\n  \n  MIT License\n"
-					},
-					"AQAAAAAAAAAAAAAAzyMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					1,
-					1,
-					"package_control_message",
-					{
-						"message": "\n\nJavaScript Enhancements\n-----------------------\n\n  =================================================================\n  ** THIS PLUGIN IS IN BETA! Thanks for your support in advance! **\n  =================================================================\n  \n  If you like it, remember to star it ⭐ on GitHub: https://github.com/pichillilorenzo/JavaScriptEnhancements\n  \n  ** USAGE **\n  ===========\n  \n  See how it works on the Wiki: 👉👉 https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki 👈👈\n  \n  A little introduction to this plugin could be found in this css-tricks.com article: \"Turn Sublime Text 3 into a JavaScript IDE\"\n  👉👉 https://css-tricks.com/turn-sublime-text-3-into-a-javascript-ide 👈👈\n  \n  \n  *****************************************************************************\n  *                                                                           *\n  *             Do you want to help me develop this plugin?                   *\n  *                                                                           *\n  *                     Become a member of the team!                          *\n  * (see https://github.com/pichillilorenzo/JavaScriptEnhancements/issues/51) *\n  *                                                                           *\n  *****************************************************************************\n  \n  \n  ** WHAT IS THIS? **\n  ===================\n  \n  This plugin uses Flow (javascript static type checker from Facebook) under the hood.\n  \n  It offers better javascript autocomplete and a lot of features about creating, \n  developing and managing javascript projects, such as:\n  \n  - Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)\n  - Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)\n  - Angular v1 and v2 (it includes also v4 and v5) projects\n  - Vue projects (only about the creation at this moment, see https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Example-Vue.js-project)\n  - React projects (only about the creation at this moment)\n  - React Native projects (only about the creation at this moment. I will add also NativeScript support)\n  - Express projects (only about the creation at this moment)\n  - Yeoman generators\n  - Local bookmarks project\n  - JavaScript real-time errors\n  - Code Refactoring\n  - etc.\n  \n  You could use it also in existing projects (see the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki/Using-it-with-an-existing-project)!\n  \n  It turns Sublime Text into a JavaScript IDE like!\n  \n  This project is based on my other Sublime Text plugin JavaScript Completions (https://github.com/pichillilorenzo/JavaScript-Completions)\n  \n  ** NOTE **\n  If you want use this plugin, you may want uninstall/disable the JavaScript Completions plugin, if installed.\n  \n  ** OS SUPPORTED **\n  ==================\n  \n  👉 Linux (64-bit)\n  👉 Mac OS X \n  👉 Windows (64-bit): released without the use of TerminalView plugin. For each feature (like also creating a project) will be used the cmd.exe shell (so during the creation of a project don't close it until it finishes!). Unfortunately the TerminalView plugin supports only Linux-based OS 😞. See https://github.com/Wramberg/TerminalView/issues/3#issuecomment-390434623, that is a workaround using WSL (Windows Subsystem for Linux).\n  \n  ❗❗ Dependencies ❗❗\n  =======================\n  \n  In order to work properly, this plugin has some dependencies:\n  \n  👉 Sublime Text 3 (build 3124 or newer)\n  👉 Node.js and npm (https://nodejs.org or nvm (https://github.com/creationix/nvm))\n  👉 TerminalView (only for Linux and Mac OS X) sublime text plugin (https://github.com/Wramberg/TerminalView)\n  \n  Not required, but useful for typescript files (Flow wont work on this type of files):\n  \n  👉 TypeScript sublime text plugin (https://github.com/Microsoft/TypeScript-Sublime-Plugin) \n  \n  ** Flow Requirements **\n  =======================\n  \n  It use [Flow](https://github.com/facebook/flow) for type checking and auto-completions.\n  \n  👉 Mac OS X\n  👉 Linux (64-bit)\n  👉 Windows (64-bit)\n  \n  Email me for any questions or doubts about this new project on: pichillilorenzo@gmail.com\n  \n  ** Donation **\n  ==============\n  \n  If this project help you reduce time to develop and also you like it, please support it with a donation 😄👍. Thanks!\n  \n  Open Collective: https://opencollective.com/javascriptenhancements/donate\n  PayPal: https://www.paypal.me/LorenzoPichilli\n  \n  Thanks anyway for your support! 😄😄\n  \n  MIT License\n"
-					},
-					"AQAAAM8jAAAAAAAAlDUAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAjQIAAAAAAACNAgAAAAAAAAAAAAAAAPC/"
-				]
 			]
 		},
 		{
-			"contents": "import { Post } from './Posts';\nimport { Comment } from './Comments';\nimport bcrypt from 'bcrypt'\nimport { getDownloadURL, getStorage, ref, uploadBytes } from \"firebase/storage\"\nimport { app } from './firebase';\nimport { asyncPipe } from './Helper';\n\nexport type User = {\n  id: string;    \n  name: string;\n  email: string;    \n  image: string;\n  password: string;\n  status: string;\n  posts: Post[];\n  comment: Comment[];\n}\n\nconst saltRounds = 10\n\nconst hash = async (pswd: string): string => await bcrypt.hash( pswd, saltRounds)\n\nconst storageCloud = async (file) => {\n    const storage =  getStorage(app)\n    const storageRef = ref(storage, `images/${new Date().getTime()}${file.name}`)\n    const snapshot = await uploadBytes(storageRef, file)\n    return await getDownloadURL(snapshot.ref)\n}\n\nconst setPswd = async (user: any): any => {\n    const hashed = await hash(user.password)\n    return { ...user, password: hashed }\n}\n\nconst comparePasswords = async (pswd: string, hash: string): boolean => {\n    \n    return await bcrypt.compare( pswd, hash )\n    \n}\n\nconst getImgUrl = async (user: any): any => {\n    if (user.image.name === 'undefined') return { ...user, image: process.env.DEFAULT_PP }\n    const url = await storageCloud(user.image)\n    return { ...user, image: url }\n}\n\nconst setUser = asyncPipe( setPswd, getImgUrl )\n\nexport const login = async cred => {\n    let user = null\n    const { email, password } = cred\n    user = await getUserByEmail(email)\n    const valid = await comparePasswords(password, user.password)\n    console.log({valid})\n    return (!user || !valid) ? null : user\n}\n\nexport const getUserById = async userId => {\n    const res = await fetch(\n        `http://localhost:3000/api/user?action=userId`,\n        {\n            method: 'POST',\n            body: JSON.stringify( {userId} ),\n            headers: {\n                'Content-Type': 'application/json',\n                'Accept': 'application/json'\n            }\n        }\n    )\n    if (!res.ok) throw new Error('User not found')\n    return await res.json()\n}\n\nexport const getUserByEmail = async email => {\n    const res = await fetch(\n        \"http://localhost:3000/api/user?action=user\", \n        {\n            method: 'POST', \n            body: JSON.stringify( {email} ),\n            headers: {\n                'Content-Type': 'application/json',\n                'Accept': 'application/json'\n            }\n        }\n    )\n    if (!res.ok) throw new Error('User not found')\n    return await res.json()\n}\n \nexport const addUser =  async (user: any) => {\n    const newUser = await setUser(user)\n    const res = await fetch(\n        \"http://localhost:3000/api/user?action=create\", \n        {\n            method: 'POST', \n            headers: {\n                'Content-Type': 'application/json',\n                'Accept': 'application/json'\n            },\n            body: JSON.stringify(newUser)\n        }\n    )\n    if (!res.ok) throw new Error('SignIn Failed')\n    return await res.json()\n}   ",
-			"file": "src/app/utils/Users.ts",
-			"file_size": 3086,
-			"file_write_time": 133603456916602470,
+			"file": "src/app/page.tsx",
 			"settings":
 			{
-				"buffer_size": 2982,
+				"buffer_size": 903,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					5,
+					7,
 					1,
 					"insert",
 					{
-						"characters": "\nconso"
+						"characters": "\nconst"
 					},
-					"BwAAAJ4FAAAAAAAAnwUAAAAAAAAAAAAAnwUAAAAAAACjBQAAAAAAAAAAAACjBQAAAAAAAKQFAAAAAAAAAAAAAKQFAAAAAAAApQUAAAAAAAAAAAAApQUAAAAAAACmBQAAAAAAAAAAAACmBQAAAAAAAKcFAAAAAAAAAAAAAKcFAAAAAAAAqAUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJ4FAAAAAAAAngUAAAAAAAAAAAAAAADwvw"
+					"BwAAAL4BAAAAAAAAvwEAAAAAAAAAAAAAvwEAAAAAAADDAQAAAAAAAAAAAADDAQAAAAAAAMQBAAAAAAAAAAAAAMQBAAAAAAAAxQEAAAAAAAAAAAAAxQEAAAAAAADGAQAAAAAAAAAAAADGAQAAAAAAAMcBAAAAAAAAAAAAAMcBAAAAAAAAyAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgEAAAAAAAC+AQAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					6,
+					8,
+					1,
+					"insert",
+					{
+						"characters": " recents"
+					},
+					"CAAAAMgBAAAAAAAAyQEAAAAAAAAAAAAAyQEAAAAAAADKAQAAAAAAAAAAAADKAQAAAAAAAMsBAAAAAAAAAAAAAMsBAAAAAAAAzAEAAAAAAAAAAAAAzAEAAAAAAADNAQAAAAAAAAAAAADNAQAAAAAAAM4BAAAAAAAAAAAAAM4BAAAAAAAAzwEAAAAAAAAAAAAAzwEAAAAAAADQAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyAEAAAAAAADIAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": " :"
+					},
+					"AgAAANABAAAAAAAA0QEAAAAAAAAAAAAA0QEAAAAAAADSAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0AEAAAAAAADQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"left_delete",
+					null,
+					"AQAAANEBAAAAAAAA0QEAAAAAAAABAAAAOg",
+					"AQAAAAAAAAABAAAA0gEAAAAAAADSAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "="
+					},
+					"AQAAANEBAAAAAAAA0gEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0QEAAAAAAADRAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " await"
+					},
+					"BgAAANIBAAAAAAAA0wEAAAAAAAAAAAAA0wEAAAAAAADUAQAAAAAAAAAAAADUAQAAAAAAANUBAAAAAAAAAAAAANUBAAAAAAAA1gEAAAAAAAAAAAAA1gEAAAAAAADXAQAAAAAAAAAAAADXAQAAAAAAANgBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gEAAAAAAADSAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " get"
+					},
+					"BAAAANgBAAAAAAAA2QEAAAAAAAAAAAAA2QEAAAAAAADaAQAAAAAAAAAAAADaAQAAAAAAANsBAAAAAAAAAAAAANsBAAAAAAAA3AEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2AEAAAAAAADYAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "RecentPost"
+					},
+					"CgAAANwBAAAAAAAA3QEAAAAAAAAAAAAA3QEAAAAAAADeAQAAAAAAAAAAAADeAQAAAAAAAN8BAAAAAAAAAAAAAN8BAAAAAAAA4AEAAAAAAAAAAAAA4AEAAAAAAADhAQAAAAAAAAAAAADhAQAAAAAAAOIBAAAAAAAAAAAAAOIBAAAAAAAA4wEAAAAAAAAAAAAA4wEAAAAAAADkAQAAAAAAAAAAAADkAQAAAAAAAOUBAAAAAAAAAAAAAOUBAAAAAAAA5gEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3AEAAAAAAADcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AQAAAOYBAAAAAAAA5wEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5gEAAAAAAADmAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAOcBAAAAAAAA6QEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wEAAAAAAADnAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert_import",
+					null,
+					"AQAAAAAAAAAAAAAAjAMAAAAAAABdAwAAaW1wb3J0IEZlYXR1cmVkIGZyb20gJy4vY29tcG9uZW50cy9mZWF0dXJlZC9GZWF0dXJlZCc7CmltcG9ydCBDYXRlZ29yaWVzIGZyb20gJy4vY29tcG9uZW50cy9jYXRlZ29yaWVzL0NhdGVnb3JpZXMnOwppbXBvcnQgQ2FyZExpc3QgZnJvbSAnLi9jb21wb25lbnRzL2NhcmRMaXN0L0NhcmRMaXN0JzsKaW1wb3J0IE1lbnUgZnJvbSAnLi9jb21wb25lbnRzL21lbnUvTWVudSc7CmltcG9ydCB7IGdldFJlY2VudHMgfSBmcm9tICcuL3V0aWxzL2dldFJlY2VudHMnOwppbXBvcnQgeyBnZXRBbGxDYXRlZ29yaWVzIH0gZnJvbSAnLi91dGlscy9DYXRlZ29yaWVzJzsKaW1wb3J0IHsgdm95ZXVyIH0gZnJvbSAnLi91dGlscy9IZWxwZXInOwoKZXhwb3J0IGRlZmF1bHQgYXN5bmMgZnVuY3Rpb24gSG9tZSgpIHsKICAgIGNvbnN0IGNhdGVnb3JpZXMgPSBhd2FpdCBnZXRBbGxDYXRlZ29yaWVzKCkKICAgIGNvbnN0IHJlY2VudHMgPSBhd2FpdCBnZXRSZWNlbnRQb3N0cygpCiAgICByZXR1cm4gKAogICAgICAgIDxkaXY+CiAgICAgICAgICAgIDxGZWF0dXJlZC8+CiAgICAgICAgICAgIDxDYXRlZ29yaWVzIGNhdGVnb3JpZXM9e2NhdGVnb3JpZXN9Lz4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9IiBtdC0xMCBtZDpncmlkIHNtOmdyaWQtY29scy0yIG1kOmdyaWQtY29scy0zIGdhcC02Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtZDpjb2wtc3Bhbi0yIj48Q2FyZExpc3QgdGl0bGU9IkFydGljbGVzIFLDqWNlbnRzIiBjYXJkcz17Z2V0UmVjZW50cygpfS8+PC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2PjxNZW51Lz48L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICApCn0K",
+					"AQAAAAAAAAABAAAA3AEAAAAAAADcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "\ncosnoe"
+					},
+					"CAAAABkCAAAAAAAAGgIAAAAAAAAAAAAAGgIAAAAAAAAeAgAAAAAAAAAAAAAeAgAAAAAAAB8CAAAAAAAAAAAAAB8CAAAAAAAAIAIAAAAAAAAAAAAAIAIAAAAAAAAhAgAAAAAAAAAAAAAhAgAAAAAAACICAAAAAAAAAAAAACICAAAAAAAAIwIAAAAAAAAAAAAAIwIAAAAAAAAkAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQIAAAAAAAAZAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"left_delete",
+					null,
+					"AQAAACMCAAAAAAAAIwIAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAJAIAAAAAAAAkAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
 					1,
 					"insert_completion",
 					{
@@ -587,547 +675,979 @@
 						"must_insert": false,
 						"trigger": "console"
 					},
-					"AgAAAKMFAAAAAAAAowUAAAAAAAAFAAAAY29uc2+jBQAAAAAAAKoFAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKgFAAAAAAAAqAUAAAAAAAAAAAAAAADwvw"
+					"AgAAAB4CAAAAAAAAHgIAAAAAAAAFAAAAY29zbm8eAgAAAAAAACUCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIwIAAAAAAAAjAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					7,
-					1,
-					"insert",
-					{
-						"characters": "/"
-					},
-					"AQAAAKoFAAAAAAAAqwUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKoFAAAAAAAAqgUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					8,
-					1,
-					"left_delete",
-					null,
-					"AQAAAKoFAAAAAAAAqgUAAAAAAAABAAAALw",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKsFAAAAAAAAqwUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					9,
+					38,
 					1,
 					"insert",
 					{
 						"characters": ".log"
 					},
-					"BAAAAKoFAAAAAAAAqwUAAAAAAAAAAAAAqwUAAAAAAACsBQAAAAAAAAAAAACsBQAAAAAAAK0FAAAAAAAAAAAAAK0FAAAAAAAArgUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKoFAAAAAAAAqgUAAAAAAAAAAAAAAADwvw"
+					"BAAAACUCAAAAAAAAJgIAAAAAAAAAAAAAJgIAAAAAAAAnAgAAAAAAAAAAAAAnAgAAAAAAACgCAAAAAAAAAAAAACgCAAAAAAAAKQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQIAAAAAAAAlAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					10,
+					39,
 					1,
 					"insert_snippet",
 					{
 						"contents": "($0)"
 					},
-					"AQAAAK4FAAAAAAAAsAUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK4FAAAAAAAArgUAAAAAAAAAAAAAAADwvw"
+					"AQAAACkCAAAAAAAAKwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQIAAAAAAAApAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					11,
+					40,
 					1,
 					"insert",
 					{
-						"characters": "user"
+						"characters": "recents"
 					},
-					"BAAAAK8FAAAAAAAAsAUAAAAAAAAAAAAAsAUAAAAAAACxBQAAAAAAAAAAAACxBQAAAAAAALIFAAAAAAAAAAAAALIFAAAAAAAAswUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK8FAAAAAAAArwUAAAAAAAAAAAAAAADwvw"
+					"BwAAACoCAAAAAAAAKwIAAAAAAAAAAAAAKwIAAAAAAAAsAgAAAAAAAAAAAAAsAgAAAAAAAC0CAAAAAAAAAAAAAC0CAAAAAAAALgIAAAAAAAAAAAAALgIAAAAAAAAvAgAAAAAAAAAAAAAvAgAAAAAAADACAAAAAAAAAAAAADACAAAAAAAAMQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKgIAAAAAAAAqAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					14,
-					1,
-					"paste",
-					null,
-					"AQAAAJ8FAAAAAAAAtQUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALQFAAAAAAAAtAUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					19,
+					43,
 					1,
 					"insert",
 					{
-						"characters": "pass"
+						"characters": "coyeur"
 					},
-					"BQAAAMUFAAAAAAAAxgUAAAAAAAAAAAAAxgUAAAAAAADGBQAAAAAAAAQAAAB1c2VyxgUAAAAAAADHBQAAAAAAAAAAAADHBQAAAAAAAMgFAAAAAAAAAAAAAMgFAAAAAAAAyQUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMkFAAAAAAAAxQUAAAAAAAAAAAAAAADwvw"
+					"BwAAAB4CAAAAAAAAHwIAAAAAAAAAAAAAHwIAAAAAAAAfAgAAAAAAAAsAAABjb25zb2xlLmxvZx8CAAAAAAAAIAIAAAAAAAAAAAAAIAIAAAAAAAAhAgAAAAAAAAAAAAAhAgAAAAAAACICAAAAAAAAAAAAACICAAAAAAAAIwIAAAAAAAAAAAAAIwIAAAAAAAAkAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQIAAAAAAAAeAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					20,
+					45,
 					1,
-					"insert_completion",
-					{
-						"completion": "password",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "password"
-					},
-					"AgAAAMUFAAAAAAAAxQUAAAAAAAAEAAAAcGFzc8UFAAAAAAAAzQUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMkFAAAAAAAAyQUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": ","
-					},
-					"AQAAAM0FAAAAAAAAzgUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM0FAAAAAAAAzQUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					22,
-					1,
-					"insert",
-					{
-						"characters": " user."
-					},
-					"BgAAAM4FAAAAAAAAzwUAAAAAAAAAAAAAzwUAAAAAAADQBQAAAAAAAAAAAADQBQAAAAAAANEFAAAAAAAAAAAAANEFAAAAAAAA0gUAAAAAAAAAAAAA0gUAAAAAAADTBQAAAAAAAAAAAADTBQAAAAAAANQFAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM4FAAAAAAAAzgUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					23,
-					1,
-					"insert_completion",
-					{
-						"completion": "password",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": true,
-						"trigger": "password"
-					},
-					"AQAAANQFAAAAAAAA3AUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANQFAAAAAAAA1AUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					24,
-					15,
 					"left_delete",
 					null,
-					"DwAAANsFAAAAAAAA2wUAAAAAAAABAAAAZNoFAAAAAAAA2gUAAAAAAAABAAAActkFAAAAAAAA2QUAAAAAAAABAAAAb9gFAAAAAAAA2AUAAAAAAAABAAAAd9cFAAAAAAAA1wUAAAAAAAABAAAAc9YFAAAAAAAA1gUAAAAAAAABAAAAc9UFAAAAAAAA1QUAAAAAAAABAAAAYdQFAAAAAAAA1AUAAAAAAAABAAAAcNMFAAAAAAAA0wUAAAAAAAABAAAALtIFAAAAAAAA0gUAAAAAAAABAAAActEFAAAAAAAA0QUAAAAAAAABAAAAZdAFAAAAAAAA0AUAAAAAAAABAAAAc88FAAAAAAAAzwUAAAAAAAABAAAAdc4FAAAAAAAAzgUAAAAAAAABAAAAIM0FAAAAAAAAzQUAAAAAAAABAAAALA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANwFAAAAAAAA3AUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					27,
-					1,
-					"paste",
-					null,
-					"AQAAALUFAAAAAAAAzwUAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM4FAAAAAAAAzgUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					31,
-					1,
-					"insert",
-					{
-						"characters": "user."
-					},
-					"BQAAAN8FAAAAAAAA4AUAAAAAAAAAAAAA4AUAAAAAAADhBQAAAAAAAAAAAADhBQAAAAAAAOIFAAAAAAAAAAAAAOIFAAAAAAAA4wUAAAAAAAAAAAAA4wUAAAAAAADkBQAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN8FAAAAAAAA3wUAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					38,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Delete Line.sublime-macro"
-					},
-					"AQAAAJ8FAAAAAAAAnwUAAAAAAABPAAAAICAgIGNvbnNvbGUubG9nKHVzZXIpCiAgICBjb25zb2xlLmxvZyhwYXNzd29yZCkKICAgIGNvbnNvbGUubG9nKHVzZXIucGFzc3dvcmQpCg",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO0FAAAAAAAAowUAAAAAAAAAAAAAAADwvw"
+					"AQAAAB4CAAAAAAAAHgIAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAAHwIAAAAAAAAfAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					46,
 					1,
-					"cut",
-					null,
-					"AQAAAOcDAAAAAAAA5wMAAAAAAAAiAAAAYXdhaXQgYmNyeXB0LmNvbXBhcmUoIHBzd2QsIGhhc2ggKQ",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAkEAAAAAAAA5wMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					47,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAOcDAAAAAAAA6QMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOcDAAAAAAAA5wMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					48,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
-					},
-					"AwAAAOgDAAAAAAAA6QMAAAAAAAAAAAAA6QMAAAAAAADqAwAAAAAAAAAAAADpAwAAAAAAAO0DAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOgDAAAAAAAA6AMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					49,
-					1,
 					"insert",
 					{
-						"characters": "try"
+						"characters": "v"
 					},
-					"AwAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAADvAwAAAAAAAPADAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO0DAAAAAAAA7QMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					50,
-					1,
-					"insert",
-					{
-						"characters": " ca"
-					},
-					"AwAAAPADAAAAAAAA8QMAAAAAAAAAAAAA8QMAAAAAAADyAwAAAAAAAAAAAADyAwAAAAAAAPMDAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPADAAAAAAAA8AMAAAAAAAAAAAAAAADwvw"
+					"AQAAAB4CAAAAAAAAHwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHgIAAAAAAAAeAgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					51,
 					1,
-					"insert_completion",
-					{
-						"completion": "callbackify",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "callbackify"
-					},
-					"AgAAAPEDAAAAAAAA8QMAAAAAAAACAAAAY2HxAwAAAAAAAPwDAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPMDAAAAAAAA8wMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					52,
-					14,
 					"left_delete",
 					null,
-					"DgAAAPsDAAAAAAAA+wMAAAAAAAABAAAAefoDAAAAAAAA+gMAAAAAAAABAAAAZvkDAAAAAAAA+QMAAAAAAAABAAAAafgDAAAAAAAA+AMAAAAAAAABAAAAa/cDAAAAAAAA9wMAAAAAAAABAAAAY/YDAAAAAAAA9gMAAAAAAAABAAAAYfUDAAAAAAAA9QMAAAAAAAABAAAAYvQDAAAAAAAA9AMAAAAAAAABAAAAbPMDAAAAAAAA8wMAAAAAAAABAAAAbPIDAAAAAAAA8gMAAAAAAAABAAAAYfEDAAAAAAAA8QMAAAAAAAABAAAAY/ADAAAAAAAA8AMAAAAAAAABAAAAIO8DAAAAAAAA7wMAAAAAAAABAAAAee4DAAAAAAAA7gMAAAAAAAABAAAAcg",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPwDAAAAAAAA/AMAAAAAAAAAAAAAAADwvw"
+					"AQAAAD0DAAAAAAAAPQMAAAAAAAAKAAAAZ2V0UmVjZW50cw",
+					"AQAAAAAAAAABAAAAPQMAAAAAAABHAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					53,
-					1,
-					"insert",
-					{
-						"characters": "c"
-					},
-					"AQAAAO4DAAAAAAAA7wMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO4DAAAAAAAA7gMAAAAAAAAAAAAAAADwvw"
+					2,
+					"left_delete",
+					null,
+					"AgAAAD4DAAAAAAAAPgMAAAAAAAABAAAAKT0DAAAAAAAAPQMAAAAAAAABAAAAKA",
+					"AQAAAAAAAAABAAAAPwMAAAAAAAA/AwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					54,
 					1,
-					"insert_completion",
+					"insert",
 					{
-						"completion": "setCategoryLogoAlt",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "setCategoryLogoAlt"
+						"characters": "recent"
 					},
-					"AgAAAO0DAAAAAAAA7QMAAAAAAAACAAAAdGPtAwAAAAAAAP8DAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO8DAAAAAAAA7wMAAAAAAAAAAAAAAADwvw"
+					"BgAAAD0DAAAAAAAAPgMAAAAAAAAAAAAAPgMAAAAAAAA/AwAAAAAAAAAAAAA/AwAAAAAAAEADAAAAAAAAAAAAAEADAAAAAAAAQQMAAAAAAAAAAAAAQQMAAAAAAABCAwAAAAAAAAAAAABCAwAAAAAAAEMDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPQMAAAAAAAA9AwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					55,
-					17,
-					"left_delete",
-					null,
-					"EQAAAP4DAAAAAAAA/gMAAAAAAAABAAAAdP0DAAAAAAAA/QMAAAAAAAABAAAAbPwDAAAAAAAA/AMAAAAAAAABAAAAQfsDAAAAAAAA+wMAAAAAAAABAAAAb/oDAAAAAAAA+gMAAAAAAAABAAAAZ/kDAAAAAAAA+QMAAAAAAAABAAAAb/gDAAAAAAAA+AMAAAAAAAABAAAATPcDAAAAAAAA9wMAAAAAAAABAAAAefYDAAAAAAAA9gMAAAAAAAABAAAAcvUDAAAAAAAA9QMAAAAAAAABAAAAb/QDAAAAAAAA9AMAAAAAAAABAAAAZ/MDAAAAAAAA8wMAAAAAAAABAAAAZfIDAAAAAAAA8gMAAAAAAAABAAAAdPEDAAAAAAAA8QMAAAAAAAABAAAAYfADAAAAAAAA8AMAAAAAAAABAAAAQ+8DAAAAAAAA7wMAAAAAAAABAAAAdO4DAAAAAAAA7gMAAAAAAAABAAAAZQ",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAP8DAAAAAAAA/wMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					56,
-					1,
-					"left_delete",
-					null,
-					"AQAAAO0DAAAAAAAA7QMAAAAAAAABAAAAcw",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO4DAAAAAAAA7gMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					57,
 					1,
 					"insert",
 					{
-						"characters": "tr"
+						"characters": "s"
 					},
-					"AgAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO0DAAAAAAAA7QMAAAAAAAAAAAAAAADwvw"
+					"AQAAAEMDAAAAAAAARAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQwMAAAAAAABDAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					58,
-					2,
-					"left_delete",
-					null,
-					"AgAAAO4DAAAAAAAA7gMAAAAAAAABAAAAcu0DAAAAAAAA7QMAAAAAAAABAAAAdA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO8DAAAAAAAA7wMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					59,
-					1,
-					"insert",
-					{
-						"characters": "try"
-					},
-					"AwAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAADvAwAAAAAAAPADAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO0DAAAAAAAA7QMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					60,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAPADAAAAAAAA8gMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPADAAAAAAAA8AMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					61,
 					1,
 					"run_macro_file",
 					{
-						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
 					},
-					"AgAAAPADAAAAAAAA8AMAAAAAAAABAAAAe/ADAAAAAAAA8AMAAAAAAAABAAAAfQ",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPEDAAAAAAAA8QMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					62,
-					3,
-					"left_delete",
-					null,
-					"AwAAAO8DAAAAAAAA7wMAAAAAAAABAAAAee4DAAAAAAAA7gMAAAAAAAABAAAAcu0DAAAAAAAA7QMAAAAAAAABAAAAdA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPADAAAAAAAA8AMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					63,
-					1,
-					"insert",
-					{
-						"characters": "ret"
-					},
-					"AwAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAADvAwAAAAAAAPADAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO0DAAAAAAAA7QMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					64,
-					1,
-					"insert_completion",
-					{
-						"completion": "return",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "return"
-					},
-					"AgAAAO0DAAAAAAAA7QMAAAAAAAADAAAAcmV07QMAAAAAAADzAwAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPADAAAAAAAA8AMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					65,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAPMDAAAAAAAA9AMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPMDAAAAAAAA8wMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					66,
-					1,
-					"paste",
-					null,
-					"AQAAAPQDAAAAAAAAFgQAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPQDAAAAAAAA9AMAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": "\ntry"
-					},
-					"BQAAABYEAAAAAAAAFwQAAAAAAAAAAAAAFwQAAAAAAAAbBAAAAAAAAAAAAAAbBAAAAAAAABwEAAAAAAAAAAAAABwEAAAAAAAAHQQAAAAAAAAAAAAAHQQAAAAAAAAeBAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAWBAAAAAAAABYEAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					5,
-					3,
-					"left_delete",
-					null,
-					"AwAAAB0EAAAAAAAAHQQAAAAAAAABAAAAeRwEAAAAAAAAHAQAAAAAAAABAAAAchsEAAAAAAAAGwQAAAAAAAABAAAAdA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAeBAAAAAAAAB4EAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					8,
-					1,
-					"insert",
-					{
-						"characters": "\ntru"
-					},
-					"BQAAAOgDAAAAAAAA6QMAAAAAAAAAAAAA6QMAAAAAAADtAwAAAAAAAAAAAADtAwAAAAAAAO4DAAAAAAAAAAAAAO4DAAAAAAAA7wMAAAAAAAAAAAAA7wMAAAAAAADwAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADoAwAAAAAAAOgDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					9,
-					1,
-					"left_delete",
-					null,
-					"AQAAAO8DAAAAAAAA7wMAAAAAAAABAAAAdQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADwAwAAAAAAAPADAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": "y"
-					},
-					"AQAAAO8DAAAAAAAA8AMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADvAwAAAAAAAO8DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					11,
-					3,
-					"left_delete",
-					null,
-					"AwAAAO8DAAAAAAAA7wMAAAAAAAABAAAAee4DAAAAAAAA7gMAAAAAAAABAAAAcu0DAAAAAAAA7QMAAAAAAAABAAAAdA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADwAwAAAAAAAPADAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					1,
-					1,
-					"insert",
-					{
-						"characters": "try"
-					},
-					"AwAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAADvAwAAAAAAAPADAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7QMAAAAAAADtAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					2,
-					3,
-					"left_delete",
-					null,
-					"AwAAAO8DAAAAAAAA7wMAAAAAAAABAAAAee4DAAAAAAAA7gMAAAAAAAABAAAAcu0DAAAAAAAA7QMAAAAAAAABAAAAdA",
-					"AQAAAAAAAAABAAAA8AMAAAAAAADwAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					3,
-					1,
-					"insert",
-					{
-						"characters": "tr"
-					},
-					"AgAAAO0DAAAAAAAA7gMAAAAAAAAAAAAA7gMAAAAAAADvAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7QMAAAAAAADtAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": "y"
-					},
-					"AQAAAO8DAAAAAAAA8AMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7wMAAAAAAADvAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					2,
-					"left_delete",
-					null,
-					"AgAAAO8DAAAAAAAA7wMAAAAAAAABAAAAee4DAAAAAAAA7gMAAAAAAAABAAAAcg",
-					"AQAAAAAAAAABAAAA8AMAAAAAAADwAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"left_delete",
-					null,
-					"AQAAAO0DAAAAAAAA7QMAAAAAAAABAAAAdA",
-					"AQAAAAAAAAABAAAA7gMAAAAAAADuAwAAAAAAAAAAAAAAAPC/"
+					"AQAAABoCAAAAAAAAGgIAAAAAAAAUAAAAICAgIHZveWV1cihyZWNlbnRzKQo",
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "src/app/api/user/route.tsx",
-			"redo_stack":
-			[
-				[
-					20,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Delete Line.sublime-macro"
-					},
-					"AQAAACcEAAAAAAAAYAQAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACcEAAAAAAAAJwQAAAAAAAAAAAAAAADwvw"
-				],
-				[
-					15,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Delete Line.sublime-macro"
-					},
-					"AQAAAHAAAAAAAAAAnQAAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHAAAAAAAAAAcAAAAAAAAAAAAAAAAADwvw"
-				]
-			],
+			"file": "src/app/utils/Posts.ts",
 			"settings":
 			{
-				"buffer_size": 1662,
+				"buffer_size": 3322,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					5,
+					12,
+					2,
+					"left_delete",
+					null,
+					"AgAAAFwCAAAAAAAAXAIAAAAAAADnAAAAZXhwb3J0IGNvbnN0IGdldFBvc3RCeUlkID0gYXN5bmMgKGlkOiBzdHJpbmcpOiBQb3N0ID0+IHsKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGBodHRwczovL2R1bW15anNvbi5jb20vcG9zdHMvJHtpZH1gKQogICAgaWYgKCFyZXMub2spIHRocm93IG5ldyBFcnJvcigiRmFpbGVkIikKICAgIGNvbnN0IHBvc3QgPSBhd2FpdCByZXMuanNvbigpCiAgICByZXR1cm4gYXdhaXQgc2V0UG9zdChwb3N0KQp9WwIAAAAAAABbAgAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAAQwMAAAAAAABcAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAFsCAAAAAAAAXAIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWwIAAAAAAABbAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					16,
+					2,
+					"left_delete",
+					null,
+					"AgAAAFsCAAAAAAAAWwIAAAAAAAABAAAACloCAAAAAAAAWgIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAXAIAAAAAAABcAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "\n\nexp"
+					},
+					"BQAAALcHAAAAAAAAuAcAAAAAAAAAAAAAuAcAAAAAAAC5BwAAAAAAAAAAAAC5BwAAAAAAALoHAAAAAAAAAAAAALoHAAAAAAAAuwcAAAAAAAAAAAAAuwcAAAAAAAC8BwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtwcAAAAAAAC3BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": "ot"
+					},
+					"AgAAALwHAAAAAAAAvQcAAAAAAAAAAAAAvQcAAAAAAAC+BwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvAcAAAAAAAC8BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"left_delete",
+					null,
+					"AQAAAL0HAAAAAAAAvQcAAAAAAAABAAAAdA",
+					"AQAAAAAAAAABAAAAvgcAAAAAAAC+BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "rt"
+					},
+					"AgAAAL0HAAAAAAAAvgcAAAAAAAAAAAAAvgcAAAAAAAC/BwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvQcAAAAAAAC9BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": " const"
+					},
+					"BgAAAL8HAAAAAAAAwAcAAAAAAAAAAAAAwAcAAAAAAADBBwAAAAAAAAAAAADBBwAAAAAAAMIHAAAAAAAAAAAAAMIHAAAAAAAAwwcAAAAAAAAAAAAAwwcAAAAAAADEBwAAAAAAAAAAAADEBwAAAAAAAMUHAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwcAAAAAAAC/BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMUHAAAAAAAAxgcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQcAAAAAAADFBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"paste",
+					null,
+					"AQAAAMYHAAAAAAAA1AcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgcAAAAAAADGBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAANQHAAAAAAAA1QcAAAAAAAAAAAAA1QcAAAAAAADWBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1AcAAAAAAADUBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": " async"
+					},
+					"BgAAANYHAAAAAAAA1wcAAAAAAAAAAAAA1wcAAAAAAADYBwAAAAAAAAAAAADYBwAAAAAAANkHAAAAAAAAAAAAANkHAAAAAAAA2gcAAAAAAAAAAAAA2gcAAAAAAADbBwAAAAAAAAAAAADbBwAAAAAAANwHAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1gcAAAAAAADWBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAANwHAAAAAAAA3QcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3AcAAAAAAADcBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAN0HAAAAAAAA3wcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3QcAAAAAAADdBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " =>"
+					},
+					"AwAAAN8HAAAAAAAA4AcAAAAAAAAAAAAA4AcAAAAAAADhBwAAAAAAAAAAAADhBwAAAAAAAOIHAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3wcAAAAAAADfBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOIHAAAAAAAA4wcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4gcAAAAAAADiBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAOMHAAAAAAAA5QcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4wcAAAAAAADjBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"AwAAAOQHAAAAAAAA5QcAAAAAAAAAAAAA5QcAAAAAAADmBwAAAAAAAAAAAADlBwAAAAAAAOkHAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5AcAAAAAAADkBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"paste",
+					null,
+					"AQAAAOkHAAAAAAAAewkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6QcAAAAAAADpBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert",
+					{
+						"characters": "recent"
+					},
+					"BwAAADEIAAAAAAAAMggAAAAAAAAAAAAAMggAAAAAAAAyCAAAAAAAAAYAAABjcmVhdGUyCAAAAAAAADMIAAAAAAAAAAAAADMIAAAAAAAANAgAAAAAAAAAAAAANAgAAAAAAAA1CAAAAAAAAAAAAAA1CAAAAAAAADYIAAAAAAAAAAAAADYIAAAAAAAANwgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMQgAAAAAAAA3CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					54,
+					1,
+					"insert",
+					{
+						"characters": "GET"
+					},
+					"BAAAAFoIAAAAAAAAWwgAAAAAAAAAAAAAWwgAAAAAAABbCAAAAAAAAAQAAABQT1NUWwgAAAAAAABcCAAAAAAAAAAAAABcCAAAAAAAAF0IAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWggAAAAAAABeCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
 					1,
 					"run_macro_file",
 					{
 						"file": "res://Packages/Default/Delete Line.sublime-macro"
 					},
-					"AQAAAP8CAAAAAAAA/wIAAAAAAAA5AAAAICAgICAgICBjb25zdCBzYW5pdGl6ZWRVc2VyID0gZXhjZXB0KHVzZXIsIFsncGFzc3dvcmQnXSkK",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADcDAAAAAAAANwMAAAAAAAAAAAAAAADwvw"
+					"AQAAAOgIAAAAAAAA6AgAAAAAAAAqAAAAICAgICAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkobmV3UG9zdCkK",
+					"AQAAAAAAAAABAAAAEQkAAAAAAAARCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"insert",
+					{
+						"characters": "retrievi"
+					},
+					"CQAAACEJAAAAAAAAIgkAAAAAAAAAAAAAIgkAAAAAAAAiCQAAAAAAAAgAAABjcmVhdGluZyIJAAAAAAAAIwkAAAAAAAAAAAAAIwkAAAAAAAAkCQAAAAAAAAAAAAAkCQAAAAAAACUJAAAAAAAAAAAAACUJAAAAAAAAJgkAAAAAAAAAAAAAJgkAAAAAAAAnCQAAAAAAAAAAAAAnCQAAAAAAACgJAAAAAAAAAAAAACgJAAAAAAAAKQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQkAAAAAAAApCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					1,
+					"insert",
+					{
+						"characters": "ng"
+					},
+					"AgAAACkJAAAAAAAAKgkAAAAAAAAAAAAAKgkAAAAAAAArCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQkAAAAAAAApCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"left_delete",
+					null,
+					"AQAAACwJAAAAAAAALAkAAAAAAAAIAAAAbmV3IHBvc3Q",
+					"AQAAAAAAAAABAAAALAkAAAAAAAA0CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": "posts"
+					},
+					"BQAAACwJAAAAAAAALQkAAAAAAAAAAAAALQkAAAAAAAAuCQAAAAAAAAAAAAAuCQAAAAAAAC8JAAAAAAAAAAAAAC8JAAAAAAAAMAkAAAAAAAAAAAAAMAkAAAAAAAAxCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALAkAAAAAAAAsCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"insert",
+					{
+						"characters": "\n\ne"
+					},
+					"AwAAAFEJAAAAAAAAUgkAAAAAAAAAAAAAUgkAAAAAAABTCQAAAAAAAAAAAABTCQAAAAAAAFQJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUQkAAAAAAABRCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"insert",
+					{
+						"characters": "xport"
+					},
+					"BQAAAFQJAAAAAAAAVQkAAAAAAAAAAAAAVQkAAAAAAABWCQAAAAAAAAAAAABWCQAAAAAAAFcJAAAAAAAAAAAAAFcJAAAAAAAAWAkAAAAAAAAAAAAAWAkAAAAAAABZCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVAkAAAAAAABUCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": " const"
+					},
+					"BgAAAFkJAAAAAAAAWgkAAAAAAAAAAAAAWgkAAAAAAABbCQAAAAAAAAAAAABbCQAAAAAAAFwJAAAAAAAAAAAAAFwJAAAAAAAAXQkAAAAAAAAAAAAAXQkAAAAAAABeCQAAAAAAAAAAAABeCQAAAAAAAF8JAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWQkAAAAAAABZCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAF8JAAAAAAAAYAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXwkAAAAAAABfCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					83,
+					1,
+					"paste",
+					null,
+					"AQAAAGAJAAAAAAAAbwkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYAkAAAAAAABgCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					84,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAG8JAAAAAAAAcAkAAAAAAAAAAAAAcAkAAAAAAABxCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbwkAAAAAAABvCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					1,
+					"insert",
+					{
+						"characters": " async"
+					},
+					"BgAAAHEJAAAAAAAAcgkAAAAAAAAAAAAAcgkAAAAAAABzCQAAAAAAAAAAAABzCQAAAAAAAHQJAAAAAAAAAAAAAHQJAAAAAAAAdQkAAAAAAAAAAAAAdQkAAAAAAAB2CQAAAAAAAAAAAAB2CQAAAAAAAHcJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQkAAAAAAABxCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHcJAAAAAAAAeAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdwkAAAAAAAB3CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAHgJAAAAAAAAegkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAeAkAAAAAAAB4CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					89,
+					1,
+					"insert",
+					{
+						"characters": " =>"
+					},
+					"AwAAAHoJAAAAAAAAewkAAAAAAAAAAAAAewkAAAAAAAB8CQAAAAAAAAAAAAB8CQAAAAAAAH0JAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAegkAAAAAAAB6CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					90,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAH0JAAAAAAAAfgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfQkAAAAAAAB9CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					91,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAH4JAAAAAAAAgAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfgkAAAAAAAB+CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					92,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"AwAAAH8JAAAAAAAAgAkAAAAAAAAAAAAAgAkAAAAAAACBCQAAAAAAAAAAAACACQAAAAAAAIQJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfwkAAAAAAAB/CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					100,
+					1,
+					"paste",
+					null,
+					"AQAAAIQJAAAAAAAA6goAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAkAAAAAAACECQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					105,
+					1,
+					"insert",
+					{
+						"characters": "popular"
+					},
+					"CAAAAMwJAAAAAAAAzQkAAAAAAAAAAAAAzQkAAAAAAADNCQAAAAAAAAYAAAByZWNlbnTNCQAAAAAAAM4JAAAAAAAAAAAAAM4JAAAAAAAAzwkAAAAAAAAAAAAAzwkAAAAAAADQCQAAAAAAAAAAAADQCQAAAAAAANEJAAAAAAAAAAAAANEJAAAAAAAA0gkAAAAAAAAAAAAA0gkAAAAAAADTCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAkAAAAAAADSCQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/app/components/cardList/CardList.tsx",
+			"settings":
+			{
+				"buffer_size": 894,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAABADAAAAAAAAEAMAAAAAAACjAQAACiAgICAgICAgICAgICAgICAgICAgICAgIGtleT17b2JqLmlkfQogICAgICAgICAgICAgICAgICAgICAgICBpZD17b2JqLmlkfQogICAgICAgICAgICAgICAgICAgICAgICBkYXRlPXtvYmouZGF0ZX0gCiAgICAgICAgICAgICAgICAgICAgICAgIGNhdGVnb3J5PXtvYmouY2F0ZWdvcnl9IAogICAgICAgICAgICAgICAgICAgICAgICB0aXRsZT17b2JqLnRpdGxlfSAKICAgICAgICAgICAgICAgICAgICAgICAgc3VidGl0bGU9e29iai5zdWJ0aXRsZX0KICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb249e29iai5kZXNjcmlwdGlvbn0gCiAgICAgICAgICAgICAgICAgICAgICAgIGltZ1NyYz17b2JqLmltZ1NyY30gCiAgICAgICAgICAgICAgICAgICAgICAgIGltZ0FsdD17b2JqLmltZ0FsdH0KICAgICAgICAgICAgICAgICAgICA",
+					"AQAAAAAAAAABAAAAswQAAAAAAAAQAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"join_lines",
+					null,
+					"AQAAAOkCAAAAAAAA6QIAAAAAAAAWAAAAIAogICAgICAgICAgICAgICAgICAgIA",
+					"AQAAAAAAAAABAAAA6gIAAAAAAADqAgAAAAAAAAAAAAAAsHpA"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOkCAAAAAAAA6gIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6QIAAAAAAADpAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"join_lines",
+					null,
+					"AQAAAP0CAAAAAAAA/gIAAAAAAAARAAAACiAgICAgICAgICAgICAgICA",
+					"AQAAAAAAAAABAAAA/QIAAAAAAAD9AgAAAAAAAP///////+9/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "post"
+					},
+					"BQAAAOoCAAAAAAAA6wIAAAAAAAAAAAAA6wIAAAAAAADrAgAAAAAAAAMAAABvYmrrAgAAAAAAAOwCAAAAAAAAAAAAAOwCAAAAAAAA7QIAAAAAAAAAAAAA7QIAAAAAAADuAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6gIAAAAAAADtAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "  "
+					},
+					"AgAAAPsCAAAAAAAA/AIAAAAAAAAAAAAA/AIAAAAAAAD9AgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+wIAAAAAAAD7AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPwCAAAAAAAA/AIAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAA/QIAAAAAAAD9AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": "post="
+					},
+					"BQAAAPwCAAAAAAAA/QIAAAAAAAAAAAAA/QIAAAAAAAD+AgAAAAAAAAAAAAD+AgAAAAAAAP8CAAAAAAAAAAAAAP8CAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAABAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/AIAAAAAAAD8AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAAEDAAAAAAAAAwMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQMAAAAAAAABAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": "post"
+					},
+					"BAAAAAIDAAAAAAAAAwMAAAAAAAAAAAAAAwMAAAAAAAAEAwAAAAAAAAAAAAAEAwAAAAAAAAUDAAAAAAAAAAAAAAUDAAAAAAAABgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgMAAAAAAAACAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "import React, { PropTypes } from 'react';\nimport PopularCard from '../popularCard/PopularCard';\nimport CategoryPill from '../categoryPill/CategoryPill';\nimport EditorCard from '../editorCard/EditorCard';\nimport { getPopular } from '../../utils/getPopular';\nimport { getEditorChoice } from '../../utils/getEditorsChoice';\nimport { getAllCategories } from '../../utils/Categories';\n\nconst Menu = async () => {\n    const categories = await getAllCategories()\n    const popular = await getPopularPosts()\n\n    return (\n        <div className=\"mt-10 px-3\">\n            <div className=\"border-b border-gray-300 pb-12\">\n                <div className=\"font-serif mb-4\">\n                    <div className=\"text-3xl\">Populaires</div>\n                </div>\n                <div>\n                    { popular.map(posts => <PopularCard posts={posts} />) }\n                </div>\n            </div>\n            <div className=\"mt-10 border-b border-gray-300 pb-12\">\n                <div className=\"font-serif mb-4\">\n                    <div className=\"text-3xl\">Catégories</div>\n                </div>\n                <div className=\"flex flex-wrap gap-2\">\n                    {categories.map( (cat, i) => <CategoryPill key={cat.id} category={cat.name} /> )}\n                </div>\n            </div>\n            <div className=\"mt-10 pb-12\">\n                <div className=\"font-serif mb-4 text-3xl\">Choix de l'éditeur</div>\n                <div>\n                    {\n                        getEditorChoice().map( \n                            obj => <EditorCard \n                                key={obj.id}\n                                date={obj.date}\n                                category={obj.category}\n                                logoSrc={obj.logoSrc}\n                                logoAlt={obj.logoAlt}\n                                logoColor={obj.logoColor}\n                                author={obj.author}\n                                title={obj.title}\n                                subtitle={obj.subtitle}\n                                imgSrc={obj.imgSrc}\n                                imgAlt={obj.imgAlt}\n                            /> \n                        )\n                    }\n                </div>\n            </div>\n        </div>\n    );\n};\n\nexport default Menu;\n",
+			"file": "src/app/components/menu/Menu.tsx",
+			"file_size": 2917,
+			"file_write_time": 133573158191193765,
+			"settings":
+			{
+				"buffer_size": 2301,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "\nconst"
+					},
+					"BwAAAMcBAAAAAAAAyAEAAAAAAAAAAAAAyAEAAAAAAADMAQAAAAAAAAAAAADMAQAAAAAAAM0BAAAAAAAAAAAAAM0BAAAAAAAAzgEAAAAAAAAAAAAAzgEAAAAAAADPAQAAAAAAAAAAAADPAQAAAAAAANABAAAAAAAAAAAAANABAAAAAAAA0QEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxwEAAAAAAADHAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": " popu"
+					},
+					"BQAAANEBAAAAAAAA0gEAAAAAAAAAAAAA0gEAAAAAAADTAQAAAAAAAAAAAADTAQAAAAAAANQBAAAAAAAAAAAAANQBAAAAAAAA1QEAAAAAAAAAAAAA1QEAAAAAAADWAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0QEAAAAAAADRAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					10,
 					1,
 					"insert",
 					{
-						"characters": "user"
+						"characters": "lar"
 					},
-					"BQAAAC8DAAAAAAAAMAMAAAAAAAAAAAAAMAMAAAAAAAAwAwAAAAAAAA0AAABzYW5pdGl6ZWRVc2VyMAMAAAAAAAAxAwAAAAAAAAAAAAAxAwAAAAAAADIDAAAAAAAAAAAAADIDAAAAAAAAMwMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAC8DAAAAAAAAPAMAAAAAAAAAAAAAAADwvw"
+					"AwAAANYBAAAAAAAA1wEAAAAAAAAAAAAA1wEAAAAAAADYAQAAAAAAAAAAAADYAQAAAAAAANkBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1gEAAAAAAADWAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAANkBAAAAAAAA2gEAAAAAAAAAAAAA2gEAAAAAAADbAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2QEAAAAAAADZAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " await"
+					},
+					"BgAAANsBAAAAAAAA3AEAAAAAAAAAAAAA3AEAAAAAAADdAQAAAAAAAAAAAADdAQAAAAAAAN4BAAAAAAAAAAAAAN4BAAAAAAAA3wEAAAAAAAAAAAAA3wEAAAAAAADgAQAAAAAAAAAAAADgAQAAAAAAAOEBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wEAAAAAAADbAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " getPo"
+					},
+					"BgAAAOEBAAAAAAAA4gEAAAAAAAAAAAAA4gEAAAAAAADjAQAAAAAAAAAAAADjAQAAAAAAAOQBAAAAAAAAAAAAAOQBAAAAAAAA5QEAAAAAAAAAAAAA5QEAAAAAAADmAQAAAAAAAAAAAADmAQAAAAAAAOcBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4QEAAAAAAADhAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "pular"
+					},
+					"BQAAAOcBAAAAAAAA6AEAAAAAAAAAAAAA6AEAAAAAAADpAQAAAAAAAAAAAADpAQAAAAAAAOoBAAAAAAAAAAAAAOoBAAAAAAAA6wEAAAAAAAAAAAAA6wEAAAAAAADsAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wEAAAAAAADnAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "Posts"
+					},
+					"BQAAAOwBAAAAAAAA7QEAAAAAAAAAAAAA7QEAAAAAAADuAQAAAAAAAAAAAADuAQAAAAAAAO8BAAAAAAAAAAAAAO8BAAAAAAAA8AEAAAAAAAAAAAAA8AEAAAAAAADxAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AEAAAAAAADsAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAPEBAAAAAAAA8wEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8QEAAAAAAADxAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHEDAAAAAAAAcQMAAAAAAAD2AQAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAga2V5PXtvYmouaWR9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGF0ZT17b2JqLmRhdGV9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2F0ZWdvcnk9e29iai5jYXRlZ29yeX0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2dvU3JjPXtvYmoubG9nb1NyY30KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2dvQWx0PXtvYmoubG9nb0FsdH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2dvQ29sb3I9e29iai5sb2dvQ29sb3J9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXV0aG9yPXtvYmouYXV0aG9yfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRpdGxlPXtvYmoudGl0bGV9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3VidGl0bGU9e29iai5zdWJ0aXRsZX0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAZwUAAAAAAABxAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHEDAAAAAAAAcgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQMAAAAAAABxAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHEDAAAAAAAAcgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQMAAAAAAABxAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"join_lines",
+					null,
+					"AQAAAEEDAAAAAAAAQQMAAAAAAAAdAAAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICA",
+					"AQAAAAAAAAABAAAAQQMAAAAAAABBAwAAAAAAAAAAAAAAwH9A"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEEDAAAAAAAAQgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQQMAAAAAAABBAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"join_lines",
+					null,
+					"AQAAAFkDAAAAAAAAWgMAAAAAAAAZAAAACiAgICAgICAgICAgICAgICAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAWQMAAAAAAABZAwAAAAAAAP///////+9/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "posts"
+					},
+					"BgAAAEIDAAAAAAAAQwMAAAAAAAAAAAAAQwMAAAAAAABDAwAAAAAAAAMAAABvYmpDAwAAAAAAAEQDAAAAAAAAAAAAAEQDAAAAAAAARQMAAAAAAAAAAAAARQMAAAAAAABGAwAAAAAAAAAAAABGAwAAAAAAAEcDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARQMAAAAAAABCAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"insert",
+					{
+						"characters": " post"
+					},
+					"BQAAAFcDAAAAAAAAWAMAAAAAAAAAAAAAWAMAAAAAAABZAwAAAAAAAAAAAABZAwAAAAAAAFoDAAAAAAAAAAAAAFoDAAAAAAAAWwMAAAAAAAAAAAAAWwMAAAAAAABcAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVwMAAAAAAABXAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"insert",
+					{
+						"characters": "s="
+					},
+					"AgAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXAMAAAAAAABcAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAF4DAAAAAAAAYAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgMAAAAAAABeAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": "posts"
+					},
+					"BQAAAF8DAAAAAAAAYAMAAAAAAAAAAAAAYAMAAAAAAABhAwAAAAAAAAAAAABhAwAAAAAAAGIDAAAAAAAAAAAAAGIDAAAAAAAAYwMAAAAAAAAAAAAAYwMAAAAAAABkAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXwMAAAAAAABfAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert",
+					{
+						"characters": "populars"
+					},
+					"CQAAADADAAAAAAAAMQMAAAAAAAAAAAAAMQMAAAAAAAAxAwAAAAAAAAwAAABnZXRQb3B1bGFyKCkxAwAAAAAAADIDAAAAAAAAAAAAADIDAAAAAAAAMwMAAAAAAAAAAAAAMwMAAAAAAAA0AwAAAAAAAAAAAAA0AwAAAAAAADUDAAAAAAAAAAAAADUDAAAAAAAANgMAAAAAAAAAAAAANgMAAAAAAAA3AwAAAAAAAAAAAAA3AwAAAAAAADgDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPAMAAAAAAAAwAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					50,
+					1,
+					"left_delete",
+					null,
+					"AQAAADcDAAAAAAAANwMAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAOAMAAAAAAAA4AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"join_lines",
+					null,
+					"AQAAAAEDAAAAAAAAAgMAAAAAAAAVAAAACiAgICAgICAgICAgICAgICAgICAg",
+					"AQAAAAAAAAABAAAAAQMAAAAAAAABAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEDAAAAAAAAAQMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAAgMAAAAAAAACAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"join_lines",
+					null,
+					"AQAAAAIDAAAAAAAAAgMAAAAAAAAZAAAACiAgICAgICAgICAgICAgICAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAAgMAAAAAAAACAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAAIDAAAAAAAAAwMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgMAAAAAAAACAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					60,
+					1,
+					"join_lines",
+					null,
+					"AQAAADkDAAAAAAAAOgMAAAAAAAAVAAAACiAgICAgICAgICAgICAgICAgICAg",
+					"AQAAAAAAAAABAAAAOQMAAAAAAAA5AwAAAAAAAP///////+9/"
+				],
+				[
+					62,
+					1,
+					"left_delete",
+					null,
+					"AQAAADkDAAAAAAAAOQMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAOgMAAAAAAAA6AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"join_lines",
+					null,
+					"AQAAADoDAAAAAAAAOwMAAAAAAAARAAAACiAgICAgICAgICAgICAgICA",
+					"AQAAAAAAAAABAAAAOgMAAAAAAAA6AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"left_delete",
+					null,
+					"AQAAADoDAAAAAAAAOgMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAOwMAAAAAAAA7AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADkDAAAAAAAAOgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOQMAAAAAAAA5AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					71,
+					1,
+					"left_delete",
+					null,
+					"AQAAAA8DAAAAAAAADwMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAEAMAAAAAAAAQAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"left_delete",
+					null,
+					"AQAAADYDAAAAAAAANgMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAANwMAAAAAAAA3AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					76,
+					1,
+					"left_delete",
+					null,
+					"AQAAADMDAAAAAAAAMwMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAANAMAAAAAAAA0AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"insert",
+					{
+						"characters": "\n\t"
+					},
+					"AwAAAAEDAAAAAAAAAgMAAAAAAAAAAAAAAgMAAAAAAAASAwAAAAAAAAAAAAASAwAAAAAAABYDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQMAAAAAAAABAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAE0DAAAAAAAATgMAAAAAAAAAAAAATgMAAAAAAABiAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATQMAAAAAAABNAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					83,
+					1,
+					"left_delete",
+					null,
+					"AQAAAF4DAAAAAAAAXgMAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAAYgMAAAAAAABiAwAAAAAAAAAAAAAAAPC/"
 				]
 			]
-		},
-		{
-			"file": "src/app/user/[id]/page.tsx",
-			"settings":
-			{
-				"buffer_size": 334,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/app/api/auth/[...nextauth]/route.tsx",
-			"settings":
-			{
-				"buffer_size": 1990,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -1337,40 +1857,59 @@
 		"/C/Users/smaik/Projects/illuminati_bx/src",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/api",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/auth",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/auth/[...nextauth]"
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/post",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components"
 	],
 	"file_history":
 	[
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/postCard/PostCard.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Helper.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/post/route.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Categories.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/post/Post.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/[slug]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/editorOptions/EditorOptions.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/article/Article.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Posts.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/next.config.js",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/blog/[slug]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/categories/route.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/write/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Comments.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/oupsNoContent/OupsNoContent.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/uploadFiles/uploadFiles.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Users.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/mediaHandler.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/authLink/AuthLinks.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/selectCategory/SelectCategory.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/user/User.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/FakeData.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/textEditor/TextEditor.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/imagesHandler.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/firebase.ts",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/button/Button.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/featured/Featured.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/login/Login.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/pagination/Pagination.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/commentsArea/CommentsArea.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/auth/[...nextauth]/route.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/user/route.tsx",
 		"/C/Users/smaik/AppData/Roaming/Sublime Text/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
 		"/C/Users/smaik/AppData/Roaming/Sublime Text/Packages/User/JavaScript-Completions.sublime-settings",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/[slug]/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/profile/Profile.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/user/[id]/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/user/route.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Users.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/authLink/AuthLinks.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/login/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/user/User.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/login/Login.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/prisma/schema.prisma",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/auth/[...nextauth]/route.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Helper.ts",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/toggleTheme/ToggleTheme.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/signup/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/.env",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/firebase.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/postCard/PostCard.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Validation.ts",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Validation.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Users.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/firebaseConfig.js",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/button/Button.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/categories/route.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Posts.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Comments.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/blog/[slug]/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/getPopular.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Categories.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/loading/LoadingScreen.tsx",
@@ -1389,8 +1928,6 @@
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Categories.json",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/FakeData.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/loading/Loading.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/write/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/article/Article.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/providers/AuthProvider.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/noYouCannot/NoYouCannot.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/providers/themeProvider.tsx",
@@ -1400,15 +1937,11 @@
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/getRecents.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/articleMeta/ArticleMeta.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/globals.css",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/commentsArea/CommentsArea.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/footer/Footer.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/themeProvider/themeProvider.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/context/ThemeContext.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/cardList/CardList.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/oupsNoContent/OupsNoContent.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/featured/Featured.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/context/PaginationContext.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/pagination/Pagination.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/comment/Comment.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/recentCard/PostCard.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/FakeData.json",
@@ -1456,20 +1989,7 @@
 		"/C/Users/smaik/Projects/Playground/Python Training/convert.py",
 		"/C/Users/smaik/Projects/Playground/Python Training/fizz_buzz.py",
 		"/C/Users/smaik/Projects/Playground/CodeWar/package.json",
-		"/C/Users/smaik/Projects/Playground/CodeWar/test.js",
-		"/C/test/test.js",
-		"/C/Users/smaik/Projects/Playground/CodeWar/isbn_search.js",
-		"/C/Users/smaik/Downloads/Sci-Fi Fantasy/Top 100 Science Fiction and Fantasy Books (Voted by NPR)/booklist",
-		"/C/Users/smaik/Projects/Playground/CodeWar/codeWar.js",
-		"/C/Users/smaik/Projects/Playground/codeWar.js",
-		"/C/Users/smaik/Projects/dvideo/client/src/components/UploadComponents.jsx",
-		"/C/Users/smaik/Projects/dvideo/client/src/style/style.js",
-		"/C/Users/smaik/Projects/dvideo/client/src/hooks/useConnect.js",
-		"/C/Users/smaik/Projects/dvideo/client/src/components/LeftMenu.jsx",
-		"/C/Users/smaik/Projects/dvideo/client/src/components/VideoCard.jsx",
-		"/C/Users/smaik/Projects/dvideo/client/src/hooks/useSince.js",
-		"/C/Users/smaik/Projects/dvideo/client/src/hooks/useAllFakeVideos.js",
-		"/C/Users/smaik/Projects/dvideo/client/src/components/Display.jsx"
+		"/C/Users/smaik/Projects/Playground/CodeWar/test.js"
 	],
 	"find":
 	{
@@ -1482,6 +2002,8 @@
 		[
 			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src\\app",
 			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src",
+			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src\\app",
+			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src",
 			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src\\app"
 		]
 	},
@@ -1490,6 +2012,59 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"categories",
+			"props",
+			"setNewPost",
+			"slug",
+			"div",
+			"label",
+			"cat",
+			"getUserById",
+			"post",
+			"form",
+			"getImgUrl",
+			"file",
+			"form",
+			"p",
+			"div",
+			"span",
+			"slug",
+			"post.user",
+			"video",
+			"setVideo",
+			"video",
+			"setPosts",
+			"imagesHandler",
+			"setUser",
+			"user",
+			"setUser",
+			",",
+			"placeholder",
+			"SelectCategory",
+			"selectCategory",
+			"Button",
+			"e.target.value",
+			"buttonText",
+			"user",
+			"target",
+			"onChange",
+			"false",
+			"name",
+			"id=",
+			"iput",
+			"name",
+			"div",
+			"scale-110",
+			"id=",
+			"id",
+			"handleSubmit",
+			"formDatas",
+			"setArticle",
+			"article",
+			"name",
+			"type=\"file\"",
+			"setMyButtons",
+			": string",
 			"getUser",
 			"data",
 			"flex",
@@ -1564,60 +2139,7 @@
 			"OupsNoContent",
 			"const",
 			"()",
-			"flex-1",
-			"ThemeProvider",
-			"md:",
-			"w-3 h-3",
-			"md:",
-			"w-3 h-3",
-			"h-6",
-			"h-10",
-			"md",
-			"span",
-			"Github",
-			"GITHUB",
-			"Github",
-			"focus:",
-			"hover",
-			"div",
-			"isInputVald",
-			"formData",
-			"post",
-			"setPost",
-			"setValue",
-			"textarea",
-			"snow",
-			"flex",
-			"flex-col",
-			"flex gap-3",
-			"input",
-			"p-6",
-			"py",
-			"serif",
-			"bg-transparent",
-			"text-",
-			"w-12 h-12",
-			"h-12",
-			"12",
-			"14",
-			"md:w-14 md:h-14",
-			"snow",
-			"w-12 h-12",
-			"button type=\"button\">",
-			"w-3",
-			"w",
-			"px-6",
-			"<button",
-			"[#]",
-			"shadow",
-			"gray",
-			"shadow",
-			"-amber-400",
-			"amber-400",
-			"shadow",
-			"2xl",
-			"shadow",
-			"font"
+			"flex-1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1625,6 +2147,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"mediaHandler",
+			"children",
 			"for",
 			"import MyJSON from './FakeData.tsx'",
 			"import MyJSON from './FakeData.json'",
@@ -1649,31 +2173,62 @@
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
+					"file": "prisma/schema.prisma",
+					"selected": true,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 13716,
+						"buffer_size": 3035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								653,
-								653
+								1922,
+								1931
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"auto_indent": false,
-							"gutter": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
+							"syntax": "Packages/Prisma/resources/syntax/Prisma.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4575.0,
+						"translation.y": 1284.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/app/page.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1681,21 +2236,21 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "src/app/utils/Users.ts",
+					"buffer": 2,
+					"file": "src/app/utils/Posts.ts",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2982,
+						"buffer_size": 3322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								605,
-								605
+								2400,
+								2415
 							]
 						],
 						"settings":
@@ -1703,7 +2258,7 @@
 							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 375.0,
+						"translation.y": 1825.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1711,89 +2266,62 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/app/api/user/route.tsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1662,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								828,
-								828
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "src/app/user/[id]/page.tsx",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 334,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								334,
-								334
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/app/api/auth/[...nextauth]/route.tsx",
+					"file": "src/app/components/cardList/CardList.tsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1990,
+						"buffer_size": 894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								428,
+								433
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax",
+							"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app/components/menu/Menu.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax",
+							"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"stack_multiselect": false,
 					"type": "text"
 				}
@@ -1817,11 +2345,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.0701237477902,
 			1.0
 		],
 		"rows":
@@ -1934,14 +2469,14 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 340.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 580.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

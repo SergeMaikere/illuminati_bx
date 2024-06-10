@@ -3,7 +3,7 @@ import Link from 'next/Link'
 import { getCategoryColor, getCategoryLogo } from '../../utils/Helper';
 import { TextCategoryColor } from '../../utils/Categories';
 
-const EditorCard = (props) => {
+const EditorCard = ({post}) => {
 
     return (
         <Link 
@@ -12,20 +12,20 @@ const EditorCard = (props) => {
                 border-b rounded border-gray-300 shadow-md
                 p-2 mb-2 
             `} 
-            href={`blog/${props.category.toLowerCase()}/${props.id}`}
+            href={`blog/${post?.catSlug}/${post?.id}`}
         >
             <div className="hidden md:block col-span-2">
-                <img className="object-cover" src={props.imgSrc} alt={props.imgAlt} />
+                <img className="object-cover" src={post?.image} alt={post?.imageAlt} />
             </div>
             <div className="col-span-3">
                 <div className="">
-                    <img className="w-5 h-5 inline-block mx-1" src={props.logoSrc} alt={props.logoAlt} />
-                    <span className={`uppercase text-sm ${TextCategoryColor[props.category.toLowerCase()]}`}>{props.category}</span>
+                    <img className="w-5 h-5 inline-block mx-1" src={post.cat.logo} alt={post.cat.logoAlt} />
+                    <span className={`uppercase text-sm ${TextCategoryColor[post?.catSlug]}`}>{post?.catSlug}</span>
                 </div>
-                <div className="text-sm font-extrabold font-mono py-2">{props.title}</div>
+                <div className="text-sm font-extrabold font-mono py-2">{post?.title}</div>
                 <div className="flex gap-4 font-serif text-sm row-span-1">
-                    <div className="font-extrabold text-xs">{props.author}</div>
-                    <div className="font-extralight text-xs">{props.date}</div>
+                    <div className="font-extrabold text-xs">{post?.user.name}</div>
+                    <div className="font-extralight text-xs">{new Date(post?.createdAt).toLocaleDateString()}</div>
                 </div>
             </div>
         </Link>

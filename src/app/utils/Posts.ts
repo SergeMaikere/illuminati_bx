@@ -1,6 +1,5 @@
-import { asyncPipe, asyncVoyeur, voyeur } from './Helper'
-import { faker } from '@faker-js/faker'
-import { getUserById } from './Users'
+import { asyncPipe, slugify } from './Helper'
+import { getImgUrl } from './mediaHandler';
 
 type Post = {
     id: string;      
@@ -21,75 +20,121 @@ type Post = {
     comments: Comment[];
 }
 
-const CATEGORIES = [ 'mode', 'histoire', 'science', 'mode', 'cyprien', 'enfer' ]
 
-const getRandomCategory = (): string => CATEGORIES[ Math.floor(Math.random() * CATEGORIES.length) ]
 
-const setCategory = (post: any) => 'category' in post ? {...post} : {...post, category: getRandomCategory()} 
+const setTitleSlug = post => ( {...post, slug: slugify(post.title)} )
+    
+const setNewPost = asyncPipe( getImgUrl, setTitleSlug )
 
-const setCategories = (posts: any[]): any[] => posts.map( post => setCategory(post) )  
-
-const setDate = (post: any) => ( {...post, date: faker.date.past().toLocaleDateString()})
-
-const setSubtitle = post => ({...post, subtitle: faker.lorem.sentence()})
-
-const setDescription = post => ({...post, description: faker.lorem.sentence({ min: 10, max: 20 })})
-
-const setImg = async (post: Post) => {
-    const img = await getImgSrc(post.id)
-    return {...post, imgSrc: img.url, imgAlt: img.title}
-
-}
-
-const getImgSrc = async (id:number): string => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
-    if (!res.ok) throw new Error("Failed")
+export const updatePostViews = async id => {
+    if (!id) return
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=views", 
+        {
+            method: 'PUT', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({id})
+        }
+    )
+    if (!res.ok) throw new Error('Failed updating post')
     return await res.json()
 }
 
-const setUser = async (post: any) => {
-    const user = await getUserById(post.userId)
-    return {...post, userData: {firstName: user.firstName, lastName: user.lastName, username: user.username, imgSrc: user.image}}
-}
-
-const getAllPosts = async (): any[] => {
-    const res = await fetch('https://dummyjson.com/posts?limit=100')
-    if (!res.ok) throw new Error("Failed")
-    const res1 = await res.json()
-    return await setCategories(res1.posts)
-
-}
-    
-const setPost = asyncPipe( setCategory, setDate, setDescription, setSubtitle, setImg, setUser )
-
-const setPosts = async (posts: any[]): Post[] => await Promise.all( posts.map(async (post: any) => await setPost(post)) )
-
-export const getPostById = async (id: string): Post => {
-    const res = await fetch(`https://dummyjson.com/posts/${id}`)
-    if (!res.ok) throw new Error("Failed")
-    const post = await res.json()
-    return await setPost(post)
-}
-
-export const getPostsByCategory = async (cat: string): Post[] => {
-    const allPosts = await getAllPosts()
-    const posts = allPosts.filter( post => post.category === cat )
-    return await setPosts( posts )
-}
-
-export const addPost = async (newPost: any) => {
+export const updateEditorLike = async (id, like) => {
     const res = await fetch(
-        `https://dummyjson.com/posts/add`,
+        "http://localhost:3000/api/post?action=like", 
         {
-            method: 'POST',
-            header: {
-                'accept': 'application/json',
-                'content': 'application/json',
+            method: 'PUT', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
-            body: JSON.stringify( {...newPost} )
+            body: JSON.stringify({id, like})
         }
     )
-    if (!res.ok) throw new Error('Failed posting new post')
+    if (!res.ok) throw new Error('Failed updating post')
+    return await res.json()
+}
+
+export const getPostBySlug = async ( slug: string ): Post[] => {
+    if (!slug) return
+    const res = await fetch(
+        `http://localhost:3000/api/post?slug=${slug}`, 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('Failed finding post')
+    return await res.json()
+}
+
+export const getRecentPosts = async () => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=recent", 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+        }
+    )
+    if (!res.ok) throw new Error('Failed retrieving posts')
+    return await res.json()
+}
+
+export const getPopularPosts = async () => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=popular", 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('Failed retrieving posts')
+    return await res.json()
+}
+
+export const getEditorChoice = async () => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=editor", 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('Failed retrieving posts')
+    return await res.json()
+}
+
+export const addPost = async (post: any) => {
+    if (!post) return
+    const newPost = await setNewPost( post )
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=create", 
+        {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(newPost)
+        }
+    )
+    if (!res.ok) throw new Error('Failed creating new post')
     return await res.json()
 }
 
