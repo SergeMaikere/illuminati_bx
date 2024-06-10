@@ -6,8 +6,9 @@ import Menu from '../menu/Menu';
 import CommentsArea from '../commentsArea/CommentsArea';
 import CategoryPill from '../categoryPill/CategoryPill';
 import EditorOptions from '../editorOptions/EditorOptions';
+import { updatePostViews } from '../../utils/Posts';
 
-const Post = ({post, updateLike}) => {
+const Post = ({post}) => {
 
     const setTextBody = text => {
         if (!text) return ''
@@ -16,22 +17,7 @@ const Post = ({post, updateLike}) => {
 
     useEffect(
         () => {
-            const updateViews = async id => {
-                if (!id) return
-                const res = await fetch(
-                    "http://localhost:3000/api/post?action=views", 
-                    {
-                        method: 'POST', 
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Accept': 'application/json'
-                        },
-                        body: JSON.stringify({id})
-                    }
-                )
-                if (!res.ok) throw new Error('Failed updating post')
-                return await res.json()
-            }
+            const updateViews = async id => await updatePostViews(id)
             updateViews( post?.id ) 
         }, []
     )
@@ -44,7 +30,7 @@ const Post = ({post, updateLike}) => {
             <div className={classNames("p-3", {hidden: !post})}>
                 <div className="flex gap-2">
                     <CategoryPill category={post.catSlug} />
-                    <EditorOptions liked={post?.editorLike} updateLike={updateLike} />
+                    <EditorOptions id={post?.id} liked={post?.editorLike} />
                 </div>
                 <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
                 <div className="md:mt-10 lg:flex gap-2">

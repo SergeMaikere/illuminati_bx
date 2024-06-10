@@ -9,11 +9,6 @@ const SinglePage = async (context) => {
 
     const post = await getPostBySlug( context.params.slug )
     const comments = await getCommentsByPostId(post?.id)
-    const updateLike = async (like) => {
-        "use server"
-        const res = await updateEditorLike(post?.id, like)
-    }
-
 
     // const comment = async () => {
     //     "use server"
@@ -28,7 +23,7 @@ const SinglePage = async (context) => {
 
     return (
         <div>
-            <Post post={post} updateLike={updateLike} />
+            <Post post={post} />
             <div className="flex gap-3">
                 <div className="w-2/3 bg-black">
                     {/*<CommentsArea comments={comments} />*/}

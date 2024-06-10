@@ -69,6 +69,8 @@ export const getFormDataByObject = obj => {
     )
 }
 
+export const  addMonths = ( date, n ) => new Date(date.setMonth( date.getMonth() + n ))
+
 export const slugify = str => latinize( str.toLowerCase().split(' ').join('_').replace(/[*+~.()'"!:@,]/g, '') )
 
 export const isLoggedIn = (status: string): boolean => status === 'authenticated'

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { URL } from 'url';
-
+import { addMonths, voyeur } from '../../utils/Helper';
 
 const create = async (req) => {
     const post = await req.json()
@@ -24,6 +24,78 @@ const getPostBySlug = async slug => {
                             name: true,
                             email: true,
                             image: true
+                        }
+                    }
+                }
+            } 
+        )
+        return new NextResponse( JSON.stringify(res, {status: 200}) )
+    }
+    catch (err) {
+        return new NextResponse( JSON.stringify(err, {status: 500}) )
+    }
+}
+
+const getPostRecent = async () => {
+    try {
+        const res = await prisma.post.findMany( 
+            {
+                where: {
+                    createdAt: { gte: addMonths( new Date(), -1 ) }
+                }, 
+                include: {
+                    user: {
+                            select: {
+                            name: true,
+                            email: true,
+                            image: true
+                        }
+                    }
+                }
+            } 
+        )
+        return new NextResponse( JSON.stringify(res, {status: 200}) )
+    }
+    catch (err) {
+        return new NextResponse( JSON.stringify(err, {status: 500}) )
+    }
+}
+
+const getPopularPosts = async () => {
+    try {
+        const res = await prisma.post.findMany(
+            {
+                orderBy: {views: 'desc'},
+                take: 3,
+                include: {
+                    user: { select: {name: true} },
+                    cat: { 
+                        select: {
+                            logo: true,
+                            logoAlt: true
+                        }
+                    }
+                }
+            } 
+        )
+        return new NextResponse( JSON.stringify(res, {status: 200}) )
+    }
+    catch (err) {
+        return new NextResponse( JSON.stringify(err, {status: 500}) )
+    }
+}
+
+const getEditorChoice = async () => {
+    try {
+        const res = await prisma.post.findMany(
+            {
+                where: {editorLike: true},
+                include: {
+                    user: { select: {name: true} },
+                    cat: { 
+                        select: {
+                            logo: true,
+                            logoAlt: true
                         }
                     }
                 }
@@ -90,7 +162,11 @@ const updatePost = async req => {
 export const GET = async req => {
     const { searchParams } = new URL(req.url)
     const slug = searchParams.get('slug')
-    return await getPostBySlug(slug)
+    const action = searchParams.get('action')
+    if ( slug ) return await getPostBySlug(slug)
+    if ( action === 'recent' ) return await getPostRecent()
+    if ( action === 'popular' ) return await getPopularPosts()
+    if ( action === 'editor' ) return await getEditorChoice()
 }
 
 export const POST = async req => {

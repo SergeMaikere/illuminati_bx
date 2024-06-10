@@ -26,13 +26,6 @@ const setTitleSlug = post => ( {...post, slug: slugify(post.title)} )
     
 const setNewPost = asyncPipe( getImgUrl, setTitleSlug )
 
-export const getPostById = async (id: string): Post => {
-    const res = await fetch(`https://dummyjson.com/posts/${id}`)
-    if (!res.ok) throw new Error("Failed")
-    const post = await res.json()
-    return await setPost(post)
-}
-
 export const updatePostViews = async id => {
     if (!id) return
     const res = await fetch(
@@ -79,6 +72,51 @@ export const getPostBySlug = async ( slug: string ): Post[] => {
         }
     )
     if (!res.ok) throw new Error('Failed finding post')
+    return await res.json()
+}
+
+export const getRecentPosts = async () => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=recent", 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+        }
+    )
+    if (!res.ok) throw new Error('Failed retrieving posts')
+    return await res.json()
+}
+
+export const getPopularPosts = async () => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=popular", 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('Failed retrieving posts')
+    return await res.json()
+}
+
+export const getEditorChoice = async () => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=editor", 
+        {
+            method: 'GET', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('Failed retrieving posts')
     return await res.json()
 }
 

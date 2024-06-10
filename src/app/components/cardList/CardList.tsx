@@ -17,19 +17,7 @@ const CardList = (props) => {
             <div className="text-4xl font-serif m-4">{props.title}</div>
             {
                 decks.length === 0 ? <OupsNoContent/> :
-                decks[state].map( 
-                    obj => <PostCard 
-                        key={obj.id}
-                        id={obj.id}
-                        date={obj.date} 
-                        category={obj.category} 
-                        title={obj.title} 
-                        subtitle={obj.subtitle}
-                        description={obj.description} 
-                        imgSrc={obj.imgSrc} 
-                        imgAlt={obj.imgAlt}
-                    />
-                )
+                decks[state].map( post => <PostCard key={post.id} post={post} /> )
             }
             <Pagination length={decks.length}/>
         </div>
