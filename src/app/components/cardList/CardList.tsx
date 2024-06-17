@@ -2,8 +2,7 @@
 import Pagination from '../pagination/Pagination';
 import PostCard from '../postCard/PostCard';
 import OupsNoContent from '../oupsNoContent/OupsNoContent';
-import { getRecents } from '../../utils/getRecents';
-import { splicer, voyeur } from '../../utils/Helper';
+import { splicer } from '../../utils/Helper';
 import { useContext } from 'react';
 import { PaginationContext } from '../../../context/PaginationContext';
 

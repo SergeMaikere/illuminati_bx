@@ -25,7 +25,7 @@ const Menu = async () => {
                     <div className="text-3xl">Catégories</div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    {categories.map( (cat, i) => <CategoryPill key={cat.id} category={cat.name} /> )}
+                    {categories.map( (cat, i) => <CategoryPill key={cat.id} category={cat.slug} /> )}
                 </div>
             </div>
             <div className="mt-10 pb-12">

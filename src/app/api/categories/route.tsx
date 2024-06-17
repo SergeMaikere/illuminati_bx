@@ -1,5 +1,5 @@
-import { Category } from '../../utils/Categories';
 import prisma from '../../utils/Connect';
+import { Category } from '../../utils/Categories';
 import { NextResponse } from 'next/server'
 import { voyeur } from '../../utils/Helper';
 

@@ -1,6 +1,7 @@
+import prisma from '../../utils/Connect';
 import { NextResponse } from 'next/server'
 import { URL } from 'url';
-import { addMonths, voyeur } from '../../utils/Helper';
+import { addMonths } from '../../utils/Helper';
 
 const create = async (req) => {
     const post = await req.json()
@@ -19,6 +20,17 @@ const getPostBySlug = async slug => {
             {
                 where: {slug: slug}, 
                 include: {
+                    comments: {
+                        include: { 
+                            user: {
+                                select: {
+                                    name: true,
+                                    email: true,
+                                    image: true
+                                }
+                            } 
+                        }
+                    },
                     user: {
                             select: {
                             name: true,

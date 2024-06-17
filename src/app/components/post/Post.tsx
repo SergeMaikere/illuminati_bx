@@ -10,10 +10,7 @@ import { updatePostViews } from '../../utils/Posts';
 
 const Post = ({post}) => {
 
-    const setTextBody = text => {
-        if (!text) return ''
-        return { __html: text }
-    }
+    const markup = { __html: post?.body }
 
     useEffect(
         () => {
@@ -29,7 +26,7 @@ const Post = ({post}) => {
             </div>
             <div className={classNames("p-3", {hidden: !post})}>
                 <div className="flex gap-2">
-                    <CategoryPill category={post.catSlug} />
+                    <CategoryPill category={post?.catSlug} />
                     <EditorOptions id={post?.id} liked={post?.editorLike} />
                 </div>
                 <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
@@ -49,7 +46,7 @@ const Post = ({post}) => {
                         </div>
                     </div>
                 </div>
-                <div className="md:mt-10 font-mono" dangerouslySetInnerHTML={setTextBody(post?.body)}></div>
+                <div className="md:mt-10 font-mono" dangerouslySetInnerHTML={markup}></div>
             </div>
         </div>
     );

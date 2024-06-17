@@ -12,7 +12,7 @@ const EditorCard = ({post}) => {
                 border-b rounded border-gray-300 shadow-md
                 p-2 mb-2 
             `} 
-            href={`blog/${post?.catSlug}/${post?.id}`}
+            href={`/${post?.slug}`}
         >
             <div className="hidden md:block col-span-2">
                 <img className="object-cover" src={post?.image} alt={post?.imageAlt} />
