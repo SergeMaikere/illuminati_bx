@@ -59,6 +59,22 @@ export const updateEditorLike = async (id, like) => {
     return await res.json()
 }
 
+export const updatePost = async post => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=post", 
+        {
+            method: 'PUT', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(post)
+        }
+    )
+    if (!res.ok) throw new Error('Failed updating post')
+    return await res.json()
+}
+
 export const getPostBySlug = async ( slug: string ): Post[] => {
     if (!slug) return
     const res = await fetch(
@@ -124,7 +140,7 @@ export const addPost = async (post: any) => {
     if (!post) return
     const newPost = await setNewPost( post )
     const res = await fetch(
-        "http://localhost:3000/api/post?action=create", 
+        "http://localhost:3000/api/post", 
         {
             method: 'POST', 
             headers: {

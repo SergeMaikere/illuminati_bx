@@ -13,3 +13,9 @@ export const getImgUrl = async (obj: any): any => {
     const url = await storageCloud(obj.image)
     return { ...obj, image: url }
 }
+
+export const getLogoUrl = async (obj: any): any => {
+    if ( obj.logo === undefined ) return { ...obj, logo: process.env.DEFAULT_PP }
+    const url = await storageCloud(obj.logo)
+    return { ...obj, logo: url }
+}

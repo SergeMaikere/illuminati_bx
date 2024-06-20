@@ -1,5 +1,5 @@
-import myJSON from './Categories.json'
-import { voyeur } from './Helper';
+import { getImgUrl, getLogoUrl } from './mediaHandler';
+import { isString } from './Validation';
 
 type Category = {
     id: number;
@@ -30,6 +30,15 @@ export const TextCategoryColor = {
     science: 'text-orange-600'
 }
 
+const setCategoryPics = async category => asyncPipe( getImgUrl, getLogoUrl )
+
+const updateCatImgLogo = async category => {
+    let newCat = { ...category }
+    if ( !isString(category.image) ) newCat = await getImgUrl(category)
+    if ( !isString(category.logo) ) newCat = await getLogoUrl(category)
+    return newCat
+}
+
 export const getAllCategories = async (): Category[] => {
     const res = await fetch(
         'http://localhost:3000/api/categories?category=all', 
@@ -48,7 +57,7 @@ export const getAllCategories = async (): Category[] => {
 
 export const getCategory = async (cat: string): Category => {
     const res = await fetch(
-        `http://localhost:3000/api/categories?category=${cat.toLowerCase()}`, 
+        `http://localhost:3000/api/categories?category=${cat}`, 
         {
             cache: 'no-store',
             headers: {
@@ -60,4 +69,56 @@ export const getCategory = async (cat: string): Category => {
     )
     if ( !res.ok ) throw new Error('Failed')
     return res.json()
+}
+
+export const createCategory = async category => {
+    if (!category) return
+    const newCat = await setCategoryPics( category )
+    const res = await fetch(
+        "http://localhost:3000/api/categories", 
+        {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(newCat)
+        }
+    )
+    if (!res.ok) throw new Error('Failed creating new category')
+    return await res.json()
+}
+
+export const updateCategory = async (category, id) => {
+    if (!category) return
+    const newCat = await updateCatImgLogo( category )
+    const res = await fetch(
+        `http://localhost:3000/api/categories?category=${id}`, 
+        {
+            method: 'PUT', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(newCat)
+        }
+    )
+    if (!res.ok) throw new Error('Failed updating category')
+    return await res.json()
+}
+
+export const deleteCategory = async catSlug => {
+    if (!catSlug) return
+    const res = await fetch(
+        `http://localhost:3000/api/categories?category=${catSlug}`, 
+        {
+            method: 'DELETE', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+    )
+    if (!res.ok) throw new Error('Failed deleting category')
+    return await res.json()
 }
