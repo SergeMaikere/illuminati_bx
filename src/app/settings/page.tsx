@@ -8,8 +8,10 @@ const SettingsPage = async () => {
     const saveSettings = async (formDatas, catId) => {
         "use server"
         const newCat = formDataToObject( formDatas )
+        console.log(newCat)
         const res = await updateCategory( newCat, catId )
         console.log(res)
+        return res
     }
 
     return (

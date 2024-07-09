@@ -1,23 +1,23 @@
 import { asyncPipe, slugify } from './Helper'
 import { getImgUrl } from './mediaHandler';
 
-type Post = {
-    id: string;      
-    createdAt: string;    
-    slug: string;      
-    title: string;     
-    subtitle: string;
-    description: string;
-    body: string;
-    image: string;
-    imageAlt: string;
-    catSlug: string;
-    cat: Category;
-    userEmail: string;
-    user: User;    
-    views: integer;     
-    editorLike: boolean; 
-    comments: Comment[];
+export type Post = {
+    id: string      
+    createdAt: string    
+    slug: string      
+    title: string     
+    subtitle: string
+    description: string
+    body: string
+    image: string
+    imageAlt: string
+    catSlug: string
+    cat: Category
+    userEmail: string
+    user: User    
+    views: integer     
+    editorLike: boolean 
+    comments: Comment[]
 }
 
 

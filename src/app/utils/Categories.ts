@@ -1,16 +1,23 @@
+import type { NextApiResponse } from 'next'
 import { getImgUrl, getLogoUrl } from './mediaHandler';
 import { isString } from './Validation';
+import { Post } from './Posts';
+import { asyncPipe } from './Helper';
 
-type Category = {
-    id: number;
-    category: string;
-    logoSrc: string;
-    logoAlt: string;
-    imgSrc: string;
-    imgAlt: string;
-    subtitle: string;
-    description: string;
+export type Category = {
+    id: string      
+    slug: string      
+    name: string      
+    subtitle: string
+    description: string
+    logo: File | string
+    logoAlt: string
+    image: File | string
+    imageAlt: string
+    posts?: Post[]
 }
+
+type UpdatedCategory = Partial<Category>
 
 export const BgCategoryColor = {
     enfer: 'bg-red-600',
@@ -30,17 +37,10 @@ export const TextCategoryColor = {
     science: 'text-orange-600'
 }
 
-const setCategoryPics = async category => asyncPipe( getImgUrl, getLogoUrl )
+const setCategoryPics = asyncPipe( getImgUrl, getLogoUrl )
 
-const updateCatImgLogo = async category => {
-    let newCat = { ...category }
-    if ( !isString(category.image) ) newCat = await getImgUrl(category)
-    if ( !isString(category.logo) ) newCat = await getLogoUrl(category)
-    return newCat
-}
-
-export const getAllCategories = async (): Category[] => {
-    const res = await fetch(
+export const getAllCategories = async (): Promise<Category[]> => {
+    const res: Response = await fetch(
         'http://localhost:3000/api/categories?category=all', 
         {
             cache: 'no-store',
@@ -52,11 +52,13 @@ export const getAllCategories = async (): Category[] => {
         }
     )
     if ( !res.ok ) throw new Error('Failed')
-    return res.json()
+    return await res.json()
 }
 
-export const getCategory = async (cat: string): Category => {
-    const res = await fetch(
+export const getCategory = async (cat: string | undefined): Promise<Category> => {
+    if ( !cat ) throw new Error("No category selected")
+
+    const res: Response = await fetch(
         `http://localhost:3000/api/categories?category=${cat}`, 
         {
             cache: 'no-store',
@@ -68,13 +70,14 @@ export const getCategory = async (cat: string): Category => {
         }
     )
     if ( !res.ok ) throw new Error('Failed')
-    return res.json()
+    return await res.json()
 }
 
-export const createCategory = async category => {
-    if (!category) return
+export const createCategory = async (category: Omit<Category, "id" | "posts"> | undefined): Promise<Category> => {
+    if (!category) throw new Error("New category is undefined")
+
     const newCat = await setCategoryPics( category )
-    const res = await fetch(
+    const res: Response = await fetch(
         "http://localhost:3000/api/categories", 
         {
             method: 'POST', 
@@ -89,10 +92,11 @@ export const createCategory = async category => {
     return await res.json()
 }
 
-export const updateCategory = async (category, id) => {
-    if (!category) return
-    const newCat = await updateCatImgLogo( category )
-    const res = await fetch(
+export const updateCategory = async (category: UpdatedCategory, id: string): Promise<Category> => {
+    if (!category) throw new Error("Update data is undefined")
+
+    const newCat = await setCategoryPics( category )
+    const res: Response = await fetch(
         `http://localhost:3000/api/categories?category=${id}`, 
         {
             method: 'PUT', 
@@ -107,9 +111,10 @@ export const updateCategory = async (category, id) => {
     return await res.json()
 }
 
-export const deleteCategory = async catSlug => {
-    if (!catSlug) return
-    const res = await fetch(
+export const deleteCategory = async (catSlug: string): Promise<Category> => {
+    if (!catSlug) throw new Error("Category to delete is not selected")
+
+    const res: Response = await fetch(
         `http://localhost:3000/api/categories?category=${catSlug}`, 
         {
             method: 'DELETE', 
