@@ -1,7 +1,8 @@
 "use client"
+import { Props } from "next/script";
 import { CiImageOn } from "react-icons/ci";
 
-const UploadFiles = ( {fileType, category, image, imageAlt, setFile, setImageAlt} ) => {
+const UploadFiles = ( {fileType, category, image, imageAlt} ) => {
 
     const fileId = `${fileType}${category}`
     const fileAlt = `${fileType}Alt${category}`

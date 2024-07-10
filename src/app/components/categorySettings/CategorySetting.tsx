@@ -1,37 +1,45 @@
 'use client'
-import React, { PropTypes, useState } from 'react';
+import React, { useState } from 'react';
 import UploadFiles from '../uploadFiles/uploadFiles';
 import Button from '../button/Button';
 import { getFormDataByObject } from '../../utils/Helper';
+import { Category } from '../../utils/Categories';
 
-const CategorySetting = ({ category, handleSubmit }) => {
+type AppProps = {
+    category: Category
+    handleSubmit: Function
+}
 
-    const [ cat, setCat ] = useState( category )
+const CategorySetting = ({ category, handleSubmit }: AppProps) => {
 
-    const saveChanges = async e => {
+    const [ cat, setCat ] = useState<Category>( category )
+
+    const saveChanges = async (e: React.SyntheticEvent) => {
         e.preventDefault()
-        const newCat = {
-            slug: e.target.name.value.toLowerCase(),
-            name: e.target.name.value,
-            subtitle: e.target.subtitle.value,
-            description: e.target.description.value,
-            logo: getFile(e, 'logo'),
-            logoAlt: getAlt(e, 'logo'),
-            image: getFile(e, 'image'),
-            imageAlt: getAlt(e, 'image')
+        const target = e.target as typeof e.target & Record<keyof Category, {value: string}>
+
+        const newCat: Omit<Category, "id" | "posts"> = {
+            slug: target.name.value.toLowerCase(),
+            name: target.name.value,
+            subtitle: target.subtitle.value,
+            description: target.description.value,
+            logo: getFile(target, 'logo'),
+            logoAlt: getAlt(target, 'logo'),
+            image: getFile(target, 'image'),
+            imageAlt: getAlt(target, 'image')
         }
         const formDatas = getFormDataByObject( newCat )
         const res = await handleSubmit(formDatas, cat.id)
-        updateCategoryView(e, res)
+        updateCategoryView(target, res)
     }
 
-    const getFile = (e, fileType) => e.target[`${fileType}${cat.name}`].files[0] || cat[fileType]
-    const getAlt = (e, fileType) => e.target[`${fileType}Alt${cat.name}`].value || cat[`${fileType}Alt`]
+    const getFile = (target: any, fileType: string): File | string => target[`${fileType}${cat.name}`].files[0] || cat[fileType as keyof Category]
+    const getAlt = (target: any, fileType: string): string => target[`${fileType}Alt${cat.name}`].value || cat[`${fileType}Alt` as keyof Category]
 
-    const updateCategoryView = (e, category) => {
+    const updateCategoryView = (target: any, category: Category): void => {
         setCat( category )
-        e.target[`image${category.name}`].value = ""
-        e.target[`logo${category.name}`].value = ""
+        target[`image${category.name}`].value = ""
+        target[`logo${category.name}`].value = ""
     }
 
     return (
@@ -48,17 +56,15 @@ const CategorySetting = ({ category, handleSubmit }) => {
                 <textarea 
                     value={cat.subtitle}
                     name="subtitle" 
-                    rows="2" 
+                    rows={2} 
                     className="bg-transparent font-mono text-xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
-                    type="text" 
                     placeholder="Sous titre..."
                     required/>
                 <textarea 
                     value={cat.description}
                     name="description" 
-                    rows="3"
+                    rows={3}
                     className="bg-transparent font-mono text-xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
-                    type="text" 
                     placeholder="Description..."
                     required/>
             </div>
