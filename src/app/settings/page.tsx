@@ -14,8 +14,8 @@ const SettingsPage = async () => {
 
     return (
         <div>
-            <div className="text-6xl font-serif text-center underline m-16">Settings</div>
-            <div>
+            <div className="text-4xl md:text-6xl font-serif text-center underline my-8 md:my-16">Settings</div>
+            <div className="flex flex-col gap-9 items-center">
                 {categories.map( category => <CategorySetting key={category.id} category={category} handleSubmit={saveSettings} /> )}
             </div>
         </div>

@@ -43,12 +43,12 @@ const CategorySetting = ({ category, handleSubmit }: AppProps) => {
     }
 
     return (
-        <form onSubmit={saveChanges} className="my-6 p-6 border border-gray-400 shadow-gray-800 shadow-xl">
-            <div className="flex flex-col w-10/12 gap-3 md:gap-6 md:w-2/3">
+        <form onSubmit={saveChanges} className="w-11/12 md= w-2/3 py-6 px-3 border-y border-gray-400 rounded shadow-gray-400 md:shadow-xl shadow-md">
+            <div className="flex flex-col gap-6 ">
                 <input 
                     value={cat.name}
                     name="name" 
-                    className="bg-transparent font-mono text-2xl md:text-4xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
+                    className="bg-transparent font-mono text-xl md:text-4xl w-full px-6 border-b border-gray-400 focus:outline-gray-400" 
                     type="text" 
                     placeholder="Nom..."
                     onChange={ e => setCat(prev => ({...prev, name: e.target.value })) } />
@@ -56,28 +56,28 @@ const CategorySetting = ({ category, handleSubmit }: AppProps) => {
                     value={cat.subtitle}
                     name="subtitle" 
                     rows={2} 
-                    className="bg-transparent font-mono text-xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
+                    className="bg-transparent font-mono text-lg md:text-xl w-full px-6 border-b border-gray-400 focus:outline-gray-400" 
                     placeholder="Sous titre..."
                     onChange={ e => setCat(prev => ({...prev, subtitle: e.target.value })) } />
                 <textarea 
                     value={cat.description}
                     name="description" 
                     rows={3}
-                    className="bg-transparent font-mono text-xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
+                    className="bg-transparent font-mono text-lg w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     placeholder="Description..."
                     onChange={ e => setCat(prev => ({...prev, description: e.target.value })) } />
-            </div>
-            <div className="flex">
-                <UploadFiles 
-                    fileType="image"
-                    category={cat.name}
-                    image={cat.image}
-                    imageAlt={cat.imageAlt} />
-                <UploadFiles 
-                    fileType="logo"
-                    category={cat.name}
-                    image={cat.logo}
-                    imageAlt={cat.logoAlt} />
+                <div className="flex flex-col md:flex-row gap-3">
+                    <UploadFiles 
+                        fileType="image"
+                        category={cat.name}
+                        image={cat.image}
+                        imageAlt={cat.imageAlt} />
+                    <UploadFiles 
+                        fileType="logo"
+                        category={cat.name}
+                        image={cat.logo}
+                        imageAlt={cat.logoAlt} />
+                </div>
             </div>
             <Button children="Sauvegarde!" type="submit" />
         </form>
