@@ -19,9 +19,9 @@ export const asyncVoyeur = async x => {
     return x
 }
 
-export const voyeur = x => {
+export const voyeur = (x: any): any => {
     console.log('\r\n')
-    console.log(`SEEEEEERGE ====> ${JSON.stringify(x)}`); 
+    console.log('SEEEEEERGE ====>', x) 
     console.log('\r\n')
     return x
 }

@@ -1,0 +1,87 @@
+'use client'
+import React, { useState } from 'react';
+import UploadFiles from '../uploadFiles/uploadFiles';
+import Button from '../button/Button';
+import { getFormDataByObject } from '../../utils/Helper';
+import { Category } from '../../utils/Categories';
+
+type AppProps = {
+    category: Category
+    handleSubmit: Function
+}
+
+const CategorySetting = ({ category, handleSubmit }: AppProps) => {
+
+    const [ cat, setCat ] = useState<Category>( category )
+
+    const saveChanges = async (e: React.SyntheticEvent) => {
+        e.preventDefault()
+        const target = e.target as typeof e.target & Record<keyof Category, {value: string}>
+
+        const newCat: Omit<Category, "id" | "posts"> = {
+            slug: target.name.value.toLowerCase(),
+            name: target.name.value,
+            subtitle: target.subtitle.value,
+            description: target.description.value,
+            logo: getFile(target, 'logo'),
+            logoAlt: getAlt(target, 'logo'),
+            image: getFile(target, 'image'),
+            imageAlt: getAlt(target, 'image')
+        }
+        const formDatas = getFormDataByObject( newCat )
+        const res = await handleSubmit(formDatas, cat.id)
+        updateCategoryView(target, res)
+    }
+
+    const getFile = (target: any, fileType: string): File | string => target[`${fileType}${cat.name}`].files[0] || cat[fileType as keyof Category]
+    const getAlt = (target: any, fileType: string): string => target[`${fileType}Alt${cat.name}`].value || cat[`${fileType}Alt` as keyof Category]
+
+    const updateCategoryView = (target: any, category: Category): void => {
+        setCat( category )
+        target[`image${category.name}`].value = ""
+        target[`logo${category.name}`].value = ""
+    }
+
+    return (
+        <form onSubmit={saveChanges} className="w-11/12 md= w-2/3 py-6 px-3 border-y border-gray-400 rounded shadow-gray-400 md:shadow-xl shadow-md">
+            <div className="flex flex-col gap-6 ">
+                <input 
+                    value={cat.name}
+                    name="name" 
+                    className="bg-transparent font-mono text-xl md:text-4xl w-full px-6 border-b border-gray-400 focus:outline-gray-400" 
+                    type="text" 
+                    placeholder="Nom..."
+                    onChange={ e => setCat(prev => ({...prev, name: e.target.value })) } />
+                <textarea 
+                    value={cat.subtitle}
+                    name="subtitle" 
+                    rows={2} 
+                    className="bg-transparent font-mono text-lg md:text-xl w-full px-6 border-b border-gray-400 focus:outline-gray-400" 
+                    placeholder="Sous titre..."
+                    onChange={ e => setCat(prev => ({...prev, subtitle: e.target.value })) } />
+                <textarea 
+                    value={cat.description}
+                    name="description" 
+                    rows={3}
+                    className="bg-transparent font-mono text-lg w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
+                    placeholder="Description..."
+                    onChange={ e => setCat(prev => ({...prev, description: e.target.value })) } />
+                <div className="flex flex-col md:flex-row gap-3">
+                    <UploadFiles 
+                        fileType="image"
+                        category={cat.name}
+                        image={cat.image}
+                        imageAlt={cat.imageAlt} />
+                    <UploadFiles 
+                        fileType="logo"
+                        category={cat.name}
+                        image={cat.logo}
+                        imageAlt={cat.logoAlt} />
+                </div>
+            </div>
+            <Button children="Sauvegarde!" type="submit" />
+        </form>
+    );
+};
+
+export default CategorySetting;

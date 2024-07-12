@@ -1,23 +1,23 @@
 import { asyncPipe, slugify } from './Helper'
 import { getImgUrl } from './mediaHandler';
 
-type Post = {
-    id: string;      
-    createdAt: string;    
-    slug: string;      
-    title: string;     
-    subtitle: string;
-    description: string;
-    body: string;
-    image: string;
-    imageAlt: string;
-    catSlug: string;
-    cat: Category;
-    userEmail: string;
-    user: User;    
-    views: integer;     
-    editorLike: boolean; 
-    comments: Comment[];
+export type Post = {
+    id: string      
+    createdAt: string    
+    slug: string      
+    title: string     
+    subtitle: string
+    description: string
+    body: string
+    image: string
+    imageAlt: string
+    catSlug: string
+    cat: Category
+    userEmail: string
+    user: User    
+    views: integer     
+    editorLike: boolean 
+    comments: Comment[]
 }
 
 
@@ -53,6 +53,22 @@ export const updateEditorLike = async (id, like) => {
                 'Accept': 'application/json'
             },
             body: JSON.stringify({id, like})
+        }
+    )
+    if (!res.ok) throw new Error('Failed updating post')
+    return await res.json()
+}
+
+export const updatePost = async post => {
+    const res = await fetch(
+        "http://localhost:3000/api/post?action=post", 
+        {
+            method: 'PUT', 
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(post)
         }
     )
     if (!res.ok) throw new Error('Failed updating post')
@@ -124,7 +140,7 @@ export const addPost = async (post: any) => {
     if (!post) return
     const newPost = await setNewPost( post )
     const res = await fetch(
-        "http://localhost:3000/api/post?action=create", 
+        "http://localhost:3000/api/post", 
         {
             method: 'POST', 
             headers: {

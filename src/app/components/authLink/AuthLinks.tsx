@@ -2,7 +2,7 @@
 import Link from 'next/Link'
 import { useSession, signOut } from 'next-auth/react'
 import { useEffect, useState } from 'react';
-import { isLoggedIn, isWriter } from '../../utils/Helper';
+import { isAdmin, isLoggedIn, isWriter } from '../../utils/Helper';
 import classNames from 'classnames'
 
 const AuthLinks = ({ className }) => {
@@ -33,7 +33,8 @@ const AuthLinks = ({ className }) => {
                 >
                     <div className="pl-2 rounded border-b border-gray-300 mb-2">{data?.user?.name}</div>
                     <Link className="pl-2 font-mono hover:text-amber-400" href={`/user/${data?.user?.id}`}>Profile</Link>
-                    { isWriter(status, data) && <Link className="pl-2" href="/write">Write</Link> }
+                    { isAdmin(status, data) &&  <Link className="pl-2 cursor-pointer font-mono hover:text-amber-400" href="/settings">Settings</Link> }
+                    { isWriter(status, data) && <Link className="pl-2 cursor-pointer font-mono hover:text-amber-400" href="/write">Write</Link> }
                     <div className="pl-2 cursor-pointer font-mono hover:text-amber-400" onClick={signOut}>Logout</div>
                 </div>
             </div>

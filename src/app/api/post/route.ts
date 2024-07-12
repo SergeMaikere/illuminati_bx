@@ -181,13 +181,7 @@ export const GET = async req => {
     if ( action === 'editor' ) return await getEditorChoice()
 }
 
-export const POST = async req => {
-    const { searchParams } = new URL(req.url)
-    const action = searchParams.get('action')
-    if ( action === 'create' ) return await create(req)
-    if ( action === 'slug' ) return await getPostBySlug(req)
-    if ( action === 'views' ) return await updateViews(req)
-}
+export const POST = async req =>  await create(req)
 
 export const PUT = async req => {
     const { searchParams } = new URL(req.url)
@@ -198,7 +192,8 @@ export const PUT = async req => {
 }
 
 export const DELETE = async req => {
-    const id = await req.json()
+    const { searchParams } = new URL(req.url)
+    const id = searchParams.get('postId')
     try {
         const res = await prisma.post.delete( {where: {id: id}} )
         return new NextResponse( JSON.stringify(res, {status: 200}) )
