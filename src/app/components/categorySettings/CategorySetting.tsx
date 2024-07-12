@@ -43,30 +43,29 @@ const CategorySetting = ({ category, handleSubmit }: AppProps) => {
     }
 
     return (
-        <form onSubmit={saveChanges} className="my-6 p-6">
+        <form onSubmit={saveChanges} className="my-6 p-6 border border-gray-400 shadow-gray-800 shadow-xl">
             <div className="flex flex-col w-10/12 gap-3 md:gap-6 md:w-2/3">
                 <input 
                     value={cat.name}
                     name="name" 
-                    className="bg-transparent font-serif text-2xl md:text-4xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
+                    className="bg-transparent font-mono text-2xl md:text-4xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     type="text" 
                     placeholder="Nom..."
-                    onChange={ e => setCat(prev => ({...prev, name: e.target.value })) }
-                    required/>
+                    onChange={ e => setCat(prev => ({...prev, name: e.target.value })) } />
                 <textarea 
                     value={cat.subtitle}
                     name="subtitle" 
                     rows={2} 
                     className="bg-transparent font-mono text-xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     placeholder="Sous titre..."
-                    required/>
+                    onChange={ e => setCat(prev => ({...prev, subtitle: e.target.value })) } />
                 <textarea 
                     value={cat.description}
                     name="description" 
                     rows={3}
                     className="bg-transparent font-mono text-xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     placeholder="Description..."
-                    required/>
+                    onChange={ e => setCat(prev => ({...prev, description: e.target.value })) } />
             </div>
             <div className="flex">
                 <UploadFiles 

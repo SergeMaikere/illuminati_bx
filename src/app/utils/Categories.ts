@@ -2,7 +2,7 @@ import type { NextApiResponse } from 'next'
 import { getImgUrl, getLogoUrl } from './mediaHandler';
 import { isString } from './Validation';
 import { Post } from './Posts';
-import { asyncPipe } from './Helper';
+import { asyncPipe, voyeur } from './Helper';
 
 export type Category = {
     id: string      
@@ -94,7 +94,7 @@ export const createCategory = async (category: Omit<Category, "id" | "posts"> | 
 
 export const updateCategory = async (category: UpdatedCategory, id: string): Promise<Category> => {
     if (!category) throw new Error("Update data is undefined")
-
+        
     const newCat = await setCategoryPics( category )
     const res: Response = await fetch(
         `http://localhost:3000/api/categories?category=${id}`, 

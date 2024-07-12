@@ -13,10 +13,12 @@ const getAllCategories = async (): Promise<NextResponse> => {
 }
 
 const getCategory = async (cat: string | null): Promise<NextResponse> => {
+    if ( !cat ) throw new Error("Request incomplete !")
+        
     try{
         const res = await prisma.category.findUnique(
             {
-                where: {slug: cat},
+                where: {slug: cat as string | undefined},
                 include: {posts: true}
             }
         )
@@ -29,6 +31,8 @@ const getCategory = async (cat: string | null): Promise<NextResponse> => {
 
 const create = async (req: Request): Promise<NextResponse> => {
     const category = await req.json()
+    if ( !category ) throw new Error("Request incomplete !")
+        
     try{
         const res = await prisma.category.create( {data: category} )
         return new NextResponse( JSON.stringify(res) )
@@ -41,10 +45,12 @@ const create = async (req: Request): Promise<NextResponse> => {
 const update = async (req: Request): Promise<NextResponse> => {
     const { searchParams } = new URL(req.url)
     const category = await req.json()
+    if ( !category ) throw new Error("Request incomplete !")
+        
     try{
         const res = await prisma.category.update(
             {
-                where: {id: searchParams.get('category')},
+                where: {id: searchParams.get('category') as string | undefined},
                 data: category
             }
         )
@@ -56,8 +62,10 @@ const update = async (req: Request): Promise<NextResponse> => {
 }
 
 const deleteCategory = async (slug: string | null): Promise<NextResponse> => {
+    if ( !slug ) throw new Error("Request incomplete !")
+        
     try{
-        const res = await prisma.category.delete( {where: {slug: slug}} )
+        const res = await prisma.category.delete( {where: {slug: slug as string | undefined}} )
         return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
@@ -67,7 +75,7 @@ const deleteCategory = async (slug: string | null): Promise<NextResponse> => {
 
 export const GET = async (req: Request): Promise<NextResponse> => {
     const {searchParams} = new URL(req.url)
-    const category = searchParams.get('category')
+    const category: string | null = searchParams.get('category')
     const res = category === 'all' ? await getAllCategories() : await getCategory(category) 
     return res
     

@@ -1,22 +1,20 @@
-import React, { PropTypes } from 'react';
-import { getAllCategories, updateCategory } from '../utils/Categories';
+import React from 'react';
+import { Category, getAllCategories, updateCategory } from '../utils/Categories';
 import CategorySetting from '../components/categorySettings/CategorySetting';
 import { formDataToObject } from '../utils/Helper';
 
 const SettingsPage = async () => {
     const categories = await getAllCategories()
-    const saveSettings = async (formDatas, catId) => {
+    const saveSettings = async (formDatas: FormData, catId: string): Promise<Category> => {
         "use server"
         const newCat = formDataToObject( formDatas )
-        console.log(newCat)
         const res = await updateCategory( newCat, catId )
-        console.log(res)
         return res
     }
 
     return (
         <div>
-            <div className="text-4xl font-serif text-center">Settings</div>
+            <div className="text-6xl font-serif text-center underline m-16">Settings</div>
             <div>
                 {categories.map( category => <CategorySetting key={category.id} category={category} handleSubmit={saveSettings} /> )}
             </div>

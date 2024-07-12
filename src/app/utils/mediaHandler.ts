@@ -3,6 +3,8 @@ import { app } from './firebase';
 import { isString } from './Validation';
 import { Category } from './Categories';
 
+type T = Partial<Category>
+
 const storageCloud = async (file: File ): Promise<string> => {
     try{
         const storage =  getStorage(app)
@@ -15,15 +17,15 @@ const storageCloud = async (file: File ): Promise<string> => {
     }
 }
 
-export const getImgUrl = async (obj: Partial<Category>): Promise<Partial<Category>>  => {
+export const getImgUrl = async (obj: T): Promise<T>  => {
     if ( !obj.image ) return { ...obj, image: process.env.DEFAULT_PP }
-    if ( isString(obj) ) return obj
-    const url = await storageCloud(obj.image)
+    if ( isString(obj.image) ) return obj
+    const url = await storageCloud(obj.image as File)
     return { ...obj, image: url }
 }
 
-export const getLogoUrl = async (obj: Partial<Category>): Promise<Partial<Category>>  => {
-    if ( isString(obj) ) return obj
-    const url = await storageCloud(obj.logo)
+export const getLogoUrl = async (obj: T): Promise<T>  => {
+    if ( isString(obj.logo) ) return obj
+    const url = await storageCloud(obj.logo as File)
     return { ...obj, logo: url }
 }

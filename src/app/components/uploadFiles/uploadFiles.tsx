@@ -1,8 +1,16 @@
 "use client"
 import { Props } from "next/script";
 import { CiImageOn } from "react-icons/ci";
+import { Category } from '../../utils/Categories';
 
-const UploadFiles = ( {fileType, category, image, imageAlt} ) => {
+type AppProps = {
+    fileType: string
+    category: string
+    image: File | string
+    imageAlt: string
+}
+
+const UploadFiles = ( {fileType, category, image, imageAlt}: AppProps ) => {
 
     const fileId = `${fileType}${category}`
     const fileAlt = `${fileType}Alt${category}`
@@ -19,7 +27,7 @@ const UploadFiles = ( {fileType, category, image, imageAlt} ) => {
                     </label>
                     <input className="hidden" type="file" id={fileId} />
                 </div>
-                <input className="px-3" type="text" id={fileAlt} placeholder="Image Alt" value={imageAlt} />
+                <input className="px-3 font-mono" type="text" id={fileAlt} placeholder="Image Alt" value={imageAlt} />
             </div>
         </div>
     );
