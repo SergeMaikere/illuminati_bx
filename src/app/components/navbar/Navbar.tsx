@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import Link from 'next/Link'
+import Link from 'next/link'
 import { FaSquareFacebook, FaSquareXTwitter, FaSquareYoutube  } from "react-icons/fa6";
 import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';

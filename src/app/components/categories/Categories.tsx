@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-import Link from 'next/Link'
+import React from 'react';
+import Link from 'next/link'
 import CategoryCard from '../categoryCard/CategoryCard';
 
 const Categories = (props) => {

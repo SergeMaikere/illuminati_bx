@@ -4,7 +4,7 @@ import { createContext, useContext, useReducer } from 'react'
 
 const initialState: number = 0
 
-const reducer = (state, action ): number => {
+const reducer = (state: number, action: {type: string} ): number => {
     if ( action.type === 'next' ) return state + 1
     if ( action.type === 'prev' ) return state - 1
     return state

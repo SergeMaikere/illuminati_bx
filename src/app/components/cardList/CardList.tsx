@@ -8,7 +8,7 @@ import { PaginationContext } from '../../../context/PaginationContext';
 
 const CardList = (props) => {
 
-    const [ state ] = useContext( PaginationContext )
+    const [ page ] = useContext( PaginationContext )
     const decks = splicer(props.cards, 4)
 
     return (
@@ -16,7 +16,7 @@ const CardList = (props) => {
             <div className="text-4xl font-serif m-4">{props.title}</div>
             {
                 decks.length === 0 ? <OupsNoContent/> :
-                decks[state].map( post => <PostCard key={post.id} post={post} /> )
+                decks[page].map( post => <PostCard key={post.id} post={post} /> )
             }
             <Pagination length={decks.length}/>
         </div>

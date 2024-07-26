@@ -1,21 +1,19 @@
 "use client"
-import React, { PropTypes, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import classNames from 'classnames'
 import OupsNoContent from '../oupsNoContent/OupsNoContent';
-import Menu from '../menu/Menu';
-import CommentsArea from '../commentsArea/CommentsArea';
 import CategoryPill from '../categoryPill/CategoryPill';
 import EditorOptions from '../editorOptions/EditorOptions';
-import { updatePostViews } from '../../utils/Posts';
+import { Post as MyPost, updatePostViews } from '../../utils/Posts';
 
-const Post = ({post}) => {
+const Post: React.FC<{post: MyPost}> = ({post}) => {
 
     const markup = { __html: post?.body }
 
     useEffect(
         () => {
-            const updateViews = async id => await updatePostViews(id)
-            updateViews( post?.id ) 
+            const updateViews = async (id: string) => await updatePostViews(id)
+            updateViews( post.id ) 
         }, []
     )
 
@@ -32,7 +30,7 @@ const Post = ({post}) => {
                 <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
                 <div className="md:mt-10 lg:flex gap-2">
                     <div className="md:flex-1">
-                        <img className="" src={post?.image} alt={post?.imgageAlt}/>
+                        <img className="" src={post?.image} alt={post?.imageAlt}/>
                     </div>
                     <div className="flex flex-col justify-around md:flex-1">
                         <div>

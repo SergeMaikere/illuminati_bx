@@ -1,5 +1,5 @@
 "use client"
-import React, { PropTypes, useContext } from 'react';
+import React, { useContext } from 'react';
 import Button from '../button/Button';
 import { PaginationContext } from '../../../context/PaginationContext';
 

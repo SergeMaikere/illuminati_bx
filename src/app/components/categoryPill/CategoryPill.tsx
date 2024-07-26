@@ -1,5 +1,5 @@
-import React, { PropTypes, useState } from 'react';
-import Link from 'next/Link'
+import React, { useState } from 'react';
+import Link from 'next/link'
 import { BgCategoryColor } from '../../utils/Categories';
 
 const CategoryPill = ({category}) => {

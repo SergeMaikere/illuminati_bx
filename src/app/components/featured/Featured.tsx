@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Button from '../button/Button';
 
-const Featured = ({ className }) => {
+const Featured: React.FC = () => {
     return (
         <div className="mt-10 pb-12 sm:pb-24 border-b border-gray-300">
             <div className="mb-4 font-serif">

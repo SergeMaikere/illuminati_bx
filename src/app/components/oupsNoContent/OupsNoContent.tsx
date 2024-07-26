@@ -1,8 +1,8 @@
-import React, { PropTypes } from 'react';
-import Link from 'next/Link'
+import React from 'react';
+import Link from 'next/link'
 import Button from '../button/Button';
 
-const   OupsNoContent = ({ className }) => {
+const   OupsNoContent = () => {
 
     return (
         <div className="lg:grid lg:grid-cols-5 gap-3 items-stretch mb-6 max-w-2xl p-3 border-b rounded border-gray-300 shadow-md">

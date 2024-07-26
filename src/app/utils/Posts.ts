@@ -1,5 +1,7 @@
 import { asyncPipe, slugify } from './Helper'
 import { getImgUrl } from './mediaHandler';
+import { Category } from './Categories';
+import { User } from './Users';
 
 export type Post = {
     id: string      
@@ -15,19 +17,19 @@ export type Post = {
     cat: Category
     userEmail: string
     user: User    
-    views: integer     
+    views: number     
     editorLike: boolean 
     comments: Comment[]
 }
 
 
 
-const setTitleSlug = post => ( {...post, slug: slugify(post.title)} )
+const setTitleSlug = (post: Partial<Post>): Partial<Post> => ( {...post, slug: slugify(post.title)} )
     
 const setNewPost = asyncPipe( getImgUrl, setTitleSlug )
 
-export const updatePostViews = async id => {
-    if (!id) return
+export const updatePostViews = async (id: string | undefined): Promise<Post> => {
+    if (!id) throw new Error('Wrong request')
     const res = await fetch(
         "http://localhost:3000/api/post?action=views", 
         {
@@ -43,7 +45,7 @@ export const updatePostViews = async id => {
     return await res.json()
 }
 
-export const updateEditorLike = async (id, like) => {
+export const updateEditorLike = async (id: string, like: boolean): Promise<Post> => {
     const res = await fetch(
         "http://localhost:3000/api/post?action=like", 
         {
@@ -59,7 +61,7 @@ export const updateEditorLike = async (id, like) => {
     return await res.json()
 }
 
-export const updatePost = async post => {
+export const updatePost = async (post: Partial<Post>): Promise<Post> => {
     const res = await fetch(
         "http://localhost:3000/api/post?action=post", 
         {
@@ -75,8 +77,8 @@ export const updatePost = async post => {
     return await res.json()
 }
 
-export const getPostBySlug = async ( slug: string ): Post[] => {
-    if (!slug) return
+export const getPostBySlug = async ( slug: string ): Promise<Post> => {
+    if (!slug) throw new Error('Wrong request')
     const res = await fetch(
         `http://localhost:3000/api/post?slug=${slug}`, 
         {
@@ -91,7 +93,7 @@ export const getPostBySlug = async ( slug: string ): Post[] => {
     return await res.json()
 }
 
-export const getRecentPosts = async () => {
+export const getRecentPosts = async (): Promise<Post[]> => {
     const res = await fetch(
         "http://localhost:3000/api/post?action=recent", 
         {
@@ -106,7 +108,7 @@ export const getRecentPosts = async () => {
     return await res.json()
 }
 
-export const getPopularPosts = async () => {
+export const getPopularPosts = async (): Promise<Post[]> => {
     const res = await fetch(
         "http://localhost:3000/api/post?action=popular", 
         {
@@ -121,7 +123,7 @@ export const getPopularPosts = async () => {
     return await res.json()
 }
 
-export const getEditorChoice = async () => {
+export const getEditorChoice = async (): Promise<Post[]> => {
     const res = await fetch(
         "http://localhost:3000/api/post?action=editor", 
         {
@@ -136,8 +138,8 @@ export const getEditorChoice = async () => {
     return await res.json()
 }
 
-export const addPost = async (post: any) => {
-    if (!post) return
+export const addPost = async (post: Partial<Post>): Promise<Post> => {
+    if (!post) throw new Error('Wrong request')
     const newPost = await setNewPost( post )
     const res = await fetch(
         "http://localhost:3000/api/post", 

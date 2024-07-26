@@ -2,9 +2,7 @@ import Featured from './components/featured/Featured';
 import Categories from './components/categories/Categories';
 import CardList from './components/cardList/CardList';
 import Menu from './components/menu/Menu';
-import { getRecents } from './utils/getRecents';
 import { getAllCategories } from './utils/Categories';
-import { voyeur } from './utils/Helper';
 import { getRecentPosts } from './utils/Posts';
 
 export default async function Home() {

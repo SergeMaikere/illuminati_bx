@@ -5,7 +5,7 @@ import EditorCard from '../editorCard/EditorCard';
 import { getAllCategories } from '../../utils/Categories';
 import { getEditorChoice, getPopularPosts } from '../../utils/Posts';
 
-const Menu = async () => {
+const Menu: React.FC = async () => {
     const categories = await getAllCategories()
     const popular = await getPopularPosts()
     const editorChoice = await getEditorChoice()

@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server'
 import { URL } from 'url'
+import prisma from '../../utils/Connect';
 
-const create = async req => {
+const create = async (req: Request): Promise<NextResponse> => {
     const comment = await req.json()
     try{
         const res = await prisma.comment.create( 
@@ -17,10 +18,10 @@ const create = async req => {
                 }
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 

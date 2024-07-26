@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-import Link from 'next/Link'
+import React from 'react';
+import Link from 'next/link'
 import Button from '../button/Button';
 import { TextCategoryColor } from '../../utils/Categories';
 

@@ -1,6 +1,5 @@
-import React, { PropTypes } from 'react';
-import Link from 'next/Link'
-import { getCategoryColor, getCategoryLogo } from '../../utils/Helper';
+import React from 'react';
+import Link from 'next/link'
 import { TextCategoryColor } from '../../utils/Categories';
 
 const EditorCard = ({post}) => {
