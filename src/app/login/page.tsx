@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Login from '../components/login/Login';
 
 const LoginPage = () => {

@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
-import Profile from '../../components/profile/Profile';
+import React from 'react';
 import { getUserById } from '../../utils/Users';
+import Profile from '../../components/profile/Profile';
 
 const UserProfile = async ( context ) => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Category, getAllCategories, updateCategory } from '../utils/Categories';
-import CategorySetting from '../components/categorySettings/CategorySetting';
 import { formDataToObject } from '../utils/Helper';
+import CategorySetting from '../components/categorySettings/CategorySetting';
 
 const SettingsPage = async () => {
     const categories = await getAllCategories()

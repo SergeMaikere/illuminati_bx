@@ -1,21 +1,17 @@
-import React, { PropTypes, useEffect, useState } from 'react';
+import React from 'react';
 import { redirect } from 'next/navigation'
-import { isMoreThanNChar, isNotEmptyString, isString, validate } from '../utils/Validation';
-import Article from '../components/article/Article';
-import { addPost } from '../utils/Posts';
 import { formDataToObject, slugify } from '../utils/Helper';
+import { Post, addPost } from '../utils/Posts';
+import Article from '../components/article/Article';
 
-const NewPost = ({ className }) => {
+const NewPost = async () => {
     
-    const isInputValid = validate( isString, isNotEmptyString, isMoreThanNChar )
-    const isNewPostValid = obj => Object.keys(obj).every( k => isInputValid(obj[k]) )
-
-    const handleSubmit = async formDatas => {
+    const handleSubmit = async (formDatas: FormData): Promise<Post> => {
         "use server"
-        // if (!isNewPostValid(postDatas)) return displayInvalidInput()
-        const post = formDataToObject( formDatas ) 
-        const res = await addPost(post)
+        const post: Partial<Post> = formDataToObject( formDatas ) 
+        const res: Post = await addPost(post)
         redirect( `/${slugify(post.title)}` )
+        return res
     }
 
     return (

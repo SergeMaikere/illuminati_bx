@@ -1,20 +1,20 @@
-import React, { PropTypes } from 'react';
-import { getPostBySlug } from '../utils/Posts';
+import React from 'react';
+import { Post as MyPost, getPostBySlug } from '../utils/Posts';
 import { formDataToObject } from '../utils/Helper';
-import { addComment } from '../utils/Comments';
+import { Comment, addComment } from '../utils/Comments';
 import Post from '../components/post/Post';
 import CommentsArea from '../components/commentsArea/CommentsArea';
 import Menu from '../components/menu/Menu';
 
-const SinglePage = async (context) => {
+type P = { params: {slug: string } }
 
-    const post = await getPostBySlug( context.params.slug )
+const SinglePage: React.FC<P> = async ({params}) => {
+    const post: MyPost = await getPostBySlug( params.slug )
 
-    const add = async formData => {
+    const add = async (formData: FormData): Promise<Comment> => {
         "use server"
-        const comment = formDataToObject(formData)
-        return await addComment(comment)
-        
+        const comment: Partial<Comment> = formDataToObject(formData)
+        return await addComment(comment)    
     }
     
     return (
@@ -23,9 +23,8 @@ const SinglePage = async (context) => {
             <div className="flex gap-3">
                 <div className="w-2/3">
                     <CommentsArea 
-                        postSlug={post?.slug}
-                        userEmail={post?.userEmail}
-                        comments={post?.comments} 
+                        postSlug={post.slug}
+                        comments={post.comments} 
                         handleSubmit={add} />
                 </div>
                 <div className="w-1/3"><Menu /></div>

@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import { User as myUser, addUser } from '../utils/Users';
 import User from '../components/user/User';
-import { addUser } from '../utils/Users';
 
 const NewUser = () => {
 
