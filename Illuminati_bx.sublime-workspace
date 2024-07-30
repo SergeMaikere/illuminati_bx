@@ -529,7 +529,7 @@
 					"",
 					null,
 					"AgAAAAQGAAAAAAAA9wYAAAAAAAAAAAAADgcAAAAAAAAOBwAAAAAAAPMAAABpZCAgICAgICAgICBTdHJpbmcgICAgICBAaWQgQGRlZmF1bHQoY3VpZCgpKSBAbWFwKCJfaWQiKQogICAgc2x1ZyAgICAgICAgU3RyaW5nICAgICAgQHVuaXF1ZQogICAgbmFtZSAgICAgICAgU3RyaW5nICAgICAgQHVuaXF1ZQogICAgc3VidGl0bGUgICAgU3RyaW5nCiAgICBkZXNjcmlwdGlvbiBTdHJpbmcKICAgIGxvZ28gICAgICAgIFN0cmluZwogICAgbG9nb0FsdCAgICAgU3RyaW5nCiAgICBpbWFnZSAgICAgICBTdHJpbmc",
-					"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABsGAAAAAAAADgcAAAAAAAAAAAAAAADwvw"
+					"DQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAGwYAAAAAAAAOBwAAAAAAAAAAAAAAAPC/"
 				]
 			],
 			"settings":
@@ -539,10 +539,234 @@
 			}
 		},
 		{
-			"file": "src/pages/write/page.tsx",
+			"file": "src/app/components/article/Article.tsx",
 			"settings":
 			{
-				"buffer_size": 1167,
+				"buffer_size": 4108,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					20,
+					2,
+					"left_delete",
+					null,
+					"AgAAAL8PAAAAAAAAvw8AAAAAAAABAAAAIr4PAAAAAAAAvg8AAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAAwA8AAAAAAADADwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAL4PAAAAAAAAwA8AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvg8AAAAAAAC+DwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": "undefined"
+					},
+					"CQAAAL8PAAAAAAAAwA8AAAAAAAAAAAAAwA8AAAAAAADBDwAAAAAAAAAAAADBDwAAAAAAAMIPAAAAAAAAAAAAAMIPAAAAAAAAww8AAAAAAAAAAAAAww8AAAAAAADEDwAAAAAAAAAAAADEDwAAAAAAAMUPAAAAAAAAAAAAAMUPAAAAAAAAxg8AAAAAAAAAAAAAxg8AAAAAAADHDwAAAAAAAAAAAADHDwAAAAAAAMgPAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvw8AAAAAAAC/DwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					2,
+					"left_delete",
+					null,
+					"AgAAANQPAAAAAAAA1A8AAAAAAAABAAAAItMPAAAAAAAA0w8AAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAA1Q8AAAAAAADVDwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAANMPAAAAAAAA1Q8AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0w8AAAAAAADTDwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "undefined"
+					},
+					"CQAAANQPAAAAAAAA1Q8AAAAAAAAAAAAA1Q8AAAAAAADWDwAAAAAAAAAAAADWDwAAAAAAANcPAAAAAAAAAAAAANcPAAAAAAAA2A8AAAAAAAAAAAAA2A8AAAAAAADZDwAAAAAAAAAAAADZDwAAAAAAANoPAAAAAAAAAAAAANoPAAAAAAAA2w8AAAAAAAAAAAAA2w8AAAAAAADcDwAAAAAAAAAAAADcDwAAAAAAAN0PAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1A8AAAAAAADUDwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AgAAAAIHAAAAAAAABQcAAAAAAAAAAAAAxwYAAAAAAADKBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxwYAAAAAAAAIBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAL4GAAAAAAAAvwYAAAAAAAAAAAAAvwYAAAAAAADHBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgYAAAAAAAC+BgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					50,
+					1,
+					"insert",
+					{
+						"characters": "console.lo"
+					},
+					"CgAAAMcGAAAAAAAAyAYAAAAAAAAAAAAAyAYAAAAAAADJBgAAAAAAAAAAAADJBgAAAAAAAMoGAAAAAAAAAAAAAMoGAAAAAAAAywYAAAAAAAAAAAAAywYAAAAAAADMBgAAAAAAAAAAAADMBgAAAAAAAM0GAAAAAAAAAAAAAM0GAAAAAAAAzgYAAAAAAAAAAAAAzgYAAAAAAADPBgAAAAAAAAAAAADPBgAAAAAAANAGAAAAAAAAAAAAANAGAAAAAAAA0QYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxwYAAAAAAADHBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					51,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAANEGAAAAAAAA0gYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0QYAAAAAAADRBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAANIGAAAAAAAA1AYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gYAAAAAAADSBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"insert",
+					{
+						"characters": "voyeur"
+					},
+					"BwAAAMcGAAAAAAAAyAYAAAAAAAAAAAAAyAYAAAAAAADIBgAAAAAAAAsAAABjb25zb2xlLmxvZ8gGAAAAAAAAyQYAAAAAAAAAAAAAyQYAAAAAAADKBgAAAAAAAAAAAADKBgAAAAAAAMsGAAAAAAAAAAAAAMsGAAAAAAAAzAYAAAAAAAAAAAAAzAYAAAAAAADNBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gYAAAAAAADHBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"insert_import",
+					null,
+					"AQAAAAAAAAAAAAAARhEAAAAAAAA+EQAAInVzZSBjbGllbnQiCmltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgdXNlU2Vzc2lvbiB9IGZyb20gJ25leHQtYXV0aC9yZWFjdCcKaW1wb3J0IEJ1dHRvbiBmcm9tICcuLi9idXR0b24vQnV0dG9uJzsKaW1wb3J0IE5vWW91Q2Fubm90IGZyb20gJy4uL25vWW91Q2Fubm90L05vWW91Q2Fubm90JzsKaW1wb3J0IFVwbG9hZEZpbGVzIGZyb20gJy4uL3VwbG9hZEZpbGVzL3VwbG9hZEZpbGVzJzsKaW1wb3J0IFNlbGVjdENhdGVnb3J5IGZyb20gJy4uL3NlbGVjdENhdGVnb3J5L1NlbGVjdENhdGVnb3J5JzsKaW1wb3J0IFRleHRFZGl0b3IgZnJvbSAnLi4vdGV4dEVkaXRvci9UZXh0RWRpdG9yJzsKaW1wb3J0IGNsYXNzTmFtZXMgZnJvbSAnY2xhc3NuYW1lcycKaW1wb3J0IHsgaXNXcml0ZXIsIGdldEZvcm1EYXRhQnlPYmplY3QgfSBmcm9tICcuLi8uLi91dGlscy9IZWxwZXInOwppbXBvcnQgeyBPdGlzIH0gZnJvbSAnLi4vLi4vdXRpbHMvQ2xhc3NpY3MnOwoKdHlwZSBIID0geyBoYW5kbGVTdWJtaXQ6IEZ1bmN0aW9uIH0KCnR5cGUgUCA9IHsKICAgIHRpdGxlOiB7dmFsdWU6IHN0cmluZ30KICAgIHN1YnRpdGxlOiB7dmFsdWU6IHN0cmluZ30KICAgIGRlc2NyaXB0aW9uOiB7dmFsdWU6IHN0cmluZ30KICAgIGNhdGVnb3J5OiB7dmFsdWU6IHN0cmluZ30KICAgIGltYWdlTmV3OiB7dmFsdWU6IEZpbGV9CiAgICBpbWFnZUFsdE5ldzoge3ZhbHVlOiBzdHJpbmd9Cn0KCmNvbnN0IEFydGljbGU6IFJlYWN0LkZDPEg+ID0gKHtoYW5kbGVTdWJtaXR9KSA9PiB7CgogICAgLy8gY29uc3QgWyB0aXRsZSwgc2V0VGl0bGUgXSA9IHVzZVN0YXRlKCcnKQogICAgLy8gY29uc3QgWyBkZXNjcmlwdGlvbiwgc2V0RGVzY3JpcHRpb24gXSA9IHVzZVN0YXRlKCcnKQogICAgLy8gY29uc3QgWyBzdWJ0aXRsZSwgc2V0U3VidGl0bGUgXSA9IHVzZVN0YXRlKCcnKQogICAgLy8gY29uc3QgWyBjYXRlZ29yeSwgc2V0Q2F0ZWdvcnkgXSA9IHVzZVN0YXRlKCcnKQogICAgLy8gY29uc3QgWyBmaWxlcywgc2V0RmlsZXMgXSA9IHVzZVN0YXRlKG51bGwpCiAgICAvLyBjb25zdCBbIGltYWdlQWx0LCBzZXRJbWFnZUFsdCBdID0gdXNlU3RhdGUoJ25pY2UgcGljJykKICAgIGNvbnN0IHsgZGF0YSwgc3RhdHVzIH0gPSB1c2VTZXNzaW9uKCkKICAgIGNvbnN0IFsgYm9keSwgc2V0Qm9keSBdID0gdXNlU3RhdGUoT3RpcykKCiAgICBjb25zdCBoYW5kbGVOZXdQb3N0U3VibWl0ID0gKGU6IFJlYWN0LlN5bnRoZXRpY0V2ZW50KSA9PiB7CiAgICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpCiAgICAgICAgY29uc3QgdGFyZ2V0ID0gZS50YXJnZXQgYXMgdHlwZW9mIGUudGFyZ2V0ICYgUAogICAgICAgIGNvbnN0IHBvc3REYXRhcyA9IHsKICAgICAgICAgICAgdGl0bGU6IHRhcmdldC50aXRsZS52YWx1ZSwKICAgICAgICAgICAgc3VidGl0bGU6IHRhcmdldC5zdWJ0aXRsZS52YWx1ZSwKICAgICAgICAgICAgZGVzY3JpcHRpb246IHRhcmdldC5kZXNjcmlwdGlvbi52YWx1ZSwKICAgICAgICAgICAgYm9keTogYm9keSwKICAgICAgICAgICAgY2F0U2x1ZzogdGFyZ2V0LmNhdGVnb3J5LnZhbHVlLAogICAgICAgICAgICBpbWFnZTogdGFyZ2V0LmltYWdlTmV3LnZhbHVlLAogICAgICAgICAgICBpbWFnZUFsdDogdGFyZ2V0LmltYWdlQWx0TmV3LnZhbHVlLAogICAgICAgICAgICB1c2VyRW1haWw6IGRhdGE/LnVzZXI/LmVtYWlsCiAgICAgICAgfQogICAgICAgIHZveWV1cigpCiAgICAgICAgLy8gY29uc3QgZm9ybURhdGFzID0gZ2V0Rm9ybURhdGFCeU9iamVjdCggcG9zdERhdGFzICkKICAgICAgICAvLyBoYW5kbGVTdWJtaXQoIGZvcm1EYXRhcyApCiAgICB9CgogICAgcmV0dXJuICgKICAgICAgICA8ZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3NOYW1lcyh7aGlkZGVuOiBpc1dyaXRlcihzdGF0dXMsIGRhdGEpfSl9PgogICAgICAgICAgICAgICAgPE5vWW91Q2Fubm90IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17ZSA9PiBoYW5kbGVOZXdQb3N0U3VibWl0KGUpfSBjbGFzc05hbWU9e2NsYXNzTmFtZXMoe2hpZGRlbjogIWlzV3JpdGVyKHN0YXR1cywgZGF0YSl9KX0+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTMnPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoaWRkZW4gbWQ6YmxvY2sgdy0xLzMiPgogICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaHR0cDovL2xvY2FsaG9zdDozMDAwL3F1aWxsLnBuZyIgYWx0PSJPbGQgbWFwIHdlaWdodGVkIGRvd24gd2l0aCBvbGQgY2FtZXJhIGFuZCBvbGQgY29tcGFzcyIvPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIHctMTAvMTIgZ2FwLTMgbWQ6Z2FwLTYgbWQ6dy0yLzMiPgogICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBuYW1lPSJ0aXRsZSIgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLXRyYW5zcGFyZW50IGZvbnQtc2VyaWYgdGV4dC0yeGwgbWQ6dGV4dC00eGwgdy1mdWxsIHB4LTYgcHQtNiBwYi0zIGJvcmRlci1iIGJvcmRlci1ncmF5LTQwMCBmb2N1czpvdXRsaW5lLWdyYXktNDAwIiAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU9InRleHQiIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IlRpdHJlLi4uIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcmVxdWlyZWQvPgogICAgICAgICAgICAgICAgICAgICAgICA8dGV4dGFyZWEgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBuYW1lPSJzdWJ0aXRsZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJvd3M9ezN9IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJiZy10cmFuc3BhcmVudCBmb250LW1vbm8gdGV4dC14bCB3LWZ1bGwgcHgtNiBwdC02IHBiLTMgYm9yZGVyLWIgYm9yZGVyLWdyYXktNDAwIGZvY3VzOm91dGxpbmUtZ3JheS00MDAiIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IlNvdXMgdGl0cmUuLi4iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXF1aXJlZC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0YXJlYSAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG5hbWU9ImRlc2NyaXB0aW9uIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcm93cz17M30KICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYmctdHJhbnNwYXJlbnQgZm9udC1tb25vIHRleHQteGwgdy1mdWxsIHB4LTYgcHQtNiBwYi0zIGJvcmRlci1iIGJvcmRlci1ncmF5LTQwMCBmb2N1czpvdXRsaW5lLWdyYXktNDAwIiAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJEZXNjcmlwdGlvbi4uLiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlcXVpcmVkLz4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PiAgIAogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9J2ZsZXggZmxleC1jb2wgZ2FwLTMgbXQtOSBwLTYgbWQ6cC0xMic+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLTY0IG1kOm1pbi1oLTgwIGJvcmRlci1iIGJvcmRlci1ncmF5LTMwMCByb3VuZGVkIj4KICAgICAgICAgICAgICAgICAgICAgICAgPFRleHRFZGl0b3IgdmFsdWU9e2JvZHl9IGhhbmRsZUNoYW5nZT17c2V0Qm9keX0gLz4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBnYXAtMyBtZDpmbGV4LXJvdyBtZDpqdXN0aWZ5LWJldHdlZW4iPiAKICAgICAgICAgICAgICAgICAgICAgICAgPFVwbG9hZEZpbGVzIGZpbGVUeXBlPSJpbWFnZSIgY2F0ZWdvcnk9Ik5ldyIgaW1hZ2U9e3VuZGVmaW5lZH0gaW1hZ2VBbHQ9e3VuZGVmaW5lZH0gLz4KICAgICAgICAgICAgICAgICAgICAgICAgPFNlbGVjdENhdGVnb3J5IC8+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICA8QnV0dG9uIHR5cGU9InN1Ym1pdCIgY2hpbGRyZW49IkV0IGMnZXN0IHBhcnRpISIgLz4KICAgICAgICAgICAgICAgIDwvZGl2PiAgICAgICAgICAgICAKICAgICAgICAgICAgPC9mb3JtPgogICAgICAgIDwvZGl2PgogICAgKTsKfTsKCmV4cG9ydCBkZWZhdWx0IEFydGljbGU7Cg",
+					"AQAAAAAAAAABAAAAzQYAAAAAAADNBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": "postDa"
+					},
+					"BgAAANYGAAAAAAAA1wYAAAAAAAAAAAAA1wYAAAAAAADYBgAAAAAAAAAAAADYBgAAAAAAANkGAAAAAAAAAAAAANkGAAAAAAAA2gYAAAAAAAAAAAAA2gYAAAAAAADbBgAAAAAAAAAAAADbBgAAAAAAANwGAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1gYAAAAAAADWBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": "ta"
+					},
+					"AgAAANwGAAAAAAAA3QYAAAAAAAAAAAAA3QYAAAAAAADeBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3AYAAAAAAADcBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AQAAAN4GAAAAAAAA3wYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gYAAAAAAADeBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"insert",
+					{
+						"characters": "files"
+					},
+					"BgAAAF0GAAAAAAAAXgYAAAAAAAAAAAAAXgYAAAAAAABeBgAAAAAAAAUAAAB2YWx1ZV4GAAAAAAAAXwYAAAAAAAAAAAAAXwYAAAAAAABgBgAAAAAAAAAAAABgBgAAAAAAAGEGAAAAAAAAAAAAAGEGAAAAAAAAYgYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXQYAAAAAAABiBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": "[]"
+					},
+					"AgAAAGIGAAAAAAAAYwYAAAAAAAAAAAAAYwYAAAAAAABkBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYgYAAAAAAABiBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					83,
+					1,
+					"insert",
+					{
+						"characters": "0"
+					},
+					"AQAAAGMGAAAAAAAAZAYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYwYAAAAAAABjBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					88,
+					1,
+					"insert",
+					{
+						"characters": "files"
+					},
+					"BgAAAL0CAAAAAAAAvgIAAAAAAAAAAAAAvgIAAAAAAAC+AgAAAAAAAAUAAAB2YWx1Zb4CAAAAAAAAvwIAAAAAAAAAAAAAvwIAAAAAAADAAgAAAAAAAAAAAADAAgAAAAAAAMECAAAAAAAAAAAAAMECAAAAAAAAwgIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvQIAAAAAAADCAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					92,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAAMgCAAAAAAAAygIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyAIAAAAAAADIAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					98,
+					2,
+					"left_delete",
+					null,
+					"AgAAACQDAAAAAAAAJAMAAAAAAABHAQAAICAgIC8vIGNvbnN0IFsgdGl0bGUsIHNldFRpdGxlIF0gPSB1c2VTdGF0ZSgnJykKICAgIC8vIGNvbnN0IFsgZGVzY3JpcHRpb24sIHNldERlc2NyaXB0aW9uIF0gPSB1c2VTdGF0ZSgnJykKICAgIC8vIGNvbnN0IFsgc3VidGl0bGUsIHNldFN1YnRpdGxlIF0gPSB1c2VTdGF0ZSgnJykKICAgIC8vIGNvbnN0IFsgY2F0ZWdvcnksIHNldENhdGVnb3J5IF0gPSB1c2VTdGF0ZSgnJykKICAgIC8vIGNvbnN0IFsgZmlsZXMsIHNldEZpbGVzIF0gPSB1c2VTdGF0ZShudWxsKQogICAgLy8gY29uc3QgWyBpbWFnZUFsdCwgc2V0SW1hZ2VBbHQgXSA9IHVzZVN0YXRlKCduaWNlIHBpYycpIwMAAAAAAAAjAwAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAAawQAAAAAAAAkAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/app/utils/Validation.ts",
+			"settings":
+			{
+				"buffer_size": 370,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
@@ -550,167 +774,223 @@
 			[
 				[
 					7,
-					2,
-					"left_delete",
-					null,
-					"AgAAAIcBAAAAAAAAhwEAAAAAAAAMAAAAIGNsYXNzTmFtZSB9hgEAAAAAAACGAQAAAAAAAAEAAAB7",
-					"AQAAAAAAAAABAAAAkwEAAAAAAACHAQAAAAAAAAAAAAAAAPC/"
+					1,
+					"insert",
+					{
+						"characters": ":"
+					},
+					"AQAAACAAAAAAAAAAIQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": " Fun"
+					},
+					"BAAAACEAAAAAAAAAIgAAAAAAAAAAAAAAIgAAAAAAAAAjAAAAAAAAAAAAAAAjAAAAAAAAACQAAAAAAAAAAAAAACQAAAAAAAAAJQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "ction"
+					},
+					"BQAAACUAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKQAAAAAAAAAAAAAAKQAAAAAAAAAqAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					10,
 					1,
-					"insert",
+					"insert_snippet",
 					{
-						"characters": "\nreturn"
+						"contents": "[$0]"
 					},
-					"CAAAAE4DAAAAAAAATwMAAAAAAAAAAAAATwMAAAAAAABXAwAAAAAAAAAAAABXAwAAAAAAAFgDAAAAAAAAAAAAAFgDAAAAAAAAWQMAAAAAAAAAAAAAWQMAAAAAAABaAwAAAAAAAAAAAABaAwAAAAAAAFsDAAAAAAAAAAAAAFsDAAAAAAAAXAMAAAAAAAAAAAAAXAMAAAAAAABdAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAATgMAAAAAAABOAwAAAAAAAAAAAAAAAPC/"
+					"AQAAACoAAAAAAAAALAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKgAAAAAAAAAqAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					11,
-					1,
-					"insert",
-					{
-						"characters": " req"
-					},
-					"BAAAAF0DAAAAAAAAXgMAAAAAAAAAAAAAXgMAAAAAAABfAwAAAAAAAAAAAABfAwAAAAAAAGADAAAAAAAAAAAAAGADAAAAAAAAYQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAXQMAAAAAAABdAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					12,
-					1,
-					"left_delete",
-					null,
-					"AQAAAGADAAAAAAAAYAMAAAAAAAABAAAAcQ",
-					"AQAAAAAAAAABAAAAYQMAAAAAAABhAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					13,
-					1,
-					"insert",
-					{
-						"characters": "s"
-					},
-					"AQAAAGADAAAAAAAAYQMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAYAMAAAAAAABgAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					19,
+					15,
 					1,
 					"insert_snippet",
 					{
 						"contents": "(${0:$SELECTION})"
 					},
-					"AgAAAFkCAAAAAAAAWQIAAAAAAAAJAAAAZm9ybURhdGFzWQIAAAAAAABkAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAWQIAAAAAAABiAgAAAAAAAAAAAAAAAPC/"
+					"AgAAADEAAAAAAAAAMQAAAAAAAAADAAAAYXJnMQAAAAAAAAA2AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMQAAAAAAAAA0AAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					21,
+					17,
 					1,
 					"insert",
 					{
 						"characters": ":"
 					},
-					"AQAAAGMCAAAAAAAAZAIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAYwIAAAAAAABjAgAAAAAAAAAAAAAAAPC/"
+					"AQAAADUAAAAAAAAANgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANQAAAAAAAAA1AAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					22,
+					18,
 					1,
 					"insert",
 					{
-						"characters": " Form"
+						"characters": " any"
 					},
-					"BQAAAGQCAAAAAAAAZQIAAAAAAAAAAAAAZQIAAAAAAABmAgAAAAAAAAAAAABmAgAAAAAAAGcCAAAAAAAAAAAAAGcCAAAAAAAAaAIAAAAAAAAAAAAAaAIAAAAAAABpAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZAIAAAAAAABkAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					23,
-					1,
-					"insert",
-					{
-						"characters": "D"
-					},
-					"AQAAAGkCAAAAAAAAagIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAaQIAAAAAAABpAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					24,
-					1,
-					"insert_completion",
-					{
-						"completion": "lsp_select_completion {\"index\":486,\"session_name\":\"LSP-typescript\"}",
-						"format": "command",
-						"keep_prefix": true,
-						"must_insert": false,
-						"query_change_id":
-						[
-							15,
-							22,
-							2
-						],
-						"trigger": "FormData"
-					},
-					"BgAAAGkCAAAAAAAAaQIAAAAAAAABAAAARGgCAAAAAAAAaAIAAAAAAAABAAAAbWcCAAAAAAAAZwIAAAAAAAABAAAAcmYCAAAAAAAAZgIAAAAAAAABAAAAb2UCAAAAAAAAZQIAAAAAAAABAAAARmUCAAAAAAAAbQIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAagIAAAAAAABqAgAAAAAAAAAAAAAAAPC/"
+					"BAAAADYAAAAAAAAANwAAAAAAAAAAAAAANwAAAAAAAAA4AAAAAAAAAAAAAAA4AAAAAAAAADkAAAAAAAAAAAAAADkAAAAAAAAAOgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANgAAAAAAAAA2AAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					26,
 					1,
-					"insert",
+					"insert_snippet",
 					{
-						"characters": ":"
+						"contents": "(${0:$SELECTION})"
 					},
-					"AQAAAG4CAAAAAAAAbwIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAbgIAAAAAAABuAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					27,
-					1,
-					"insert",
-					{
-						"characters": " Prom"
-					},
-					"BQAAAG8CAAAAAAAAcAIAAAAAAAAAAAAAcAIAAAAAAABxAgAAAAAAAAAAAABxAgAAAAAAAHICAAAAAAAAAAAAAHICAAAAAAAAcwIAAAAAAAAAAAAAcwIAAAAAAAB0AgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAbwIAAAAAAABvAgAAAAAAAAAAAAAAAPC/"
+					"AgAAAL8AAAAAAAAAvwAAAAAAAAABAAAAeL8AAAAAAAAAwgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwAAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					28,
 					1,
 					"insert",
 					{
-						"characters": "ise<>"
+						"characters": ":"
 					},
-					"BQAAAHQCAAAAAAAAdQIAAAAAAAAAAAAAdQIAAAAAAAB2AgAAAAAAAAAAAAB2AgAAAAAAAHcCAAAAAAAAAAAAAHcCAAAAAAAAeAIAAAAAAAAAAAAAeAIAAAAAAAB5AgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAdAIAAAAAAAB0AgAAAAAAAAAAAAAAAPC/"
+					"AQAAAMEAAAAAAAAAwgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwQAAAAAAAADBAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					30,
+					29,
 					1,
 					"insert",
 					{
-						"characters": "Post"
+						"characters": " na"
 					},
-					"BAAAAHgCAAAAAAAAeQIAAAAAAAAAAAAAeQIAAAAAAAB6AgAAAAAAAAAAAAB6AgAAAAAAAHsCAAAAAAAAAAAAAHsCAAAAAAAAfAIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAeAIAAAAAAAB4AgAAAAAAAAAAAAAAAPC/"
+					"AwAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgAAAAAAAADCAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					32,
+					30,
+					2,
+					"left_delete",
+					null,
+					"AgAAAMQAAAAAAAAAxAAAAAAAAAABAAAAYcMAAAAAAAAAwwAAAAAAAAABAAAAbg",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
 					1,
-					"paste_import",
+					"insert",
 					{
-						"item":
-						{
-							"filepath": "C:/Users/smaik/Projects/illuminati_bx/src/app/utils/Posts.ts",
-							"isDefault": false,
-							"name": "Post"
-						},
-						"typescript_paths":
-						[
-						]
+						"characters": "any"
 					},
-					"AQAAAAAAAAAAAAAAjwQAAAAAAACJBAAAaW1wb3J0IFJlYWN0LCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IHJlZGlyZWN0IH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJwppbXBvcnQgeyBpc01vcmVUaGFuTkNoYXIsIGlzTm90RW1wdHlTdHJpbmcsIGlzU3RyaW5nLCB2YWxpZGF0ZSB9IGZyb20gJy4uLy4uL2FwcC91dGlscy9WYWxpZGF0aW9uJzsKaW1wb3J0IHsgZm9ybURhdGFUb09iamVjdCwgc2x1Z2lmeSB9IGZyb20gJy4uLy4uL2FwcC91dGlscy9IZWxwZXInOwppbXBvcnQgeyBhZGRQb3N0IH0gZnJvbSAnLi4vLi4vYXBwL3V0aWxzL1Bvc3RzJzsKaW1wb3J0IEFydGljbGUgZnJvbSAnLi4vLi4vYXBwL2NvbXBvbmVudHMvYXJ0aWNsZS9BcnRpY2xlJzsKCmNvbnN0IE5ld1Bvc3QgPSAoKSA9PiB7CiAgICAKICAgIGNvbnN0IGlzSW5wdXRWYWxpZCA9IHZhbGlkYXRlKCBpc1N0cmluZywgaXNOb3RFbXB0eVN0cmluZywgaXNNb3JlVGhhbk5DaGFyICkKICAgIGNvbnN0IGlzTmV3UG9zdFZhbGlkID0gb2JqID0+IE9iamVjdC5rZXlzKG9iaikuZXZlcnkoIGsgPT4gaXNJbnB1dFZhbGlkKG9ialtrXSkgKQoKICAgIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IGFzeW5jIChmb3JtRGF0YXM6IEZvcm1EYXRhKTogUHJvbWlzZTxQb3N0PiA9PiB7CiAgICAgICAgInVzZSBzZXJ2ZXIiCiAgICAgICAgLy8gaWYgKCFpc05ld1Bvc3RWYWxpZChwb3N0RGF0YXMpKSByZXR1cm4gZGlzcGxheUludmFsaWRJbnB1dCgpCiAgICAgICAgY29uc3QgcG9zdCA9IGZvcm1EYXRhVG9PYmplY3QoIGZvcm1EYXRhcyApIAogICAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGFkZFBvc3QocG9zdCkKICAgICAgICByZWRpcmVjdCggYC8ke3NsdWdpZnkocG9zdC50aXRsZSl9YCApCiAgICAgICAgcmV0dXJuIHJlcwogICAgfQoKICAgIHJldHVybiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im15LTEwIHRleHQtY2VudGVyIG1kOnRleHQtbGVmdCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LTR4bCBtZDp0ZXh0LTZ4bCBmb250LXNlcmlmIHB5LTYiPk5vdXZlbCBBcnRpY2xlID88L2Rpdj4KICAgICAgICAgICAgPEFydGljbGUgaGFuZGxlU3VibWl0PXtoYW5kbGVTdWJtaXR9IC8+CiAgICAgICAgPC9kaXY+CiAgICApOwp9OwoKZXhwb3J0IGRlZmF1bHQgTmV3UG9zdDsK",
-					"AQAAAAAAAAABAAAAfAIAAAAAAAB8AgAAAAAAAAAAAAAAAPC/"
+					"AwAAAMMAAAAAAAAAxAAAAAAAAAAAAAAAxAAAAAAAAADFAAAAAAAAAAAAAADFAAAAAAAAAMYAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwwAAAAAAAADDAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/app/components/uploadFiles/uploadFiles.tsx",
+			"settings":
+			{
+				"buffer_size": 1041,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " |"
+					},
+					"AgAAALEAAAAAAAAAsgAAAAAAAAAAAAAAsgAAAAAAAACzAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsQAAAAAAAACxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " undefi"
+					},
+					"BwAAALMAAAAAAAAAtAAAAAAAAAAAAAAAtAAAAAAAAAC1AAAAAAAAAAAAAAC1AAAAAAAAALYAAAAAAAAAAAAAALYAAAAAAAAAtwAAAAAAAAAAAAAAtwAAAAAAAAC4AAAAAAAAAAAAAAC4AAAAAAAAALkAAAAAAAAAAAAAALkAAAAAAAAAugAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAswAAAAAAAACzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":1484,\"session_name\":\"LSP-typescript\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							6,
+							13,
+							3
+						],
+						"trigger": "undefined"
+					},
+					"BgAAALkAAAAAAAAAuQAAAAAAAAABAAAAabgAAAAAAAAAuAAAAAAAAAABAAAAZrcAAAAAAAAAtwAAAAAAAAABAAAAZbYAAAAAAAAAtgAAAAAAAAABAAAAZLQAAAAAAAAAtAAAAAAAAAACAAAAdW60AAAAAAAAAL0AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugAAAAAAAAC6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": " |"
+					},
+					"AgAAAJwAAAAAAAAAnQAAAAAAAAAAAAAAnQAAAAAAAACeAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnAAAAAAAAACcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": " undefined"
+					},
+					"CgAAAJ4AAAAAAAAAnwAAAAAAAAAAAAAAnwAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKEAAAAAAAAAAAAAAKEAAAAAAAAAogAAAAAAAAAAAAAAogAAAAAAAACjAAAAAAAAAAAAAACjAAAAAAAAAKQAAAAAAAAAAAAAAKQAAAAAAAAApQAAAAAAAAAAAAAApQAAAAAAAACmAAAAAAAAAAAAAACmAAAAAAAAAKcAAAAAAAAAAAAAAKcAAAAAAAAAqAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAngAAAAAAAACeAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/app/components/selectCategory/SelectCategory.tsx",
+			"settings":
+			{
+				"buffer_size": 1045,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAABwCAAAAAAAAHQIAAAAAAAAAAAAAHQIAAAAAAAAtAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHAIAAAAAAAAcAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					5,
+					"left_delete",
+					null,
+					"BQAAACkCAAAAAAAAKQIAAAAAAAAEAAAAICAgICUCAAAAAAAAJQIAAAAAAAAEAAAAICAgICECAAAAAAAAIQIAAAAAAAAEAAAAICAgIB0CAAAAAAAAHQIAAAAAAAAEAAAAICAgIBwCAAAAAAAAHAIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -946,14 +1226,33 @@
 		"/C/Users/smaik/Projects/illuminati_bx",
 		"/C/Users/smaik/Projects/illuminati_bx/src",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app",
-		"/C/Users/smaik/Projects/illuminati_bx/src/pages",
-		"/C/Users/smaik/Projects/illuminati_bx/src/pages/write"
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils"
 	],
 	"file_history":
 	[
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/write/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/user/[id]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/signup/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/settings/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/login/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/blog/[slug]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/[slug]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/login/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/settings/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/signup/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/user/[id]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/write/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/blog/[slug]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/pages/[slug]/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Posts.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/pages/blog/[slug]/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/uploadFiles/uploadFiles.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/categorySettings/CategorySetting.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/textEditor/TextEditor.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/selectCategory/SelectCategory.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/pages/login/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/article/Article.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/pages/write/page.tsx",
+		"/C/Users/smaik/Projects/illuminati_bx/src/pages/blog/[slug]/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/commentsArea/CommentsArea.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/post/Post.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/post/route.ts",
@@ -979,18 +1278,13 @@
 		"/C/Users/smaik/Projects/illuminati_bx/package.json",
 		"/C/Users/smaik/Projects/illuminati_bx/src/context/ThemeContext.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/toggleTheme/ToggleTheme.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/pages/write/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/pages/user/[id]/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/pages/signup/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/pages/settings/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/pages/login/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Comments.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/[slug]/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.d.ts",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/categories/route.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Helper.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/uploadFiles/uploadFiles.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/settings/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/mediaHandler.ts",
 		"/C/Users/smaik/Projects/illuminati_bx/.eslintrc.json",
 		"/C/Users/smaik/Projects/illuminati_bx/tsconfig.json",
@@ -1000,14 +1294,9 @@
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/api/user/route.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/editorOptions/EditorOptions.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/FakeData.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/article/Article.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/next.config.js",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/blog/[slug]/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/write/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Users.ts",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/selectCategory/SelectCategory.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/user/User.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/textEditor/TextEditor.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/imagesHandler.ts",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/firebase.ts",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/button/Button.tsx",
@@ -1016,9 +1305,6 @@
 		"/C/Users/smaik/AppData/Roaming/Sublime Text/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
 		"/C/Users/smaik/AppData/Roaming/Sublime Text/Packages/User/JavaScript-Completions.sublime-settings",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/profile/Profile.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/user/[id]/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/login/page.tsx",
-		"/C/Users/smaik/Projects/illuminati_bx/src/app/signup/page.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/.env",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Validation.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/utils/Users.tsx",
@@ -1071,14 +1357,7 @@
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/categories/Categories.tsx",
 		"/C/Users/smaik/Projects/illuminati_bx/src/app/components/featured/Featured/tsx",
 		"/C/Users/smaik/Projects/React/components/plantes/plantes.js",
-		"/C/Users/smaik/Projects/Playground/CodeWar/no5s.js",
-		"/C/Users/smaik/Projects/Playground/CodeWar/no5s2.js",
-		"/C/Users/smaik/Projects/Playground/CodeWar/no5s3.js",
-		"/C/Users/smaik/Projects/Playground/CodeWar/no5s4.js",
-		"/C/Users/smaik/Projects/Playground/ISBN Search/isbnSearch.js",
-		"/C/Users/smaik/Projects/Playground/Python Training/mystery_num.py",
-		"/C/Users/smaik/Projects/Playground/NextJs/next-app/app/page.tsx",
-		"/C/Users/smaik/Projects/Playground/NextJs/next-app/app/users/new/page.tsx"
+		"/C/Users/smaik/Projects/Playground/CodeWar/no5s.js"
 	],
 	"find":
 	{
@@ -1089,6 +1368,7 @@
 		"height": 152.0,
 		"where_history":
 		[
+			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src\\app\\pages",
 			"C:\\Users\\smaik\\Projects\\illuminati_bx",
 			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src\\app",
 			"C:\\Users\\smaik\\Projects\\illuminati_bx\\src",
@@ -1102,6 +1382,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"'../",
+			"from '../",
+			"/..''",
+			"/app",
+			" '../",
+			"../",
+			"props",
+			": ",
+			"type=\"text\"",
+			"rows",
 			"Comment",
 			"next/Link",
 			", {status: 500}",
@@ -1219,17 +1509,7 @@
 			"setUser",
 			",",
 			"placeholder",
-			"SelectCategory",
-			"selectCategory",
-			"Button",
-			"e.target.value",
-			"buttonText",
-			"user",
-			"target",
-			"onChange",
-			"false",
-			"name",
-			"id="
+			"SelectCategory"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1237,6 +1517,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"/..",
+			"''",
 			"next/link",
 			"mediaHandler",
 			"children",
@@ -1318,20 +1600,19 @@
 			[
 				{
 					"buffer": 1,
-					"file": "src/pages/write/page.tsx",
-					"selected": true,
+					"file": "src/app/components/article/Article.tsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1167,
+						"buffer_size": 4108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								353,
-								353
+								803,
+								803
 							]
 						],
 						"settings":
@@ -1353,7 +1634,104 @@
 								}
 							],
 							"lsp_active": true,
-							"lsp_uri": "file:///C:/Users/smaik/Projects/illuminati_bx/src/pages/write/page.tsx",
+							"lsp_uri": "file:///C:/Users/smaik/Projects/illuminati_bx/src/app/components/article/Article.tsx",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/app/utils/Validation.ts",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/Users/smaik/Projects/illuminati_bx/src/app/utils/Validation.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/app/components/uploadFiles/uploadFiles.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/Users/smaik/Projects/illuminati_bx/src/app/components/uploadFiles/uploadFiles.tsx",
 							"show_definitions": false,
 							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
 						},
@@ -1361,7 +1739,55 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app/components/selectCategory/SelectCategory.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/Users/smaik/Projects/illuminati_bx/src/app/components/selectCategory/SelectCategory.tsx",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"stack_multiselect": false,
 					"type": "text"
 				}
@@ -1396,7 +1822,7 @@
 		"cols":
 		[
 			0.0,
-			0.0291545189504,
+			0.0932944606414,
 			1.0
 		],
 		"rows":

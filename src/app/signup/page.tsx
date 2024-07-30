@@ -1,19 +1,15 @@
 import React from 'react';
-import { User as myUser, addUser } from '../utils/Users';
+import { User as MyUser, addUser } from '../utils/Users';
 import User from '../components/user/User';
+import { formDataToObject } from '../utils/Helper';
 
 const NewUser = () => {
 
-    const handleSubmit = async formData => {
+    const handleSubmit = async (formData: FormData): Promise<MyUser> => {
         "use server"
-        const user = [ ...formData.entries() ].reduce(
-            (user, pair) => {
-                user[pair[0]] = pair[1]
-                return user
-            }, {}
-        )
-        const result = await addUser(user)
-        console.log({result})
+        const user: Partial<MyUser> = formDataToObject(formData)
+        const res: MyUser = await addUser(user)
+        return res
     }
 
     return (

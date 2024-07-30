@@ -4,8 +4,8 @@ import { CiImageOn } from "react-icons/ci";
 type AppProps = {
     fileType: string
     category: string
-    image: File | string
-    imageAlt: string
+    image: File | string | undefined
+    imageAlt: string | undefined
 }
 
 const UploadFiles: React.FC<AppProps> = ({fileType, category, image, imageAlt}) => {

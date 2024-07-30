@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { isAdmin, isLoggedIn, isWriter } from '../../utils/Helper';
 import classNames from 'classnames'
 
-const AuthLinks = ({ className }) => {
+const AuthLinks = () => {
 
     const { data, status } = useSession()
     const [ open, setOpen ] = useState(false)

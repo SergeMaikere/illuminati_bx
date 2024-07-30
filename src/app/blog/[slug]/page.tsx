@@ -17,7 +17,7 @@ const BlogPage: React.FC<P> = async ({params}) => {
                     text-5xl text-gray-100 uppercase font-serif text-center
                     sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2
                 `}>{cat.name}</h1>
-                <img className=" hidden sm:block w-full" src={cat.image} alt={cat.imageAlt}/>
+                <img className=" hidden sm:block w-full" src={cat.image as string} alt={cat.imageAlt}/>
             </div>
             <div className="md:flex">
                 <div className="flex-2"><CardList title="Dernièrement" cards={posts} /></div>

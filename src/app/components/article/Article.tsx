@@ -17,20 +17,14 @@ type P = {
     subtitle: {value: string}
     description: {value: string}
     category: {value: string}
-    imageNew: {value: File}
+    imageNew: {files: File[]}
     imageAltNew: {value: string}
 }
 
 const Article: React.FC<H> = ({handleSubmit}) => {
 
-    // const [ title, setTitle ] = useState('')
-    // const [ description, setDescription ] = useState('')
-    // const [ subtitle, setSubtitle ] = useState('')
-    // const [ category, setCategory ] = useState('')
-    // const [ files, setFiles ] = useState(null)
-    // const [ imageAlt, setImageAlt ] = useState('nice pic')
     const { data, status } = useSession()
-    const [ body, setBody ] = useState(Otis)
+    const [ body, setBody ] = useState()
 
     const handleNewPostSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault()
@@ -41,7 +35,7 @@ const Article: React.FC<H> = ({handleSubmit}) => {
             description: target.description.value,
             body: body,
             catSlug: target.category.value,
-            image: target.imageNew.value,
+            image: target.imageNew?.files[0],
             imageAlt: target.imageAltNew.value,
             userEmail: data?.user?.email
         }
@@ -85,7 +79,7 @@ const Article: React.FC<H> = ({handleSubmit}) => {
                         <TextEditor value={body} handleChange={setBody} />
                     </div>
                     <div className="flex flex-col gap-3 md:flex-row md:justify-between"> 
-                        <UploadFiles fileType="image" category="New" image="" imageAlt="" />
+                        <UploadFiles fileType="image" category="New" image={undefined} imageAlt={undefined} />
                         <SelectCategory />
                     </div>
                 </div>

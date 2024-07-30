@@ -19,7 +19,16 @@ export type Category = {
 
 type UpdatedCategory = Partial<Category>
 
-export const BgCategoryColor = {
+type CategoryColors = {
+    enfer: string
+    france: string
+    cyprien: string
+    histoire: string
+    mode: string
+    science: string
+}
+
+export const BgCategoryColor: CategoryColors = {
     enfer: 'bg-red-600',
     france: 'bg-blue-600',
     cyprien: 'bg-lime-600',
@@ -28,7 +37,7 @@ export const BgCategoryColor = {
     science: 'bg-amber-600'
 }
 
-export const TextCategoryColor = {
+export const TextCategoryColor: CategoryColors = {
     enfer: 'text-red-600',
     france: 'text-blue-600',
     cyprien: 'text-lime-600',

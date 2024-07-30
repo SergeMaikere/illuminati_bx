@@ -1,15 +1,17 @@
 "use client"
-import React, { PropTypes, useContext, useState } from 'react';
+import React, { ReactNode, useContext, useState } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import classNames from 'classnames'
 
-const ThemeProvider = ({ children }) => {
+type C = { children: ReactNode }
+
+const ThemeProvider: React.FC<C> = ({ children }) => {
 
     const { theme } = useContext(ThemeContext)
     const [ myClass, setMyClass ] = useState('w-screen')
 
     return (
-        <div className={classNames('w-screen', {dark: theme}) }>{children}</div>
+        <div className={classNames('w-screen', {dark: theme === 'true'}) }>{children}</div>
     );
 };
 
