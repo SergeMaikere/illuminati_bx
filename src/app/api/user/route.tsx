@@ -30,7 +30,12 @@ const getUserByEmail = async (req: Request): Promise<NextResponse> => {
 const getUserById = async (req: Request): Promise<NextResponse> => {
     try {
         const { userId } = await req.json()
-        const user = await prisma.user.findUnique( {where: {id: userId}} )
+        const user = await prisma.user.findUnique( 
+            {
+                where: {id: userId},
+                include: {comment: true, posts: true}
+            } 
+        )
         const sanitizedUser = except(user, ['password'])
         return new NextResponse( JSON.stringify(sanitizedUser) )
     } 

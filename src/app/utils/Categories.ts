@@ -19,14 +19,7 @@ export type Category = {
 
 type UpdatedCategory = Partial<Category>
 
-type CategoryColors = {
-    enfer: string
-    france: string
-    cyprien: string
-    histoire: string
-    mode: string
-    science: string
-}
+type CategoryColors = { [key: string]: string }
 
 export const BgCategoryColor: CategoryColors = {
     enfer: 'bg-red-600',

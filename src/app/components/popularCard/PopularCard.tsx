@@ -1,14 +1,15 @@
 import React from 'react';
 import Link from 'next/link'
 import { TextCategoryColor } from '../../utils/Categories';
+import { Post } from '../../utils/Posts';
 
-const PopularCard = ({post}) => {
+const PopularCard = ({post}: {post: Post}) => {
 
     return (
         <div className="p-3 mb-1 border-b rounded border-gray-300 shadow-md">
             <Link href={`/${post?.slug}`}>
                 <div>
-                    <img className="w-6 h-6 inline-block mx-1" src={post?.cat?.logo} alt={post?.cat?.logoAlt} />
+                    <img className="w-6 h-6 inline-block mx-1" src={post?.cat?.logo as string} alt={post?.cat?.logoAlt} />
                     <span className={`uppercase text-sm font-mono ${TextCategoryColor[post?.catSlug]}`}>{post?.catSlug}</span>
                 </div>
                 <div className="py-3">

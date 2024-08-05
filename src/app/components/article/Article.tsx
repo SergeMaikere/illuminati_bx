@@ -24,7 +24,7 @@ type P = {
 const Article: React.FC<H> = ({handleSubmit}) => {
 
     const { data, status } = useSession()
-    const [ body, setBody ] = useState()
+    const [ body, setBody ] = useState<string>(Otis)
 
     const handleNewPostSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault()

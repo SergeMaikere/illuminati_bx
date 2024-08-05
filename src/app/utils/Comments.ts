@@ -3,7 +3,7 @@ import { Post } from './Posts';
 
 export type Comment = {
     id: string      
-    createdAt: Date 
+    createdAt: Date | string | number 
     body: string
     postSlug: string
     post: Post

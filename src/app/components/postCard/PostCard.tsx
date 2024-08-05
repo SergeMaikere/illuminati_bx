@@ -2,8 +2,9 @@ import React from 'react';
 import Link from 'next/link'
 import Button from '../button/Button';
 import { TextCategoryColor } from '../../utils/Categories';
+import { Post } from '../../utils/Posts';
 
-const PostCard = ({post}) => {
+const PostCard = ({post}: {post: Post}) => {
     return (
         <div className="lg:grid lg:grid-cols-5 gap-3 items-stretch mb-6 max-w-2xl p-3 border-b rounded border-gray-300 shadow-md">
             <img className="p-1 hidden lg:block object-cover col-span-2" src={post?.image} alt={post?.imageAlt}/>
@@ -18,7 +19,7 @@ const PostCard = ({post}) => {
                 </div>
                 <p className="text-base text-light font-mono">{post?.description}</p>
                 <Link href={`http://localhost:3000/${post?.slug}`}>
-                    <Button children="Read More"/>
+                    <Button type='button' children="Read More"/>
                 </Link>
             </div>
         </div>

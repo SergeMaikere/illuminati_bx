@@ -1,8 +1,11 @@
 import React from 'react';
 import Link from 'next/link'
 import { TextCategoryColor } from '../../utils/Categories';
+import { Post } from '../../utils/Posts';
 
-const EditorCard = ({post}) => {
+type P = { post: Post }
+
+const EditorCard: React.FC<P> = ({post}) => {
 
     return (
         <Link 
@@ -18,8 +21,8 @@ const EditorCard = ({post}) => {
             </div>
             <div className="col-span-3">
                 <div className="">
-                    <img className="w-5 h-5 inline-block mx-1" src={post.cat.logo} alt={post.cat.logoAlt} />
-                    <span className={`uppercase text-sm ${TextCategoryColor[post?.catSlug]}`}>{post?.catSlug}</span>
+                    <img className="w-5 h-5 inline-block mx-1" src={post.cat.logo as string} alt={post.cat.logoAlt} />
+                    <span className={`uppercase text-sm ${TextCategoryColor[post.catSlug]}`}>{post.catSlug}</span>
                 </div>
                 <div className="text-sm font-extrabold font-mono py-2">{post?.title}</div>
                 <div className="flex gap-4 font-serif text-sm row-span-1">

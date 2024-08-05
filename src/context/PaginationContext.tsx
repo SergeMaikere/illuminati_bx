@@ -1,21 +1,10 @@
-'use client'
+import { createContext, Dispatch, useContext } from 'react'
 
-import { createContext, useContext, useReducer } from 'react'
-
-const initialState: number = 0
-
-const reducer = (state: number, action: {type: string} ): number => {
-    if ( action.type === 'next' ) return state + 1
-    if ( action.type === 'prev' ) return state - 1
-    return state
+type PageState = {
+    page: number
+    dispatch: Dispatch<{type: string}>
 }
 
-export const PaginationContext = createContext(null)
+export const PaginationContext = createContext<PageState>( {page: 0, dispatch: () => {}} )
 
-export const PaginationProvider = ( {children} ) => {
-    return (
-        <PaginationContext.Provider value={useReducer(reducer, initialState)}>
-            {children}
-        </PaginationContext.Provider>
-    )
-}
+export const usePage = () => useContext(PaginationContext)

@@ -1,8 +1,6 @@
 import React from 'react';
 
 const SelectCategory = () => {
-
- 
     return (
         <div>
             <label htmlFor="categories" className="font-serif text-2xl hidden lg:inline-block">Choisis ta Catégorie: </label>

@@ -9,5 +9,3 @@ export const isNotEmptyString = (x: string) => typeof x === 'string' && x.length
 export const isMoreThanNChar = (n: number): Function => (char: string): boolean => char.length >= n
 
 export const isSameString = (pswd1: string, pswd2: string): boolean => pswd1 === pswd2
-
-

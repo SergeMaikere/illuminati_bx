@@ -1,13 +1,13 @@
 "use client"
-import React, { PropTypes, useEffect, useState } from 'react';
+import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'
 import { CiImageOn } from 'react-icons/ci';
-import Button from '../button/Button';
-import { voyeur } from '../../utils/Helper';
 import { isSameString } from '../../utils/Validation';
 import classNames from 'classnames'
 
-const User = (props) => {
+type T = Record<'name' | 'email' | 'password' | 'password2', {value: string}> & {image: {files: File[]} | undefined}
+
+const User = ( {handleSubmit}: {handleSubmit: Function} ) => {
 
     const [ valid, setValid ] = useState(true)
     const [ pswd1, setPswd1 ] = useState('')
@@ -16,17 +16,24 @@ const User = (props) => {
 
     useEffect( () => setValid(isSameString(pswd1, pswd2)), [pswd2] )
 
-    const handleSubmit = e => {
+    const handleUserSubmit = (e: SyntheticEvent) => {
         e.preventDefault()
-        const formData = new FormData(e.target)
-        props.handleSubmit(formData) 
+        const target =  e.target as typeof e.target & T
+        const newUser = {
+            name: target.name.value,
+            email: target.email.value,
+            password: target.password.value,
+            image: target.image?.files[0]
+        }
+        console.log(newUser)
+        handleSubmit(newUser) 
         router.push('/')
 
     }
 
     return (
         <div className='flex items-center justify-center gap-4'>
-            <form onSubmit={e => handleSubmit(e)} className="flex flex-col w-10/12 gap-3 md:gap-6 md:w-2/3">
+            <form onSubmit={e => handleUserSubmit(e)} className="flex flex-col w-10/12 gap-3 md:gap-6 md:w-2/3">
                 <input 
                     className="bg-transparent font-serif text-2xl md:text-4xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     name="name"
@@ -45,7 +52,7 @@ const User = (props) => {
                     type="password"
                     value={pswd1}
                     onChange={e => setPswd1(e.target.value)}
-                    minLength="8" 
+                    minLength={8} 
                     placeholder="Mot de passe béton"
                     required/>
 
@@ -57,11 +64,12 @@ const User = (props) => {
                 <input 
                     className="bg-transparent font-serif text-2xl md:text-4xl w-full px-6 pt-6 pb-3 border-b border-gray-400 focus:outline-gray-400" 
                     type="password"
+                    name="password2"
                     value={pswd2}
                     onChange={e => setPswd2(e.target.value)}
-                    minLength="8" 
+                    minLength={8} 
                     placeholder="Retour du Mot de Passe Béton"
-                    requiorange/>
+                    required/>
                 <input 
                     id="image"
                     className="hidden" 

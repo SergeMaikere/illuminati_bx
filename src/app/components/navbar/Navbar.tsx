@@ -1,14 +1,13 @@
 "use client"
 import { useState } from 'react';
 import Link from 'next/link'
-import { FaSquareFacebook, FaSquareXTwitter, FaSquareYoutube  } from "react-icons/fa6";
 import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';
 import classNames from 'classnames'
 
-const Navbar = ({ className }) => {
+const Navbar = () => {
 
-    const [ open, setOpen ] = useState( false )
+    const [ open, setOpen ] = useState<boolean>( false )
 
     return (
         <div className="flex items-center justify-between px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
@@ -40,7 +39,7 @@ const Navbar = ({ className }) => {
             </div>
 
             <div className="hidden sm:flex">
-                <ToggleTheme className="hidden sm:block"/>
+                <ToggleTheme/>
             </div>
 
             

@@ -8,8 +8,8 @@ import classNames from 'classnames'
 const AuthLinks = () => {
 
     const { data, status } = useSession()
-    const [ open, setOpen ] = useState(false)
-    const [ isLogged, setIsLogged ] = useState(false)
+    const [ open, setOpen ] = useState<boolean>(false)
+    const [ isLogged, setIsLogged ] = useState<boolean>(false)
 
     useEffect(
         () => {
@@ -23,7 +23,7 @@ const AuthLinks = () => {
                 <img 
                     className="rounded-full max-h-10 ml-3 cursor-pointer hover:scale-125"
                     onClick={() => setOpen(!open)} 
-                    src={data?.user?.image} 
+                    src={data?.user?.image!} 
                     alt="Profile picture" />
                 <div 
                     className={

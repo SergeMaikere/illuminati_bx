@@ -2,7 +2,7 @@ import { Post } from './Posts';
 import { Comment } from './Comments';
 import bcrypt from 'bcrypt'
 import { app } from './firebase';
-import { asyncPipe } from './Helper';
+import { asyncPipe, voyeur } from './Helper';
 import { getImgUrl } from './mediaHandler';
 
 export type User = {
@@ -17,10 +17,7 @@ export type User = {
   comment: Comment[]
 }
 
-export type Credentials = {
-    email: string
-    password: string
-}
+export type Login = Record<'email' | 'password', string>
 
 const saltRounds = 10
 
@@ -35,9 +32,10 @@ const comparePasswords = async (pswd: string, hash: string): Promise<boolean> =>
 
 const setUser = asyncPipe( setPswd, getImgUrl )
 
-export const login = async (cred: Credentials): Promise<Partial<User> | null> => {
+export const login = async (cred: Login | undefined): Promise<Partial<User> | null> => {
+    if ( !cred ) throw new Error("No credentials")
     let user = null
-    const { email, password } = cred
+    const { email, password } = cred!
     user = await getUserByEmail(email)
     const valid = await comparePasswords(password, user.password!)
     return (!user || !valid) ? null : user
@@ -77,6 +75,7 @@ export const getUserByEmail = async (email: string): Promise<Partial<User>> => {
  
 export const addUser =  async (user: Partial<User>): Promise<Partial<User>> => {
     const newUser = await setUser(user)
+    voyeur(newUser)
     const res = await fetch(
         "http://localhost:3000/api/user?action=create", 
         {

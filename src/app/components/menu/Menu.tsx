@@ -1,11 +1,11 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import PopularCard from '../popularCard/PopularCard';
 import CategoryPill from '../categoryPill/CategoryPill';
 import EditorCard from '../editorCard/EditorCard';
 import { getAllCategories } from '../../utils/Categories';
 import { getEditorChoice, getPopularPosts } from '../../utils/Posts';
 
-const Menu: React.FC = async () => {
+const Menu = async () => {
     const categories = await getAllCategories()
     const popular = await getPopularPosts()
     const editorChoice = await getEditorChoice()
@@ -25,7 +25,7 @@ const Menu: React.FC = async () => {
                     <div className="text-3xl">Catégories</div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    {categories.map( (cat, i) => <CategoryPill key={cat.id} category={cat.slug} /> )}
+                    {categories.map( (cat, i) => <CategoryPill key={cat.id} categorySlug={cat.slug} /> )}
                 </div>
             </div>
             <div className="mt-10 pb-12">

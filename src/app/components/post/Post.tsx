@@ -24,7 +24,7 @@ const Post: React.FC<{post: MyPost}> = ({post}) => {
             </div>
             <div className={classNames("p-3", {hidden: !post})}>
                 <div className="flex gap-2">
-                    <CategoryPill category={post?.catSlug} />
+                    <CategoryPill categorySlug={post?.catSlug} />
                     <EditorOptions id={post?.id} liked={post?.editorLike} />
                 </div>
                 <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
@@ -38,7 +38,7 @@ const Post: React.FC<{post: MyPost}> = ({post}) => {
                         </div>
                         <div className="font-mono font-extralight">{post?.description}</div>
                         <div className="flex items-center gap-2 h-10 mt-5">
-                            <img className="w-10 rounded-full" src={post?.user?.image} alt="author Profile picture"/>
+                            <img className="w-10 rounded-full" src={post?.user?.image as string} alt="author Profile picture"/>
                             <div className="font-bold">{post?.user?.name}</div>
                             <div className="text-sm">{new Date(post?.createdAt).toLocaleDateString()}</div>
                         </div>

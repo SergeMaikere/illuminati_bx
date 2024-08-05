@@ -10,7 +10,7 @@ export const curry = (fn: Function) => {
 
 export const pipe = (...fns: Function[]) => (arg: any) => fns.reduce( (g, fn) => fn(g), arg )
 
-export const asyncPipe = (...fns: Promise<Function>[]) => (arg: any) => fns.reduce( (g, fn) => g.then(fn), Promise.resolve(arg) )
+export const asyncPipe = (...fns: Function[]) => (arg: any) => fns.reduce( (g, fn) => g.then(fn), Promise.resolve(arg) )
 
 export const asyncVoyeur = async (x: any) => {
     console.log('\r\n')

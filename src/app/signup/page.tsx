@@ -1,15 +1,12 @@
 import React from 'react';
 import { User as MyUser, addUser } from '../utils/Users';
 import User from '../components/user/User';
-import { formDataToObject } from '../utils/Helper';
 
 const NewUser = () => {
 
-    const handleSubmit = async (formData: FormData): Promise<MyUser> => {
+    const handleSubmit = async (user: Partial<MyUser>): Promise<Partial<MyUser>> => {
         "use server"
-        const user: Partial<MyUser> = formDataToObject(formData)
-        const res: MyUser = await addUser(user)
-        return res
+        return await addUser(user)
     }
 
     return (

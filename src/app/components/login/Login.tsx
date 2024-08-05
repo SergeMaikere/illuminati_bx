@@ -1,27 +1,26 @@
 "use client"
-import React, { PropTypes, useEffect, useState } from 'react';
+import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { useSession, signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import classNames from 'classnames'
 import { isLoggedIn } from '../../utils/Helper';
 import Button from '../button/Button';
 
+type MyLogin = Record<'email' | 'password', {value: string}>
+
 const Login = () => {
 
     const { data, status } = useSession()
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState<boolean>(true)
     const router = useRouter()
-    console.log(data, status)
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: SyntheticEvent) => {
         e.preventDefault()
-        const formData = new FormData(e.target)
-        const cred = [ ...formData.entries() ].reduce(
-            (user, pair) => {
-                user[pair[0]] = pair[1]
-                return user
-            }, {}
-        )
+        const target = e.target as typeof e.target & MyLogin
+        const cred = {
+            email: target.email.value,
+            password: target.password.value
+        }
         await signIn('credentials', cred )
     }
 
@@ -67,23 +66,23 @@ const Login = () => {
                     <div>
                         <label className="font-serif pr-2" htmlFor="email">Votre email:</label>
                         <input 
-                        className="bg-transparent font-serif text-lg px-3 pt-3 border-b border-gray-400 focus:outline-gray-400" 
-                        id="email"
-                        name="email" 
-                        type="email" 
-                        placeholder="g.soros@nwo.org"
-                        required/>
+                            className="bg-transparent font-serif text-lg px-3 pt-3 border-b border-gray-400 focus:outline-gray-400" 
+                            id="email"
+                            name="email" 
+                            type="email" 
+                            placeholder="g.soros@nwo.org"
+                            required/>
                     </div>
                     <div>
                         <label className="font-serif pr-2" htmlFor="pswd">Votre mot de passe:</label>
                         <input 
-                        className="bg-transparent font-serif text-lg px-3 pt-3 border-b border-gray-400 focus:outline-gray-400" 
-                        id="pswd"
-                        name="password" 
-                        type="password" 
-                        minLength="8"
-                        placeholder="3p5731nD1dn7K1llH1m53lf"
-                        required/>
+                            className="bg-transparent font-serif text-lg px-3 pt-3 border-b border-gray-400 focus:outline-gray-400" 
+                            id="pswd"
+                            name="password" 
+                            type="password" 
+                            minLength={8}
+                            placeholder="3p5731nD1dn7K1llH1m53lf"
+                            required/>
                     <div className="text-center">
                         <Button type="submit" children="Allé zou" />
                     </div>

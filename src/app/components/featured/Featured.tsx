@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/Button';
 
-const Featured: React.FC = () => {
+const Featured = () => {
     return (
         <div className="mt-10 pb-12 sm:pb-24 border-b border-gray-300">
             <div className="mb-4 font-serif">
@@ -20,7 +20,7 @@ const Featured: React.FC = () => {
                     <p className="font-mono text-base">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi voluptate, voluptates sunt odit rerum maxime explicabo natus nam dolor iusto ullam quia assumenda rem doloremque exercitationem dicta inventore. Quod.
                     </p>  
-                    <Button children="Read More" />
+                    <Button type="button" children="Read More" />
                 </div>
             </div>
         </div>

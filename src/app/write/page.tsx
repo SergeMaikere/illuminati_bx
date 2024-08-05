@@ -9,9 +9,8 @@ const NewPost = async () => {
     const handleSubmit = async (formDatas: FormData): Promise<Post> => {
         "use server"
         const post: Partial<Post> = formDataToObject( formDatas ) 
-        const res: Post = await addPost(post)
-        redirect( `/${slugify(post.title)}` )
-        return res
+        await addPost(post)
+        redirect( `/${slugify(post.title!)}` )
     }
 
     return (

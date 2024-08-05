@@ -11,7 +11,7 @@ export type Post = {
     subtitle: string
     description: string
     body: string
-    image: string
+    image: string | undefined
     imageAlt: string
     catSlug: string
     cat: Category
@@ -19,12 +19,12 @@ export type Post = {
     user: User    
     views: number     
     editorLike: boolean 
-    comments: Comment[]
+    comments: Partial<Comment>[]
 }
 
 
 
-const setTitleSlug = (post: Partial<Post>): Partial<Post> => ( {...post, slug: slugify(post.title)} )
+const setTitleSlug = (post: Partial<Post>): Partial<Post> => ( {...post, slug: slugify(post.title!)} )
     
 const setNewPost = asyncPipe( getImgUrl, setTitleSlug )
 

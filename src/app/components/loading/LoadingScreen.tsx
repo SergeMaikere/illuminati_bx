@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
-const LoadingScreen = ({ className }) => {
+const LoadingScreen = () => {
     return (
         <div className="flex justify-center items-center min-h-80">
             <span className={`
