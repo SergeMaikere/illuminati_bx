@@ -1,33 +1,44 @@
 "use client"
-import React, { PropTypes, useState } from 'react';
+import React, { useState } from 'react';
 import { useSession } from 'next-auth/react'
 import Comment from '../comment/Comment';
 import Button from '../button/Button';
 import { asyncPipe, getFormDataByObject, isLoggedIn } from '../../utils/Helper';
+import { Comment as MyComm } from '../../utils/Comments';
 
-const CommentsArea = ({postSlug, comments, handleSubmit}) => {
+type P = {
+    postSlug: string
+    comments: Partial<MyComm>[]
+    handleSubmit: Function
+}
+
+type E = { body: {value: string} }
+
+const CommentsArea: React.FC<P> = ({postSlug, comments, handleSubmit}) => {
 
     const [ myComments, setMyComments ] = useState(comments)
     const { data, status } = useSession()
 
-    const updateView = comment => setMyComments( prev => [...prev, comment] )
+    const updateView = (comment: MyComm) => {
+        setMyComments( prev => [...prev, comment] )
+        return comment
+    }
     
     const commentHandler = asyncPipe( getFormDataByObject, handleSubmit, updateView )
 
-    const handleClick = async e => {
+    const handleClick = async (e: React.SyntheticEvent) => {
         e.preventDefault()
-
         if ( !isLoggedIn(status) ) return alert("Il faut se connecter l'ami.e")
 
+        const target = e.target as typeof e.target & E
         const comment = {
-            body: e.target.body.value,
+            body: target.body.value,
             userEmail: data?.user?.email,
             postSlug: postSlug
         }
-
-        await commentHandler( comment )
-
-        e.target.body.value = ''
+        const res = await commentHandler( comment )
+        target.body.value = ''
+        return res
     }
 
     return (

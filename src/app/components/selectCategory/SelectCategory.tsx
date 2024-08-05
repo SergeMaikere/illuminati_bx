@@ -1,26 +1,18 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
-const SelectCategory = (props) => {
-
-    const handleSelection = (value: string) => {
-        if ( value === 'Champion' ) alert('Soyons sérieux 🙄')
-        props.category(value)
-    }
-
+const SelectCategory = () => {
     return (
         <div>
             <label htmlFor="categories" className="font-serif text-2xl hidden lg:inline-block">Choisis ta Catégorie: </label>
             <select 
-                id="categories" 
-                name="categories"
-                onChange={e => handleSelection(e.target.value)}
+                id="category" 
                 className={`
                     font-bold text-xl font-mono px-2.5 pb-0.5 pt-2 
                     rounded-lg border-b border-gray-300 ml-2
                     hover:scale-110 hover:bg-zinc-800 hover:text-gray-200 focus:outline-gray-400
                 `}
             >
-                <option defaultValue>Champion</option>
+                <option selected={true} disabled={true}>Champion</option>
                 <option value="france">France</option>
                 <option value="enfer">Enfer</option>
                 <option value="science">Science</option>

@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
-import ReactQuill from 'react-quill'
+import React from 'react';
+import ReactQuill, { UnprivilegedEditor } from 'react-quill'
 import 'react-quill/dist/quill.bubble.css'
 import { OtisMini } from '../../utils/Classics';
+import { DeltaStatic, Sources } from 'quill';
 
 const modules = {
     toolbar: [
@@ -25,9 +26,14 @@ const modules = {
 
 const formats = ['header', 'font', 'size', 'bold', 'italic', 'underline', 'strike', 'blockquote', 'list', 'bullet', 'indent', 'link' ]
 
-const TextEditor = (props) => {
+type T = {
+    value: string
+    handleChange(value: string, delta: DeltaStatic, source: Sources, editor: UnprivilegedEditor): void
+}
+
+const TextEditor = ( {value, handleChange}: T ) => {
     return (
-        <ReactQuill theme="bubble" modules={modules} formats={formats} placeholder={OtisMini} value={props.value} onChange={props.handleChange} />
+        <ReactQuill theme="bubble" modules={modules} formats={formats} placeholder={OtisMini} value={value} onChange={handleChange} />
         
     );
 };

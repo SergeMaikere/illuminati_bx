@@ -1,13 +1,7 @@
 import { PrismaClient } from '@prisma/client';
+import { isProductionEnv } from './Helper';
 
-const isProductionEnv = (): boolean => process.env.NODE_ENV === 'production'
-const isGlobalPrisma = (): boolean => global.prisma
-    
-const setPrisma = (): PrismaClient => {
-    if ( isProductionEnv() ) return new PrismaClient()
-    if ( !isProductionEnv() && !isGlobalPrisma() ) global.prisma = new PrismaClient()
-    if ( !isProductionEnv() && isGlobalPrisma() ) return global.prisma
-}
+const setPrisma = (): PrismaClient => isProductionEnv() ? new PrismaClient() : ( global.prisma ?? new PrismaClient() )
 
 const prisma = setPrisma()
 

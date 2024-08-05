@@ -1,19 +1,21 @@
 "use client"
-import React, { PropTypes, useContext } from 'react';
+import React, { useContext } from 'react';
 import Button from '../button/Button';
-import { PaginationContext } from '../../../context/PaginationContext';
+import { PaginationContext, usePage } from '../../../context/PaginationContext';
 
-const Pagination = (props) => {
+type L = { length: number }
 
-    const [ state, dispatch ] = useContext( PaginationContext )
+const Pagination: React.FC<L> = ({length}) => {
 
-    const handlePrev = () => state <= 0 ? dispatch({type: "here"}) : dispatch({type: "prev"})
-    const handleNext = () => state < props.length - 1 ? dispatch({type: "next"}) : dispatch({type: "here"})
+    const { page, dispatch } = usePage()
+
+    const handlePrev = () => page <= 0 ? dispatch({type: "here"}) : dispatch({type: "prev"})
+    const handleNext = () => page < length - 1 ? dispatch({type: "next"}) : dispatch({type: "here"})
 
     return (
         <div className="flex justify-between">
-            <Button handleClick={handlePrev} children="Précédente"/>
-            <Button handleClick={handleNext} children="Suivante"/>
+            <Button type="button" handleClick={handlePrev} children="Précédente"/>
+            <Button type="button" handleClick={handleNext} children="Suivante"/>
         </div>
     );
 };

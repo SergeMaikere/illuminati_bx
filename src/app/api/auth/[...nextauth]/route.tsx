@@ -7,6 +7,7 @@ import { PrismaAdapter } from '@auth/prisma-adapter';
 import prisma from '../../../utils/Connect';
 import { login } from '../../../utils/Users';
 
+
 const handler = NextAuth( 
     {
         adapter: PrismaAdapter(prisma),
@@ -14,20 +15,20 @@ const handler = NextAuth(
         providers: [
             GithubProvider(
                 {
-                    clientId: process.env.GITHUB_ID,
-                    clientSecret: process.env.GITHUB_SECRET
+                    clientId: process.env.GITHUB_ID!,
+                    clientSecret: process.env.GITHUB_SECRET!
                 }
             ),
             GoogleProvider(
                 {
-                    clientId: process.env.GOOGLE_ID,
-                    clientSecret: process.env.GOOGLE_SECRET
+                    clientId: process.env.GOOGLE_ID!,
+                    clientSecret: process.env.GOOGLE_SECRET!
                 }
             ),
             FacebookProvider(
                 {
-                    clientId: process.env.FACEBOOK_ID,
-                    clientSecret: process.env.FACEBOOK_SECRET
+                    clientId: process.env.FACEBOOK_ID!,
+                    clientSecret: process.env.FACEBOOK_SECRET!
                 }
             ),
             CredentialsProvider(
@@ -48,7 +49,7 @@ const handler = NextAuth(
                 return token
             },
             session: async ( {session, token} ) => {
-                session.user = token.user
+                session.user = token.user!
                 return session
             }
         }

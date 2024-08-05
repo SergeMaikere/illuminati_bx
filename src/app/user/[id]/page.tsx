@@ -1,10 +1,12 @@
-import React, { PropTypes } from 'react';
-import Profile from '../../components/profile/Profile';
+import React from 'react';
 import { getUserById } from '../../utils/Users';
+import Profile from '../../components/profile/Profile';
 
-const UserProfile = async ( context ) => {
+type P = { params: {id: string} }
 
-    const user = await getUserById( context.params.id )
+const UserProfile: React.FC<P> = async ( {params} ) => {
+
+    const user = await getUserById( params.id )
 
     return (
         <Profile user={user} />

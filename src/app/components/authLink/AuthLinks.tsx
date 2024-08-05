@@ -1,15 +1,15 @@
 "use client"
-import Link from 'next/Link'
+import Link from 'next/link'
 import { useSession, signOut } from 'next-auth/react'
 import { useEffect, useState } from 'react';
 import { isAdmin, isLoggedIn, isWriter } from '../../utils/Helper';
 import classNames from 'classnames'
 
-const AuthLinks = ({ className }) => {
+const AuthLinks = () => {
 
     const { data, status } = useSession()
-    const [ open, setOpen ] = useState(false)
-    const [ isLogged, setIsLogged ] = useState(false)
+    const [ open, setOpen ] = useState<boolean>(false)
+    const [ isLogged, setIsLogged ] = useState<boolean>(false)
 
     useEffect(
         () => {
@@ -23,7 +23,7 @@ const AuthLinks = ({ className }) => {
                 <img 
                     className="rounded-full max-h-10 ml-3 cursor-pointer hover:scale-125"
                     onClick={() => setOpen(!open)} 
-                    src={data?.user?.image} 
+                    src={data?.user?.image!} 
                     alt="Profile picture" />
                 <div 
                     className={

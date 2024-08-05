@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
-import Link from 'next/Link'
+import React from 'react';
+import Link from 'next/link'
 
-const Footer = ({ className }) => {
+const Footer = () => {
     return (
         <div className="hidden sm:block lg:flex gap-2 py-10 px-2 border-t border-gray-300">
             <div className="flex gap-2 flex-2">

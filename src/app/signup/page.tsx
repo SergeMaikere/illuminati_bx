@@ -1,19 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import { User as MyUser, addUser } from '../utils/Users';
 import User from '../components/user/User';
-import { addUser } from '../utils/Users';
 
 const NewUser = () => {
 
-    const handleSubmit = async formData => {
+    const handleSubmit = async (user: Partial<MyUser>): Promise<Partial<MyUser>> => {
         "use server"
-        const user = [ ...formData.entries() ].reduce(
-            (user, pair) => {
-                user[pair[0]] = pair[1]
-                return user
-            }, {}
-        )
-        const result = await addUser(user)
-        console.log({result})
+        return await addUser(user)
     }
 
     return (

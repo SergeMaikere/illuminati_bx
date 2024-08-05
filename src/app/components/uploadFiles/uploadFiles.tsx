@@ -1,16 +1,14 @@
-"use client"
-import { Props } from "next/script";
+import React from 'react';
 import { CiImageOn } from "react-icons/ci";
-import { Category } from '../../utils/Categories';
 
 type AppProps = {
     fileType: string
     category: string
-    image: File | string
-    imageAlt: string
+    image: File | string | undefined
+    imageAlt: string | undefined
 }
 
-const UploadFiles = ( {fileType, category, image, imageAlt}: AppProps ) => {
+const UploadFiles: React.FC<AppProps> = ({fileType, category, image, imageAlt}) => {
 
     const fileId = `${fileType}${category}`
     const fileAlt = `${fileType}Alt${category}`
@@ -18,7 +16,7 @@ const UploadFiles = ( {fileType, category, image, imageAlt}: AppProps ) => {
     return (
         <div className="flex md:gap-9 gap-3 items-center justify-around">
             <div className="w-24 px-3">
-                <img src={image} alt={imageAlt} />
+                <img src={image as string} alt={imageAlt} />
             </div>
             <div>
                 <label htmlFor={fileId}>

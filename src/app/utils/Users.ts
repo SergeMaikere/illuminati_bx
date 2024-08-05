@@ -2,42 +2,46 @@ import { Post } from './Posts';
 import { Comment } from './Comments';
 import bcrypt from 'bcrypt'
 import { app } from './firebase';
-import { asyncPipe } from './Helper';
+import { asyncPipe, voyeur } from './Helper';
 import { getImgUrl } from './mediaHandler';
 
 export type User = {
-  id: string;    
-  name: string;
-  email: string;    
-  image: string;
-  password: string;
-  status: string;
-  posts: Post[];
-  comment: Comment[];
+  id: string    
+  name: string
+  email: string  
+  emailVerified: Date  
+  image: string | null
+  password: string
+  role: 'USER' | 'WRITER' | 'EDITOR' | 'ADMIN'
+  posts: Post[]
+  comment: Comment[]
 }
+
+export type Login = Record<'email' | 'password', string>
 
 const saltRounds = 10
 
-const hash = async (pswd: string): string => await bcrypt.hash( pswd, saltRounds)
+const hash = async (pswd: string): Promise<string> => await bcrypt.hash( pswd, saltRounds)
 
-const setPswd = async (user: any): any => {
-    const hashed = await hash(user.password)
+const setPswd = async (user: Partial<User>): Promise<Partial<User>> => {
+    const hashed = await hash(user.password!)
     return { ...user, password: hashed }
 }
 
-const comparePasswords = async (pswd, hash) => ( !pswd || !hash ) ? false : await bcrypt.compare( pswd, hash )
+const comparePasswords = async (pswd: string, hash: string): Promise<boolean> => ( !pswd || !hash ) ? false : await bcrypt.compare( pswd, hash )
 
 const setUser = asyncPipe( setPswd, getImgUrl )
 
-export const login = async cred => {
+export const login = async (cred: Login | undefined): Promise<Partial<User> | null> => {
+    if ( !cred ) throw new Error("No credentials")
     let user = null
-    const { email, password } = cred
+    const { email, password } = cred!
     user = await getUserByEmail(email)
-    const valid = await comparePasswords(password, user?.password)
+    const valid = await comparePasswords(password, user.password!)
     return (!user || !valid) ? null : user
 }
 
-export const getUserById = async userId => {
+export const getUserById = async (userId: string): Promise<Partial<User>> => {
     const res = await fetch(
         `http://localhost:3000/api/user?action=userId`,
         {
@@ -53,7 +57,7 @@ export const getUserById = async userId => {
     return await res.json()
 }
 
-export const getUserByEmail = async email => {
+export const getUserByEmail = async (email: string): Promise<Partial<User>> => {
     const res = await fetch(
         "http://localhost:3000/api/user?action=user", 
         {
@@ -69,9 +73,9 @@ export const getUserByEmail = async email => {
     return await res.json()
 }
  
-export const addUser =  async (user: any) => {
+export const addUser =  async (user: Partial<User>): Promise<Partial<User>> => {
     const newUser = await setUser(user)
-    console.log('addUser =>', newUser)
+    voyeur(newUser)
     const res = await fetch(
         "http://localhost:3000/api/user?action=create", 
         {

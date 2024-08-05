@@ -1,14 +1,14 @@
-import { faker } from '@faker-js/faker';
-import { asyncPipe, asyncVoyeur, voyeur } from './Helper';
-import { User, getUserById } from './Users';
+import { User } from './Users';
 import { Post } from './Posts';
 
 export type Comment = {
-    id: string;      
-    createdAt: string;    
-    body: string;
-    post: Post;        
-    user: User;
+    id: string      
+    createdAt: Date | string | number 
+    body: string
+    postSlug: string
+    post: Post
+    userEmail: string       
+    user: Partial<User>
 }
 
 

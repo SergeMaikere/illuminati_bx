@@ -1,15 +1,18 @@
 "use client"
+import { createContext, ReactNode, useContext } from 'react';
 
-import { createContext, useState } from 'react';
-
-export const ThemeContext: createContext = createContext()
-
-const getFromLocalStorage = () => {
-    if ( typeof window === 'undefined' ) return
-    return localStorage.getItem('theme') || false
+type ThemeState = {
+    theme: string
+    setTheme(theme: string): void
 }
 
-export const ThemeContextProvider = ( {children} ): any => {
-    const [ theme, setTheme ] = useState( getFromLocalStorage() )
-    return <ThemeContext.Provider value={ {theme, setTheme} }>{children}</ThemeContext.Provider>
-}
+type C = { children: ReactNode }
+
+export const ThemeContext = createContext<ThemeState>( 
+    {
+        theme: 'false',
+        setTheme: () => {}
+    } 
+)
+
+export const useTheme = () => useContext(ThemeContext)

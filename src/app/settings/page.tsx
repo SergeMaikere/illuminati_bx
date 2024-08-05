@@ -1,14 +1,15 @@
 import React from 'react';
 import { Category, getAllCategories, updateCategory } from '../utils/Categories';
-import CategorySetting from '../components/categorySettings/CategorySetting';
 import { formDataToObject } from '../utils/Helper';
+import CategorySetting from '../components/categorySettings/CategorySetting';
 
 const SettingsPage = async () => {
-    const categories = await getAllCategories()
+    const categories: Category[] = await getAllCategories()
+
     const saveSettings = async (formDatas: FormData, catId: string): Promise<Category> => {
         "use server"
-        const newCat = formDataToObject( formDatas )
-        const res = await updateCategory( newCat, catId )
+        const newCat: Partial<Category> = formDataToObject( formDatas )
+        const res: Category = await updateCategory( newCat, catId )
         return res
     }
 

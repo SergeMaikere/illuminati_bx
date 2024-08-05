@@ -3,18 +3,18 @@ import { NextResponse } from 'next/server'
 import { URL } from 'url';
 import { addMonths } from '../../utils/Helper';
 
-const create = async (req) => {
+const create = async (req: Request): Promise<NextResponse> => {
     const post = await req.json()
     try {
         const res = await prisma.post.create( {data: post} )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const getPostBySlug = async slug => {
+const getPostBySlug = async (slug: string): Promise<NextResponse> => {
     try {
         const res = await prisma.post.findUnique( 
             {
@@ -41,19 +41,19 @@ const getPostBySlug = async slug => {
                 }
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const getPostRecent = async () => {
+const getPostRecent = async (): Promise<NextResponse> => {
     try {
         const res = await prisma.post.findMany( 
             {
                 where: {
-                    createdAt: { gte: addMonths( new Date(), -1 ) }
+                    createdAt: { gte: addMonths( new Date(), -4 ) }
                 }, 
                 include: {
                     user: {
@@ -66,14 +66,14 @@ const getPostRecent = async () => {
                 }
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const getPopularPosts = async () => {
+const getPopularPosts = async (): Promise<NextResponse> => {
     try {
         const res = await prisma.post.findMany(
             {
@@ -90,14 +90,14 @@ const getPopularPosts = async () => {
                 }
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const getEditorChoice = async () => {
+const getEditorChoice = async (): Promise<NextResponse> => {
     try {
         const res = await prisma.post.findMany(
             {
@@ -113,14 +113,14 @@ const getEditorChoice = async () => {
                 }
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const updateViews = async req => {
+const updateViews = async (req: Request): Promise<NextResponse> => {
     const { id } = await req.json()
     try {
         const res = await prisma.post.update( 
@@ -131,14 +131,14 @@ const updateViews = async req => {
                 }
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const updateEditorLike = async req => {
+const updateEditorLike = async (req: Request): Promise<NextResponse> => {
     const { id, like } = await req.json()
     try {
         const res = await prisma.post.update( 
@@ -147,14 +147,14 @@ const updateEditorLike = async req => {
                 data:{editorLike: like}
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
-const updatePost = async req => {
+const updatePost = async (req: Request): Promise<NextResponse> => {
     const { post } = await req.json()
     try {
         const res = await prisma.post.update( 
@@ -163,15 +163,15 @@ const updatePost = async req => {
                 data: post
             } 
         )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
 
 
-export const GET = async req => {
+export const GET = async (req: Request) => {
     const { searchParams } = new URL(req.url)
     const slug = searchParams.get('slug')
     const action = searchParams.get('action')
@@ -181,9 +181,9 @@ export const GET = async req => {
     if ( action === 'editor' ) return await getEditorChoice()
 }
 
-export const POST = async req =>  await create(req)
+export const POST = async (req: Request) =>  await create(req)
 
-export const PUT = async req => {
+export const PUT = async (req: Request) => {
     const { searchParams } = new URL(req.url)
     const action = searchParams.get('action')
     if ( action === 'views' ) return await updateViews(req)
@@ -191,14 +191,14 @@ export const PUT = async req => {
     if ( action === 'like' ) return await updateEditorLike(req)
 }
 
-export const DELETE = async req => {
+export const DELETE = async (req: Request) => {
     const { searchParams } = new URL(req.url)
     const id = searchParams.get('postId')
     try {
-        const res = await prisma.post.delete( {where: {id: id}} )
-        return new NextResponse( JSON.stringify(res, {status: 200}) )
+        const res = await prisma.post.delete( {where: {id: id as string | undefined}} )
+        return new NextResponse( JSON.stringify(res) )
     }
     catch (err) {
-        return new NextResponse( JSON.stringify(err, {status: 500}) )
+        return new NextResponse( JSON.stringify(err) )
     }
 }
