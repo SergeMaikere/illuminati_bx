@@ -1,8 +1,6 @@
-import type { NextApiResponse } from 'next'
 import { getImgUrl, getLogoUrl } from './mediaHandler';
-import { isString } from './Validation';
 import { Post } from './Posts';
-import { asyncPipe, voyeur } from './Helper';
+import { asyncPipe } from './Helper';
 
 export type Category = {
     id: string      

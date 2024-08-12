@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
-import { TextCategoryColor } from '../../utils/Categories';
-import { Post } from '../../utils/Posts';
+import { TextCategoryColor } from '../../../utils/Categories';
+import { Post } from '../../../utils/Posts';
 
 type P = { post: Post }
 

@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import UploadFiles from '../uploadFiles/uploadFiles';
 import Button from '../button/Button';
-import { getFormDataByObject } from '../../utils/Helper';
-import { Category } from '../../utils/Categories';
+import { getFormDataByObject } from '../../../utils/Helper';
+import { Category } from '../../../utils/Categories';
 
 type AppProps = {
     category: Category

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
-import { BgCategoryColor, Category } from '../../utils/Categories';
+import { BgCategoryColor, Category } from '../../../utils/Categories';
 
 const CategoryPill = ({categorySlug}: {categorySlug: string}) => {
 

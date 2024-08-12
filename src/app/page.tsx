@@ -2,8 +2,8 @@ import Featured from './components/featured/Featured';
 import Categories from './components/categories/Categories';
 import CardList from './components/cardList/CardList';
 import Menu from './components/menu/Menu';
-import { getAllCategories } from './utils/Categories';
-import { getRecentPosts } from './utils/Posts';
+import { getAllCategories } from '../utils/Categories';
+import { getRecentPosts } from '../utils/Posts';
 
 export default async function Home() {
     const categories = await getAllCategories()

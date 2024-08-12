@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
-import { Category, TextCategoryColor } from '../../utils/Categories';
+import { Category, TextCategoryColor } from '../../../utils/Categories';
 
 const CategoryCard = ({category}: {category: Category}) => {
 

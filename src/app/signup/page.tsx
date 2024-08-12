@@ -1,5 +1,5 @@
 import React from 'react';
-import { User as MyUser, addUser } from '../utils/Users';
+import { User as MyUser, addUser } from '../../utils/Users';
 import User from '../components/user/User';
 
 const NewUser = () => {

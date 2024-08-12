@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react';
-import { User } from '../../utils/Users';
+import { User } from '../../../utils/Users';
 import Comment from '../comment/Comment';
 
 const Profile = ( {user}: {user: Partial<User>} ) => {

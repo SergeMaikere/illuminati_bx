@@ -1,7 +1,7 @@
-import prisma from '../../utils/Connect';
+import prisma from '../../../utils/Connect';
 import { NextResponse } from 'next/server'
 import { URL } from 'url';
-import { addMonths } from '../../utils/Helper';
+import { addMonths } from '../../../utils/Helper';
 
 const create = async (req: Request): Promise<NextResponse> => {
     const post = await req.json()

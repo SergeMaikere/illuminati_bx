@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactQuill, { UnprivilegedEditor } from 'react-quill'
 import 'react-quill/dist/quill.bubble.css'
-import { OtisMini } from '../../utils/Classics';
+import { OtisMini } from '../../../utils/Classics';
 import { DeltaStatic, Sources } from 'quill';
 
 const modules = {

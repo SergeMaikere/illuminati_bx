@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { useSession } from 'next-auth/react'
 import Comment from '../comment/Comment';
 import Button from '../button/Button';
-import { asyncPipe, getFormDataByObject, isLoggedIn } from '../../utils/Helper';
-import { Comment as MyComm } from '../../utils/Comments';
+import { asyncPipe, getFormDataByObject, isLoggedIn } from '../../../utils/Helper';
+import { Comment as MyComm } from '../../../utils/Comments';
 
 type P = {
     postSlug: string

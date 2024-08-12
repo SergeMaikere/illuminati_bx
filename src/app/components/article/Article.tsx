@@ -7,8 +7,8 @@ import UploadFiles from '../uploadFiles/uploadFiles';
 import SelectCategory from '../selectCategory/SelectCategory';
 import TextEditor from '../textEditor/TextEditor';
 import classNames from 'classnames'
-import { isWriter, getFormDataByObject } from '../../utils/Helper';
-import { Otis } from '../../utils/Classics';
+import { isWriter, getFormDataByObject } from '../../../utils/Helper';
+import { Otis } from '../../../utils/Classics';
 
 type H = { handleSubmit: Function }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Comment as MyComment } from '../../utils/Comments';
+import { Comment as MyComment } from '../../../utils/Comments';
 
 type C = { comment: Omit<MyComment, 'id'> }
 

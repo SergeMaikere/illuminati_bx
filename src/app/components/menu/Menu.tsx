@@ -2,8 +2,8 @@ import React from 'react';
 import PopularCard from '../popularCard/PopularCard';
 import CategoryPill from '../categoryPill/CategoryPill';
 import EditorCard from '../editorCard/EditorCard';
-import { getAllCategories } from '../../utils/Categories';
-import { getEditorChoice, getPopularPosts } from '../../utils/Posts';
+import { getAllCategories } from '../../../utils/Categories';
+import { getEditorChoice, getPopularPosts } from '../../../utils/Posts';
 
 const Menu = async () => {
     const categories = await getAllCategories()

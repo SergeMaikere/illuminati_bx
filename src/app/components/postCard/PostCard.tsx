@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link'
 import Button from '../button/Button';
-import { TextCategoryColor } from '../../utils/Categories';
-import { Post } from '../../utils/Posts';
+import { TextCategoryColor } from '../../../utils/Categories';
+import { Post } from '../../../utils/Posts';
 
 const PostCard = ({post}: {post: Post}) => {
     return (

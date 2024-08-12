@@ -2,9 +2,9 @@
 import Pagination from '../pagination/Pagination';
 import PostCard from '../postCard/PostCard';
 import OupsNoContent from '../oupsNoContent/OupsNoContent';
-import { splicer } from '../../utils/Helper';
+import { splicer } from '../../../utils/Helper';
 import { usePage } from '../../../context/PaginationContext';
-import { Post } from '../../utils/Posts';
+import { Post } from '../../../utils/Posts';
 
 type Props = {
     cards: Post[]

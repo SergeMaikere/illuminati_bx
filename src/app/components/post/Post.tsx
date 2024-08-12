@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import OupsNoContent from '../oupsNoContent/OupsNoContent';
 import CategoryPill from '../categoryPill/CategoryPill';
 import EditorOptions from '../editorOptions/EditorOptions';
-import { Post as MyPost, updatePostViews } from '../../utils/Posts';
+import { Post as MyPost, updatePostViews } from '../../../utils/Posts';
 
 const Post: React.FC<{post: MyPost}> = ({post}) => {
 

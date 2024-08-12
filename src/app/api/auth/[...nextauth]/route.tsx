@@ -4,9 +4,8 @@ import GoogleProvider from 'next-auth/providers/google'
 import FacebookProvider from 'next-auth/providers/facebook'
 import CredentialsProvider from "next-auth/providers/credentials"
 import { PrismaAdapter } from '@auth/prisma-adapter';
-import prisma from '../../../utils/Connect';
-import { login } from '../../../utils/Users';
-
+import { login } from '../../../../utils/Users';
+import prisma from '../../../../utils/Connect';
 
 const handler = NextAuth( 
     {

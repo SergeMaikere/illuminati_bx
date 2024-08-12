@@ -1,5 +1,5 @@
 import React from 'react';
-import { BgCategoryColor, Category, getCategory } from '../../utils/Categories';
+import { BgCategoryColor, Category, getCategory } from '../../../utils/Categories';
 import CardList from '../../components/cardList/CardList';
 import Menu from '../../components/menu/Menu';
 

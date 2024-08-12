@@ -2,7 +2,7 @@
 import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'
 import { CiImageOn } from 'react-icons/ci';
-import { isSameString } from '../../utils/Validation';
+import { isSameString } from '../../../utils/Validation';
 import classNames from 'classnames'
 
 type T = Record<'name' | 'email' | 'password' | 'password2', {value: string}> & {image: {files: File[]} | undefined}

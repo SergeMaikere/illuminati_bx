@@ -1,12 +1,12 @@
 "use client"
-import React, { PropTypes, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react'
 import Button from '../button/Button';
 import { CiEdit } from "react-icons/ci";
 import { ImCheckmark, ImCheckmark2 } from "react-icons/im";
 import classNames from 'classnames'
-import { isEditor } from '../../utils/Helper';
-import { updateEditorLike } from '../../utils/Posts';
+import { isEditor } from '../../../utils/Helper';
+import { updateEditorLike } from '../../../utils/Posts';
 
 const EditorOptions = ({id, liked}) => {
     const [ like, setLike ] = useState(liked)

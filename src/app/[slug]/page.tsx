@@ -1,7 +1,7 @@
 import React from 'react';
-import { Post as MyPost, getPostBySlug } from '../utils/Posts';
-import { formDataToObject } from '../utils/Helper';
-import { Comment, addComment } from '../utils/Comments';
+import { Post as MyPost, getPostBySlug } from '../../utils/Posts';
+import { Comment, addComment } from '../../utils/Comments';
+import { formDataToObject } from '../../utils/Helper';
 import Post from '../components/post/Post';
 import CommentsArea from '../components/commentsArea/CommentsArea';
 import Menu from '../components/menu/Menu';

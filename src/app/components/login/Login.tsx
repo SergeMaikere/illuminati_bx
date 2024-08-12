@@ -3,7 +3,7 @@ import React, { SyntheticEvent, useEffect, useState } from 'react';
 import { useSession, signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import classNames from 'classnames'
-import { isLoggedIn } from '../../utils/Helper';
+import { isLoggedIn } from '../../../utils/Helper';
 import Button from '../button/Button';
 
 type MyLogin = Record<'email' | 'password', {value: string}>

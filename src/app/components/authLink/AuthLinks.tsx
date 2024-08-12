@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useSession, signOut } from 'next-auth/react'
 import { useEffect, useState } from 'react';
-import { isAdmin, isLoggedIn, isWriter } from '../../utils/Helper';
+import { isAdmin, isLoggedIn, isWriter } from '../../../utils/Helper';
 import classNames from 'classnames'
 
 const AuthLinks = () => {

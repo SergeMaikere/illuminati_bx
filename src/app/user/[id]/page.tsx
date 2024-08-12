@@ -1,5 +1,5 @@
 import React from 'react';
-import { getUserById } from '../../utils/Users';
+import { getUserById } from '../../../utils/Users';
 import Profile from '../../components/profile/Profile';
 
 type P = { params: {id: string} }

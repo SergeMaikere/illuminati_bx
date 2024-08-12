@@ -1,7 +1,7 @@
 import React from 'react';
 import { redirect } from 'next/navigation'
-import { formDataToObject, slugify } from '../utils/Helper';
-import { Post, addPost } from '../utils/Posts';
+import { formDataToObject, slugify } from '../../utils/Helper';
+import { Post, addPost } from '../../utils/Posts';
 import Article from '../components/article/Article';
 
 const NewPost = async () => {

@@ -1,8 +1,8 @@
-import prisma from '../../utils/Connect';
+import prisma from '../../../utils/Connect';
 import { NextResponse } from 'next/server'
-import { User } from '../../utils/Users';
+import { User } from '../../../utils/Users';
 import { URL } from 'url';
-import { except } from '../../utils/Helper';
+import { except } from '../../../utils/Helper';
 
 
 const create = async (req: Request): Promise<NextResponse> => {
