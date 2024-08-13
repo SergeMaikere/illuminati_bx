@@ -1,7 +1,7 @@
 "use client"
 import React, { useContext } from 'react';
 import Button from '../button/Button';
-import { PaginationContext, usePage } from '../../../context/PaginationContext';
+import { usePage } from '../../../context/PaginationContext';
 
 type L = { length: number }
 

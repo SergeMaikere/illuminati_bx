@@ -27,14 +27,14 @@ const Post: React.FC<{post: MyPost}> = ({post}) => {
                     <CategoryPill categorySlug={post?.catSlug} />
                     <EditorOptions id={post?.id} liked={post?.editorLike} />
                 </div>
-                <h1 className="text-3xl md:text-6xl font-serif mb-3">{post?.title}</h1>
+                <h1 className="text-4xl md:text-6xl font-serif mb-3">{post?.title}</h1>
                 <div className="md:mt-10 lg:flex gap-2">
                     <div className="md:flex-1">
                         <img className="" src={post?.image} alt={post?.imageAlt}/>
                     </div>
                     <div className="flex flex-col justify-around md:flex-1">
                         <div>
-                            <div className="text-4xl font-mono">{` ${post?.subtitle}`}</div>
+                            <div className="text-2xl md:text-4xl font-mono">{` ${post?.subtitle}`}</div>
                         </div>
                         <div className="font-mono font-extralight">{post?.description}</div>
                         <div className="flex items-center gap-2 h-10 mt-5">

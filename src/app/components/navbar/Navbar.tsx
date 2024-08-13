@@ -1,13 +1,13 @@
 "use client"
-import { useState } from 'react';
 import Link from 'next/link'
 import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';
 import classNames from 'classnames'
+import { signal } from '@preact/signals-react';
 
 const Navbar = () => {
 
-    const [ open, setOpen ] = useState<boolean>( false )
+    const open = signal<boolean>( false )
 
     return (
         <div className="flex items-center justify-between px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
@@ -32,11 +32,13 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <div className="flex items-center gap-1 text-xl">
-                <span className="hidden lg:block text-sky-700">Illuminati</span>
-                <img className="h-20" src="/illuminati_bx.png" alt="Illuminati Brussels logo" />
-                <span className="hidden lg:block text-amber-500">Bruxelles</span>
-            </div>
+            <Link href="/">
+                <div className="flex items-center gap-1 text-xl">
+                    <span className="hidden lg:block text-sky-700">Illuminati</span>
+                    <img className="h-20" src="/illuminati_bx.png" alt="Illuminati Brussels logo" />
+                    <span className="hidden lg:block text-amber-500">Bruxelles</span>
+                </div>
+            </Link>
 
             <div className="hidden sm:flex">
                 <ToggleTheme/>
@@ -52,7 +54,7 @@ const Navbar = () => {
             <AuthLinks/>
 
             {/*Responsive Button*/}
-            <div onClick={() => setOpen(!open)} className={`
+            <div onClick={() => open.value = !open.value} className={`
                 flex flex-col justify-around items-center sm:hidden
                 border p-1 mr-3 rounded w-8 h-8
                 dark:border-gray-100 border-gray-900
@@ -67,7 +69,7 @@ const Navbar = () => {
                             flex flex-col justify-around
                             top-[3rem] left-0 w-screen h-[calc(100%-3rem)] absolute
                             bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-2xl text-center 
-                        `, {hidden: !open})}>
+                        `, {hidden: !open.value})}>
                 <Link href="/">Home</Link>
                 <Link href="/contact">Contact</Link>
                 <Link href="/about">About</Link>

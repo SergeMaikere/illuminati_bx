@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import LoadingScreen from './components/loading/LoadingScreen';
 
 export default function Loading () {

@@ -42,12 +42,12 @@ const CommentsArea: React.FC<P> = ({postSlug, comments, handleSubmit}) => {
     }
 
     return (
-        <div className="mt-10">
-            <div className="text-3xl">Commentaires</div>
+        <div className="mt-10 p-1 text-center">
+            <div className="text-2xl md:text-3xl">Commentaires</div>
 
-            <form onSubmit={e => handleClick(e)} className="flex gap-5 py-4">
+            <form onSubmit={e => handleClick(e)} className="flex gap-5 px-2 py-4 w-full">
                 <input 
-                    className={`w-full px-2 border-b border-gray-400 focus:outline-gray-400`} 
+                    className="md:w-3/4 px-2 border-b border-gray-400 focus:outline-gray-400" 
                     type="text" 
                     placeholder="C'est une bonne position ça, complotiste ?"
                     name="body"

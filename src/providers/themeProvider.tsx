@@ -1,7 +1,10 @@
 "use client"
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode } from 'react';
 import classNames from 'classnames'
 import { ThemeContext } from '../context/ThemeContext';
+import { signal } from '@preact/signals-react';
+import { useSignals } from '@preact/signals-react/runtime';
+
 
 type C = { children: ReactNode }
 
@@ -11,15 +14,15 @@ const getFromLocalStorage = (): string => {
 }
 
 export const ThemeProvider = ( {children}: C ) => {
-    const [ theme, setTheme ] = useState<string>( getFromLocalStorage() )
-    
+    useSignals()
+    const theme = signal<string>( getFromLocalStorage() )
     return (
-        <ThemeContext.Provider value={ { theme, setTheme } }>
-            <div className={classNames('w-screen', {dark: theme === 'true'}) }>
+        <ThemeContext.Provider value={ {theme} }>
+            <div className={classNames('w-screen', {dark: theme.value === 'true'}) }>
                 {children}
             </div>
         </ThemeContext.Provider>
-    )
+    )   
 }
 
 export default ThemeProvider;

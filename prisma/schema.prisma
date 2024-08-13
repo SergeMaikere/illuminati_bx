@@ -49,7 +49,7 @@ model User {
   password      String?   
   role          Role      @default( USER )
   posts         Post[]
-  comment       Comment[]
+  comments      Comment[]
   accounts      Account[]
   sessions      Session[]
 }
@@ -83,6 +83,7 @@ model Post {
     user        User        @relation( fields: [userEmail], references: [email] )
     views       Int         @default( 0 )
     editorLike  Boolean     @default( false )
+    isFeatured  Boolean     @default( false )
     comments    Comment[]
 }
 
