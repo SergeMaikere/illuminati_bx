@@ -170,7 +170,6 @@ const updatePost = async (req: Request): Promise<NextResponse> => {
     }
 }
 
-
 export const GET = async (req: Request) => {
     const { searchParams } = new URL(req.url)
     const slug = searchParams.get('slug')
@@ -202,3 +201,4 @@ export const DELETE = async (req: Request) => {
         return new NextResponse( JSON.stringify(err) )
     }
 }
+

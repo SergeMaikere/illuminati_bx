@@ -10,6 +10,7 @@ export default async function Home() {
     const recents = await getRecentPosts()
     const popular = await getPopularPosts()
     const editorChoices = await getEditorChoice()
+
     return (
         <div>
             <Featured/>

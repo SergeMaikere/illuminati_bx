@@ -8,7 +8,7 @@ const Categories = ({categories}: {categories: Category[]}) => {
             <div className="text-4xl font-serif mb-8">Nos Catégories</div>
             <div className="flex flex-wrap gap-4">
                 {
-                    categories.map(
+                    categories?.map(
                         obj => <CategoryCard key={obj.id} category={obj} />
                     )
                 }

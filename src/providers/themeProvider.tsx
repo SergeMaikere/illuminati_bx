@@ -13,9 +13,10 @@ const getFromLocalStorage = (): string => {
     return localStorage.getItem('theme') || 'false'
 }
 
+const theme = signal<string>( getFromLocalStorage() )
+
 export const ThemeProvider = ( {children}: C ) => {
     useSignals()
-    const theme = signal<string>( getFromLocalStorage() )
     return (
         <ThemeContext.Provider value={ {theme} }>
             <div className={classNames('w-screen', {dark: theme.value === 'true'}) }>

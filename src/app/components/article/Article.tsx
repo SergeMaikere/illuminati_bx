@@ -9,6 +9,8 @@ import TextEditor from '../textEditor/TextEditor';
 import classNames from 'classnames'
 import { isWriter, getFormDataByObject } from '../../../utils/Helper';
 import { Otis } from '../../../utils/Classics';
+import { signal } from '@preact/signals-react';
+import { useSignals } from '@preact/signals-react/runtime';
 
 type H = { handleSubmit: Function }
 
@@ -22,9 +24,10 @@ type P = {
 }
 
 const Article: React.FC<H> = ({handleSubmit}) => {
+    useSignals()
 
     const { data, status } = useSession()
-    const [ body, setBody ] = useState<string>(Otis)
+    const body = signal<string>(Otis)
 
     const handleNewPostSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault()
@@ -33,7 +36,7 @@ const Article: React.FC<H> = ({handleSubmit}) => {
             title: target.title.value,
             subtitle: target.subtitle.value,
             description: target.description.value,
-            body: body,
+            body: body.value,
             catSlug: target.category.value,
             image: target.imageNew?.files[0],
             imageAlt: target.imageAltNew.value,
@@ -76,7 +79,7 @@ const Article: React.FC<H> = ({handleSubmit}) => {
                 </div>   
                 <div className='flex flex-col gap-3 mt-9 p-6 md:p-12'>
                     <div className="min-h-64 md:min-h-80 border-b border-gray-300 rounded">
-                        <TextEditor value={body} handleChange={setBody} />
+                        <TextEditor value={Otis} handleChange={(newValue) => body.value = newValue } />
                     </div>
                     <div className="flex flex-col gap-3 md:flex-row md:justify-between"> 
                         <UploadFiles fileType="image" category="New" image={undefined} imageAlt={undefined} />

@@ -11,7 +11,12 @@ const ToggleTheme = () => {
 
     const {theme} = useTheme()
     
-    effect( () => localStorage.setItem('theme', theme.value) )
+    effect( 
+        () => {
+            if ( typeof window !== 'undefined' ) return
+            localStorage.setItem('theme', theme.value)
+        }
+    )
 
     const changeTheme = () => {
         theme.value = theme.value === 'true' ? 'false' : 'true'

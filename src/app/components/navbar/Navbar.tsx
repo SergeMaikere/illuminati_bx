@@ -4,11 +4,13 @@ import AuthLinks from '../authLink/AuthLinks';
 import ToggleTheme from '../toggleTheme/ToggleTheme';
 import classNames from 'classnames'
 import { signal } from '@preact/signals-react';
+import { useSignals } from '@preact/signals-react/runtime';
+
+const open = signal<boolean>( false )
 
 const Navbar = () => {
-
-    const open = signal<boolean>( false )
-
+    useSignals()
+    
     return (
         <div className="flex items-center justify-between px-2 py-3 mb-2 border-b border-gray-300 h-24 font-serif w-ful">
 
