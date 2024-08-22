@@ -10,7 +10,7 @@ const PostCard = ({post}: {post: Post}) => {
             <img className="p-1 hidden lg:block object-cover col-span-2" src={post?.image} alt={post?.imageAlt}/>
             <div className="lg:col-span-3">
                 <div className="mb-1 font-mono">
-                    <span>{new Date(post?.createdAt).toLocaleDateString()}</span>
+                    <span>{post?.createdAt}</span>
                     <span className={`uppercase ${TextCategoryColor[post?.catSlug]}`}>{` ${post?.catSlug}`}</span>
                 </div>
                 <div className="mb-2">

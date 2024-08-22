@@ -1,16 +1,17 @@
 "use client"
-import React, { useContext } from 'react';
 import Button from '../button/Button';
-import { usePage } from '../../../context/PaginationContext';
+import { useSignals } from '@preact/signals-react/runtime';
+import { usePage } from '../../../signals/pagination';
 
 type L = { length: number }
 
-const Pagination: React.FC<L> = ({length}) => {
-
+const Pagination = ({length}: L) => {
+    useSignals()
+    
     const { page, dispatch } = usePage()
 
-    const handlePrev = () => page <= 0 ? dispatch({type: "here"}) : dispatch({type: "prev"})
-    const handleNext = () => page < length - 1 ? dispatch({type: "next"}) : dispatch({type: "here"})
+    const handlePrev = () => page.value <= 0 ? dispatch({type: "here"}) : dispatch({type: "prev"})
+    const handleNext = () => page.value < length - 1 ? dispatch({type: "next"}) : dispatch({type: "here"})
 
     return (
         <div className="flex justify-between">

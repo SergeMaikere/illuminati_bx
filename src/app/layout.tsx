@@ -4,8 +4,7 @@ import './globals.css'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import AuthProvider from '../providers/AuthProvider';
-import { ThemeProvider } from '../providers/themeProvider';
-import PaginationProvider from '../providers/PaginationProvider';
+import { ThemeProvider } from '../providers/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +24,6 @@ export default function RootLayout({
         <body className={inter.className}>
             <AuthProvider>
                 <ThemeProvider>
-                    <PaginationProvider>
                         <main className={`
                             bg-zinc-50 dark:bg-zinc-800 text-gray-800 dark:text-gray-200
                             text-sm md:text-base xl:text-lg
@@ -35,7 +33,6 @@ export default function RootLayout({
                             {children}
                             <Footer/>
                         </main>
-                    </PaginationProvider>
                 </ThemeProvider>
             </AuthProvider>
         </body>

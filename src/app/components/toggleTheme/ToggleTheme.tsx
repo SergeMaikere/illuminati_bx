@@ -1,24 +1,23 @@
 "use client"
 import React from 'react';
 import { FaSun, FaMoon  } from "react-icons/fa";
-import { useTheme } from '../../../context/ThemeContext';
 import classNames from 'classnames'
 import { effect } from '@preact/signals-react';
 import { useSignals } from '@preact/signals-react/runtime';
+import { theme } from '../../../signals/theme';
 
 const ToggleTheme = () => {
     useSignals()
-
-    const {theme} = useTheme()
     
     effect( 
         () => {
-            if ( typeof window !== 'undefined' ) return
+            if ( typeof window === 'undefined' ) return
             localStorage.setItem('theme', theme.value)
         }
     )
 
     const changeTheme = () => {
+        console.log('theme', theme.value)
         theme.value = theme.value === 'true' ? 'false' : 'true'
     }
 

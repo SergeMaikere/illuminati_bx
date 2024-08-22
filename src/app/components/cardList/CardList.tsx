@@ -3,16 +3,17 @@ import Pagination from '../pagination/Pagination';
 import PostCard from '../postCard/PostCard';
 import OupsNoContent from '../oupsNoContent/OupsNoContent';
 import { splicer } from '../../../utils/Helper';
-import { usePage } from '../../../context/PaginationContext';
 import { Post } from '../../../utils/Posts';
+import { useSignals } from '@preact/signals-react/runtime';
+import { usePage } from '../../../signals/pagination';
 
-type Props = {
+type P = {
     cards: Post[]
     title: string
 }
 
-const CardList: React.FC<Props> = ({cards, title}) => {
-
+const CardList = ({cards, title}: P) => {
+    useSignals()
     const { page } = usePage()
     const decks = splicer(cards, 4)
 
@@ -21,7 +22,7 @@ const CardList: React.FC<Props> = ({cards, title}) => {
             <div className="text-4xl font-serif m-4">{title}</div>
             {
                 decks.length === 0 ? <OupsNoContent/> :
-                decks[page].map( post => <PostCard key={post.id} post={post} /> )
+                decks[page.value].map( post => <PostCard key={post.id} post={post} /> )
             }
             <Pagination length={decks.length}/>
         </div>

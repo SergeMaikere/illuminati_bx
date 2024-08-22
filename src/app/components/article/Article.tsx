@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSession } from 'next-auth/react'
 import Button from '../button/Button';
 import NoYouCannot from '../noYouCannot/NoYouCannot';
@@ -23,7 +23,7 @@ type P = {
     imageAltNew: {value: string}
 }
 
-const Article: React.FC<H> = ({handleSubmit}) => {
+const Article = ({handleSubmit}: H) => {
     useSignals()
 
     const { data, status } = useSession()
